@@ -16,4 +16,9 @@ use App\HinhGiay;
 class GiayController extends Controller
 {
     //
+    public function getDanhsach(){
+
+    	$giay = Giay::orderBy('id','DESC')->get();
+    	return view('admin.giay.danhsach',['giay'=>$giay]);
+    }
 }
