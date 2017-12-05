@@ -21,4 +21,15 @@ class GiayController extends Controller
     	$giay = Giay::orderBy('id','DESC')->get();
     	return view('admin.giay.danhsach',['giay'=>$giay]);
     }
+    
+    public function getThem(){
+    	$giay = Giay::all();
+        $loaigiay = LoaiGiay::all();
+        $brand = Brand::all();
+    	return view('admin.giay.them',[
+            'giay'=>$giay,
+            'loaigiay'=>$loaigiay,
+            'brand'=>$brand
+            ]);
+    }
 }
