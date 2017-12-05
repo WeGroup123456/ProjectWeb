@@ -29,3 +29,9 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 ## Website bán hàng
 
 Tạo website bán giày
+Sản phẩm: Giày thuộc nhiều hãng, nhiều loại giày.
+Chức năng:
+- Giỏ hàng
+- Thanh toán
+- Lọc sản phẩm
+- Hiển thị thông tin chi tiết sản phẩm
