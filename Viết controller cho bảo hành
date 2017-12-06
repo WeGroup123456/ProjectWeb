@@ -1,0 +1,4 @@
+ public function getDanhsach(){
+    	$baohanh = BaoHanh::all();
+    	return view('admin.baohanh.danhsach',['baohanh'=>$baohanh]);
+    }
