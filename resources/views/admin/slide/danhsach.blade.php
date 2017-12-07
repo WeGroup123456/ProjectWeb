@@ -2,7 +2,7 @@
 
 @section('content')
 
-<!-- Page Content -->
+
         <div id="page-wrapper" style="margin: 0px 0px;">
             <div class="container-fluid">
                 <div class="row">
@@ -11,7 +11,7 @@
                             <small>Danh sách</small>
                         </h1>
                     </div>
-                    <!-- /.col-lg-12 -->
+                    
                     @if(session('thongbao'))
                         <div class="alert alert-success">
                             {{session('thongbao')}}
@@ -48,6 +48,6 @@
             </div>
             <!-- /.container-fluid -->
         </div>
-        <!-- /#page-wrapper -->
+       
 
 @endsection
