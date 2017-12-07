@@ -9,5 +9,8 @@ use App\Slide;
 
 class SlideController extends Controller
 {
-    //
+    public function getDanhsach(){
+    	$slide = Slide::all();
+    	return view('admin.slide.danhsach',['slide'=>$slide]);
+    }
 }
