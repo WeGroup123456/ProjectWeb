@@ -61,4 +61,57 @@ class GiayController extends Controller
 
     	return redirect('admin/giay/them')->with('thongbao','Thêm thành công'); // gán thêm session thongbao
     }
+
+    public function getSua($id){
+        $brand = Brand::all();
+        $loaigiay = LoaiGiay::all();
+        $giay = Giay::find($id);
+        return view('admin.giay.sua',[
+            'giay'=>$giay,
+            'brand'=>$brand,
+            'loaigiay'=>$loaigiay
+            ]);
+    }
+
+    public function postSua(Request $request,$id){
+
+        $this->validate($request,
+            [
+                'TomTat' => 'required',
+                'NoiDung' => 'required',
+            ],[
+                'TomTat.required' => 'Bạn chưa nhập tóm tắt',
+                'NoiDung.required' => 'Bạn chưa nhập nội dung',
+            ]);
+
+        $giay = Giay::find($id);
+        /*$giay->Ten = $request->Ten;
+        $giay->TenKhongDau = changeTitle($request->Ten);*/
+        $giay->TomTat = $request->TomTat;
+        $giay->NoiDung = $request->NoiDung;
+        /*$giay->idBrand = $request->Brand;
+        $giay->idLoaiGiay = $request->LoaiGiay;*/
+
+        $giay->save();
+
+        return redirect('admin/giay/sua/'.$id)->with('thongbao','Sửa thành công'); // gán thêm session thongbao
+    }
+
+    public function getXoa($id){
+        $giay = Giay::find($id);
+
+        $maugiay = MauGiay::where('idGiay',$id)->get();
+
+        foreach ($maugiay as $mg) {
+            $size = Size::where('mau_giay_id',$mg->id)->get();
+            foreach ($size as $si) {
+                $si->delete();
+            }
+            $mg->delete();
+        }
+
+        $giay->delete();
+
+        return redirect('admin/giay/danhsach')->with('thongbao','Xóa thành công');
+    }
 }
