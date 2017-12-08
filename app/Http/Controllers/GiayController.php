@@ -114,4 +114,90 @@ class GiayController extends Controller
 
         return redirect('admin/giay/danhsach')->with('thongbao','Xóa thành công');
     }
+
+    public function getChiTiet($id){
+        $giay = Giay::find($id);
+        $maugiay = MauGiay::where('idGiay',$id)->get();
+        return view('admin.giay.chitiet',['maugiay'=>$maugiay,'giay'=>$giay]);
+    }
+
+    public function getThemChiTiet($id){
+        $giay = Giay::find($id);
+        return view('admin.giay.themchitiet',[
+            'giay'=>$giay
+            ]);
+    }
+
+    public function postThemChiTiet(Request $request,$id){
+
+        $maugiay = new MauGiay;
+        $size = new Size;
+        $giay = Giay::where('id',$id)->get();
+
+        if ($request->hasFile('HinhBe')) {
+            $file = $request->file('HinhBe');
+            $duoi = $file->getClientOriginalExtension();
+            if ($duoi != 'jpg' && $duoi != 'png' && $duoi != 'jpeg') {
+                return redirect('admin/giay/themchitiet/'.$id)->with('loi','Bạn chỉ được chọn file có đuôi jpg,jpeg,png');
+            }
+            $name = $file->getClientOriginalName();
+            $HinhBe = str_random(4)."_".$name;
+            while (file_exists("upload/giay/".$request->MaGiay."/chinh/".$HinhBe)) {
+                $HinhBe = str_random(4)."_".$name;
+            }
+            $file->move("upload/giay/".$request->MaGiay."/chinh",$HinhBe);
+            $maugiay->HinhBe = $HinhBe;
+        }
+
+        $maugiay->Ten = $giay[0]->Ten;
+        $maugiay->MaGiay = $request->MaGiay;
+        $maugiay->Mau = $request->Mau;
+        $maugiay->LuotXem = 0;
+        $maugiay->LuotThich = 0;
+        $maugiay->GiaCu = $request->GiaCu;
+        $maugiay->GiaMoi = $request->GiaMoi;
+        $maugiay->NoiBat = $request->NoiBat;
+        $maugiay->Status = $request->Status;
+        $maugiay->GioiTinh = $request->GioiTinh;
+        $maugiay->idGiay = $id;
+
+        $maugiay->save();
+
+        $size->SoLuong = $request->SoLuong;
+        $size->Size = $request->Size;
+        $size->mau_giay_id = $maugiay->id;
+
+        $size->save();
+
+        if(count($_FILES['upload']['name']) > 0){
+
+            for($i=0; $i<count($_FILES['upload']['name']); $i++) {
+                $file = $request->file('upload');
+                //$file=$_FILES['upload']['name'][$i];
+
+                $duoi = $file[$i]->getClientOriginalExtension();
+                if ($duoi != 'jpg' && $duoi != 'png' && $duoi != 'jpeg') {
+                    return redirect('admin/giay/themchitiet/'.$id)->with('loi','Bạn chỉ được chọn file có đuôi jpg,jpeg,png');
+                }
+                $name = $file[$i]->getClientOriginalName();
+                $Hinh = str_random(4)."_".$name;
+                while (file_exists("upload/giay/".$maugiay->MaGiay."/hinhphu/".$Hinh)) {
+                    $Hinh = str_random(4)."_".$name;
+                }
+                $filePath = "upload/giay/".$maugiay->MaGiay."/hinhphu";
+
+                $file[$i]->move($filePath,$Hinh);
+
+                $hinhgiay = new HinhGiay;
+                $hinhgiay->Hinh = $Hinh;
+                $hinhgiay->mau_giay_id = $maugiay->id;
+                $hinhgiay->save();
+            }
+
+        }
+
+        
+
+        return redirect('admin/giay/themchitiet/'.$id)->with('thongbao','Thêm thành công'); // gán thêm session thongbao
+    }
 }
