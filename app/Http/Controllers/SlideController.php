@@ -100,4 +100,10 @@ class SlideController extends Controller
 
     	return redirect('admin/slide/sua/'.$id)->with('thongbao','Sửa thành công'); // gán thêm session thongbao
     }
+    public function getXoa($id){
+            $slide = Slide::find($id);
+            $slide->delete();
+
+            return redirect('admin/slide/danhsach')->with('thongbao','Xóa thành công');
+        }
 }
