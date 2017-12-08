@@ -2,16 +2,16 @@
 
 @section('content')
 
-
+<!-- Page Content -->
         <div id="page-wrapper" style="margin: 0px 0px;">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1 class="page-header">Slide
+                        <h1 class="page-header">Bảo hành
                             <small>Danh sách</small>
                         </h1>
                     </div>
-                    
+                    <!-- /.col-lg-12 -->
                     @if(session('thongbao'))
                         <div class="alert alert-success">
                             {{session('thongbao')}}
@@ -21,24 +21,26 @@
                         <thead>
                             <tr align="center">
                                 <th>ID</th>
-                                <th>Tên Slide</th>
-                                <th>Hình</th>
+                                <th>Tiêu đề</th>
+                                <th>Kiểu</th>
+                                <th>Tên không dấu</th>
+                                <th>Tóm tắt</th>
                                 <th>Nội dung</th>
-                                <th>Link</th>
                                 <th>Delete</th>
                                 <th>Edit</th>
                             </tr>
                         </thead>
                         <tbody>
-                        @foreach($slide as $sl)
+                        @foreach($baohanh as $bh)
                             <tr class="odd gradeX" align="center">
-                                <td>{{$sl->id}}</td>
-                                <td>{{$sl->Ten}}</td>
-                                <td><img width="400px" src="upload/slide/{{$sl->Hinh}}"></td>
-                                <td>{{$sl->NoiDung}}</td>
-                                <td>{{$sl->link}}</td>
-                                <td class="center"><i class="fa fa-trash-o  fa-fw"></i><a href="admin/slide/xoa/{{$sl->id}}"> Xóa</a></td>
-                                <td class="center"><i class="fa fa-pencil fa-fw"></i> <a href="admin/slide/sua/{{$sl->id}}">Sửa</a></td>
+                                <td>{{$bh->id}}</td>
+                                <td>{{$bh->TieuDe}}</td>
+                                <td>{{$bh->Kieu}}</td>
+                                <td>{{$bh->TenKhongDau}}</td>
+                                <td>{{$bh->TomTat}}</td>
+                                <td>{{$bh->NoiDung}}</td>
+                                <td class="center"><i class="fa fa-trash-o  fa-fw"></i><a href="admin/baohanh/xoa/{{$bh->id}}"> Xóa</a></td>
+                                <td class="center"><i class="fa fa-pencil fa-fw"></i> <a href="admin/baohanh/sua/{{$bh->id}}">Sửa</a></td>
                             </tr>
                         @endforeach
                         </tbody>
@@ -48,6 +50,6 @@
             </div>
             <!-- /.container-fluid -->
         </div>
-       
+        <!-- /#page-wrapper -->
 
 @endsection
