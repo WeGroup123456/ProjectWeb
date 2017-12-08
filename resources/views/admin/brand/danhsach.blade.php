@@ -1,50 +1,48 @@
 @extends('admin.layout.index')
 
 @section('content')
+
 <!-- Page Content -->
         <div id="page-wrapper" style="margin: 0px 0px;">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
                         <h1 class="page-header">Brand
-                            <small>Thêm</small>
+                            <small>Danh sách</small>
                         </h1>
                     </div>
                     <!-- /.col-lg-12 -->
-                    <div class="col-lg-7" style="padding-bottom:120px">
-                        @if(count($errors) > 0)
-                            <div class="alert alert-danger">
-                                @foreach($errors->all() as $err)
-                                    {{$err}}<br>
-                                @endforeach
-                            </div>
-                        @endif
-
-                        @if(session('thongbao'))
-                            <div class="alert alert-success">
-                                {{session('thongbao')}}
-                            </div>
-                        @endif
-
-                        <form action="admin/brand/them" method="POST" enctype="multipart/form-data">
-                            <input type="hidden" name="_token" value="{{csrf_token()}}">
-                            <div class="form-group">
-                                <label>Tên Brand</label>
-                                <input class="form-control" name="Ten" placeholder="Nhập tên hãng" />
-                            </div>
-                            <div class="form-group">
-                                <label>Mô tả</label>
-                                <textarea name="MoTa" id="demo" class="form-control ckeditor" rows="3" ></textarea>
-                            </div>
-                            <div class="form-group">
-                                <label>Hình ảnh</label>
-                                <input class="form-control" type="file" name="Hinh">
-                            </div>
-                            
-                            <button type="submit" class="btn btn-default">Thêm</button>
-                            <button type="reset" class="btn btn-default">Reset</button>
-                        </form>
-                    </div>
+                    @if(session('thongbao'))
+                        <div class="alert alert-success">
+                            {{session('thongbao')}}
+                        </div>
+                    @endif
+                    <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+                        <thead>
+                            <tr align="center">
+                                <th>ID</th>
+                                <th>Tên</th>
+                                <th>Tên không dấu</th>
+                                <th>Mô tả</th>
+                                <th>Hình</th>
+                                <th>Delete</th>
+                                <th>Edit</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        @foreach($brand as $br)
+                            <tr class="odd gradeX" align="center">
+                                <td>{{$br->id}}</td>
+                                <td>{{$br->Ten}}</td>
+                                <td>{{$br->TenKhongDau}}</td>
+                                <td>{{$br->MoTa}}</td>
+                                <td><img width="100px" src="upload/brand/{{$br->Hinh}}"></td>
+                                <td class="center"><i class="fa fa-trash-o  fa-fw"></i><a href="admin/brand/xoa/{{$br->id}}"> Delete</a></td>
+                                <td class="center"><i class="fa fa-pencil fa-fw"></i> <a href="admin/brand/sua/{{$br->id}}">Edit</a></td>
+                            </tr>
+                        @endforeach
+                        </tbody>
+                    </table>
                 </div>
                 <!-- /.row -->
             </div>
