@@ -31,6 +31,7 @@
                             <div class="form-group">
                                 <label>Hãng giày</label>
                                 <select class="form-control" name="Brand" id="Brand">
+                                    <option value="" selected="" disabled="">Hãng giày</option>
                                     @foreach($brand as $br)
                                         <option value="{{$br->id}}">{{$br->Ten}}</option>
                                     @endforeach
@@ -39,7 +40,7 @@
                             <div class="form-group">
                                 <label>Loại giày</label>
                                 <select class="form-control" name="LoaiGiay" id="LoaiGiay">
-                                    <option value="" selected="">Hãy chọn hãng giày</option>
+                                    <option value="" selected="" disabled="">Hãy chọn hãng giày</option>
                                 </select>
                             </div>
                             <div class="form-group">

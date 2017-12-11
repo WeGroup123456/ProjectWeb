@@ -31,15 +31,15 @@
 
                             <div class="form-group">
                                 <label>Mã giày</label>
-                                <input class="form-control" name="MaGiay" placeholder="Nhập mã giày" />
+                                <input class="form-control" name="MaGiay" placeholder="Nhập mã giày" required="" />
                             </div>
                             <div class="form-group">
                                 <label>Tên giày</label>
-                                <input class="form-control" name="Ten" placeholder="{{$giay->Ten}}" value="{{$giay->Ten}}" disabled="" />
+                                <input class="form-control" name="Ten" placeholder="{{$giay->Ten}}" value="{{$giay->Ten}}" disabled="" required="" />
                             </div>
                             <div class="form-group">
                                 <label>Màu</label>
-                                <input class="form-control" name="Mau" placeholder="Nhập màu" />
+                                <input class="form-control" name="Mau" placeholder="Nhập màu" required="" />
                             </div>
 
                             @if(session('loi'))
@@ -49,7 +49,7 @@
                             @endif
                             <div class="form-group">
                                 <label>Ảnh chính</label>
-                                <input class="form-control" type="file" name="HinhBe">
+                                <input class="form-control" type="file" name="HinhBe" required="" >
                             </div>
 
                             @if(session('loi'))
@@ -59,7 +59,7 @@
                             @endif
                             <div class="form-group">
                                 <label>Tập ảnh nhỏ</label>
-                                <input class="form-control" type="file" name="upload[]" multiple>
+                                <input class="form-control" type="file" name="upload[]" multiple required="" >
                             </div>
 
                             <div class="form-group">
@@ -82,7 +82,15 @@
                                 </label>
                             </div>
 
-                            
+                            <div class="form-group">
+                                <label>Giá cũ</label>
+                                <input class="form-control" name="GiaCu" placeholder="Nhập giá cũ" required="" />
+                            </div>
+
+                            <div class="form-group">
+                                <label>Giá mới</label>
+                                <input class="form-control" name="GiaMoi" placeholder="Nhập giá mới" required="" />
+                            </div>
 
                             <div class="form-group">
                                 <label>Size</label>
@@ -94,18 +102,8 @@
                             </div>
 
                             <div class="form-group">
-                                <label>Giá cũ</label>
-                                <input class="form-control" name="GiaCu" placeholder="Nhập giá cũ" />
-                            </div>
-
-                            <div class="form-group">
-                                <label>Giá mới</label>
-                                <input class="form-control" name="GiaMoi" placeholder="Nhập giá mới" />
-                            </div>
-
-                            <div class="form-group">
                                 <label>Số lượng</label>
-                                <input class="form-control" name="SoLuong" placeholder="Nhập số lượng" />
+                                <input class="form-control" name="SoLuong" placeholder="Nhập số lượng" required="" />
                             </div>
 
                             <div class="form-group">

@@ -118,7 +118,7 @@
                                 <input class="form-control" name="GiaMoi" placeholder="Nhập giá mới" value="{{$maugiay->GiaMoi}}" />
                             </div>
 
-                            <div class="form-group">
+                            {{--<div class="form-group">
                                 <label>Size</label>
                                 <select class="form-control" name="Size">
                                     @for ($i = 35; $i <= 45 ; $i++)
@@ -130,7 +130,7 @@
                             <div class="form-group">
                                 <label>Số lượng</label>
                                 <input class="form-control" name="SoLuong" id="SoLuong" placeholder="Nhập số lượng" value="" />
-                            </div>
+                            </div> --}}
 
                             <!-- <div class="form-group">
                                 <label>Số lượng cũ: </label>
