@@ -110,6 +110,12 @@ class UserController extends Controller
 
         return redirect('admin/user/sua/'.$id)->with('thongbao','Sửa thành công'); // gán thêm session thongbao
     }
+    public function getXoa($id){
+        $user = User::find($id);
+        $user->delete();
+
+        return redirect('admin/user/danhsach')->with('thongbao','Xóa thành công');
+    }
     public function getDangnhapAdmin(){
     	return view('admin.login');
     }
