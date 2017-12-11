@@ -2,7 +2,7 @@
 @extends('admin.layout.index')
 
 @section('content')
-<!-- Page Content -->
+
         <div id="page-wrapper" style="margin: 0px 0px;">
             <div class="container-fluid">
                 <div class="row">
@@ -11,7 +11,7 @@
                             <small>Thêm</small>
                         </h1>
                     </div>
-                    <!-- /.col-lg-12 -->
+                    
                     <div class="col-lg-7" style="padding-bottom:120px">
                         @if(count($errors) > 0)
                             <div class="alert alert-danger">
@@ -57,10 +57,10 @@
                         </form>
                     </div>
                 </div>
-                <!-- /.row -->
+                
             </div>
-            <!-- /.container-fluid -->
+            
         </div>
-        <!-- /#page-wrapper -->
+        
 
 @endsection

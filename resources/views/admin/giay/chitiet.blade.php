@@ -32,8 +32,9 @@
                                 <th>Lượt xem</th>
                                 <th>Lượt thích</th>
                                 <th>Giới tính</th>
+                                <th>+Size</th>
                                 <th>Size</th>
-                                <th>Số lượng</th>
+                                <th>SL</th>
                                 <th>Giá cũ</th>
                                 <th>Giá mới</th>
                                 <th>Status</th>
@@ -69,11 +70,12 @@
                                         {{'Nữ'}}
                                     @endif
                                 </td>
+                                <td class="center"><i class="fa fa-pencil fa-fw"></i> <a href="admin/giay/themsize/{{$mg->id}}">+Size</a></td>
                                 @php
                                     $count++;
                                 @endphp
                                 <td><select class="form-control" name="Size" id="Size{{$count}}">
-                                    <option value="" selected="">Size</option>
+                                    <option value="" selected="" disabled="">Size</option>
 
                                     @foreach($mg->size as $size)
                                         <option value="{{$size->id}}">{{$size->Size}}</option>
@@ -85,7 +87,7 @@
                                             
                                     </div> --}}
                                     <select class="form-control" name="SoLuong" id="SoLuong{{$count}}">
-                                        <option value="" selected="">Chọn Size</option>
+                                        <option value="" selected="" disabled=""><<-</option>
                                     </select>
                                 </td>
 
