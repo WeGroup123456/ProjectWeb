@@ -1,43 +1,62 @@
  @extends('layout.index_general')
  @section('content')
+ @php
+   use Illuminate\Support\Facades\Input;
+   use Illuminate\Support\Facades\URL;
+ @endphp
+
+ @if (Session::get('shoe')!==null)
+  @php
+    $shoe = Session::get('shoe');
+    //Session::forget('shoe');
+  @endphp
+  @if (count($shoe) > 0)
+    <div class="alert alert-info">Có {{count($shoe)}} kết quả</div>
+  @else
+    <div class="alert alert-info">Không có kết quả phù hợp</div>
+  @endif
+@endif
+<form method="get" action="productfilter" id="my_form">
  <div class="container_fullwidth">
         <div class="container">
           <div class="row">
             <div class="col-md-3">
+
+              <div class="others leftbar">
+                <h3 class="title">
+                  Điều kiện lọc
+                </h3>
+                <div class="form-group">
+                  <label>
+                  <input type="checkbox" name="" {{Input::has('gender') ? 'checked' : ''}}>
+                    Gender
+                  </label>
+                </div>
+              </div>
+              <div class="clearfix">
+              </div>
+
               <div class="category leftbar">
                 <h3 class="title">
-                  Categories
+                  Gender
                 </h3>
+                <?php $gender = Input::has('gender') ? Input::get('gender'): [] ; ?>
                 <ul>
-                  <li>
-                    <a href="#">
-                      Men
-                    </a>
+                  <li class="">
+                    <div class="form-group">
+                      <label>
+                      <input type="radio" name="gender" id="men" value="0" onclick="document.getElementById('my_form').submit()" {{Input::get('gender') == 0 ? 'checked' : ''}}>
+                        Men
+                      </label>
+                    </div>
                   </li>
                   <li>
-                    <a href="#">
-                      Women
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      Salon
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      New Trend
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      Living room
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      Bed room
-                    </a>
+                    <div class="form-group">
+                      <label>
+                      <input type="radio" name="gender" value="1" onclick="document.getElementById('my_form').submit()" {{Input::get('gender') == 1 ? 'checked' : ''}}>
+                        Women
+                      </label>
+                    </div>
                   </li>
                 </ul>
               </div>
@@ -45,39 +64,51 @@
               </div>
               <div class="branch leftbar">
                 <h3 class="title">
-                  Branch
+                  Brand
                 </h3>
                 <ul>
+                @foreach ($shoe_brand_all as $sba)
+                  <?php
+                    $nameBrand = strtolower(preg_replace('/\s+/', '', $sba->TenKhongDau));
+                    $brands = Input::has('brands') ? Input::get('brands'): [] ;
+                  ?>
                   <li>
-                    <a href="#">
-                      New
-                    </a>
+                    {{-- <a href="javascript:{}" onclick="filter('brand','{{$nameBrand}}')">
+                      {{$sba->Ten}}
+                    </a> --}}
+                    <div class="form-group">
+                      <label>
+                      <input type="radio" name="brands" value="{{$nameBrand}}" onclick="document.getElementById('my_form').submit()" {{Input::get('brands') == $nameBrand ? 'checked' : ''}}>
+                        {{$sba->Ten}}
+                      </label>
+                    </div>
                   </li>
+                @endforeach
+                </ul>
+              </div>
+              <div class="clearfix">
+              </div>
+              <div class="branch leftbar">
+                <h3 class="title">
+                  Type of Shoes
+                </h3>
+                <ul>
+                @foreach ($shoe_cate_all as $sca)
+                  <?php
+                    $nameCate = strtolower(preg_replace('/\s+/', '', $sca->TenKhongDau));
+                  ?>
                   <li>
-                    <a href="#">
-                      Sofa
-                    </a>
+                    {{-- <a href="#">
+                      {{$sca->Ten}}
+                    </a> --}}
+                    <div class="form-group">
+                      <label>
+                      <input type="radio" name="cate" value="{{$nameCate}}" onclick="document.getElementById('my_form').submit()" {{Input::get('cate') == $nameCate ? 'checked' : ''}}>
+                        {{$sca->Ten}}
+                      </label>
+                    </div>
                   </li>
-                  <li>
-                    <a href="#">
-                      Salon
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      New Trend
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      Living room
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      Bed room
-                    </a>
-                  </li>
+                @endforeach
                 </ul>
               </div>
               <div class="clearfix">
@@ -89,14 +120,14 @@
                 <form class="pricing">
                   <label>
                     $ 
-                    <input type="number">
+                    <input type="number" name="min_price" value="{{Input::get('min_price')}}">
                   </label>
                   <span class="separate">
                     - 
                   </span>
                   <label>
                     $ 
-                    <input type="number">
+                    <input type="number" name="max_price" value="{{Input::get('max_price')}}">
                   </label>
                   <input type="submit" value="Go">
                 </form>
@@ -358,100 +389,48 @@
                       </select>
                     </div>
                   </div>
+                  <style type="text/css">
+                    .pagination {
+                      margin: 0;
+                    }
+                  </style>
                   <div class="pager">
-                    <a href="#" class="prev-page">
-                      <i class="fa fa-angle-left">
-                      </i>
-                    </a>
-                    <a href="#" class="active">
-                      1
-                    </a>
-                    <a href="#">
-                      2
-                    </a>
-                    <a href="#">
-                      3
-                    </a>
-                    <a href="#" class="next-page">
-                      <i class="fa fa-angle-right">
-                      </i>
-                    </a>
+                    {!! $shoe->links() !!}
                   </div>
                 </div>
                 <div class="clearfix">
                 </div>
                 <div class="row">
-                  <div class="col-md-4 col-sm-6">
-                    <div class="products">
-                      <div class="thumbnail">
-                        <a href="details.html">
-                          <img src="images/products/small/products-05.png" alt="Product Name">
-                        </a>
-                      </div>
-                      <div class="productname">
-                        Iphone 5s Gold 32 Gb 2013
-                      </div>
-                      <h4 class="price">
-                        $451.00
-                      </h4>
-                      <div class="button_group">
-                        <button class="button add-cart" type="button">
-                          Add To Cart
-                        </button>
-                        <button class="button compare" type="button">
-                          <i class="fa fa-exchange">
-                          </i>
-                        </button>
-                        <button class="button wishlist" type="button">
-                          <i class="fa fa-heart-o">
-                          </i>
-                        </button>
-                      </div>
+                @if(count($errors) > 0)
+                    <div class="alert alert-danger">
+                        @foreach($errors->all() as $err)
+                            {{$err}}<br>
+                        @endforeach
                     </div>
-                  </div>
-                  <div class="col-md-4 col-sm-6">
-                    <div class="products">
-                      <div class="thumbnail">
-                        <a href="details.html">
-                          <img src="images/products/small/products-06.png" alt="Product Name">
-                        </a>
-                      </div>
-                      <div class="productname">
-                        Iphone 5s Gold 32 Gb 2013
-                      </div>
-                      <h4 class="price">
-                        $451.00
-                      </h4>
-                      <div class="button_group">
-                        <button class="button add-cart" type="button">
-                          Add To Cart
-                        </button>
-                        <button class="button compare" type="button">
-                          <i class="fa fa-exchange">
-                          </i>
-                        </button>
-                        <button class="button wishlist" type="button">
-                          <i class="fa fa-heart-o">
-                          </i>
-                        </button>
-                      </div>
+                @endif
+
+                @if(session('thongbao'))
+                    <div class="alert alert-success">
+                        {{session('thongbao')}}
                     </div>
-                  </div>
+                @endif
+
+                @foreach ($shoe as $sh)
                   <div class="col-md-4 col-sm-6">
                     <div class="products">
                       <div class="offer">
                         New
                       </div>
                       <div class="thumbnail">
-                        <a href="details.html">
-                          <img src="images/products/small/products-07.png" alt="Product Name">
+                        <a href="productdetail/{{$sh->giay->TenKhongDau}}/shoe{{$sh->id}}.html">
+                          <img src="upload/giay/{{$sh->MaGiay}}/chinh/{{$sh->HinhBe}}" alt="Product Name">
                         </a>
                       </div>
                       <div class="productname">
-                        Iphone 5s Gold 32 Gb 2013
+                        {{$sh->giay->Ten}}
                       </div>
                       <h4 class="price">
-                        $451.00
+                        ${{number_format($sh->GiaMoi)}}
                       </h4>
                       <div class="button_group">
                         <button class="button add-cart" type="button">
@@ -468,180 +447,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-4 col-sm-6">
-                    <div class="products">
-                      <div class="thumbnail">
-                        <a href="details.html">
-                          <img src="images/products/small/products-05.png" alt="Product Name">
-                        </a>
-                      </div>
-                      <div class="productname">
-                        Iphone 5s Gold 32 Gb 2013
-                      </div>
-                      <h4 class="price">
-                        $451.00
-                      </h4>
-                      <div class="button_group">
-                        <button class="button add-cart" type="button">
-                          Add To Cart
-                        </button>
-                        <button class="button compare" type="button">
-                          <i class="fa fa-exchange">
-                          </i>
-                        </button>
-                        <button class="button wishlist" type="button">
-                          <i class="fa fa-heart-o">
-                          </i>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 col-sm-6">
-                    <div class="products">
-                      <div class="thumbnail">
-                        <a href="details.html">
-                          <img src="images/products/small/products-06.png" alt="Product Name">
-                        </a>
-                      </div>
-                      <div class="productname">
-                        Iphone 5s Gold 32 Gb 2013
-                      </div>
-                      <h4 class="price">
-                        $451.00
-                      </h4>
-                      <div class="button_group">
-                        <button class="button add-cart" type="button">
-                          Add To Cart
-                        </button>
-                        <button class="button compare" type="button">
-                          <i class="fa fa-exchange">
-                          </i>
-                        </button>
-                        <button class="button wishlist" type="button">
-                          <i class="fa fa-heart-o">
-                          </i>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 col-sm-6">
-                    <div class="products">
-                      <div class="offer">
-                        New
-                      </div>
-                      <div class="thumbnail">
-                        <a href="details.html">
-                          <img src="images/products/small/products-07.png" alt="Product Name">
-                        </a>
-                      </div>
-                      <div class="productname">
-                        Iphone 5s Gold 32 Gb 2013
-                      </div>
-                      <h4 class="price">
-                        $451.00
-                      </h4>
-                      <div class="button_group">
-                        <button class="button add-cart" type="button">
-                          Add To Cart
-                        </button>
-                        <button class="button compare" type="button">
-                          <i class="fa fa-exchange">
-                          </i>
-                        </button>
-                        <button class="button wishlist" type="button">
-                          <i class="fa fa-heart-o">
-                          </i>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 col-sm-6">
-                    <div class="products">
-                      <div class="thumbnail">
-                        <a href="details.html">
-                          <img src="images/products/small/products-05.png" alt="Product Name">
-                        </a>
-                      </div>
-                      <div class="productname">
-                        Iphone 5s Gold 32 Gb 2013
-                      </div>
-                      <h4 class="price">
-                        $451.00
-                      </h4>
-                      <div class="button_group">
-                        <button class="button add-cart" type="button">
-                          Add To Cart
-                        </button>
-                        <button class="button compare" type="button">
-                          <i class="fa fa-exchange">
-                          </i>
-                        </button>
-                        <button class="button wishlist" type="button">
-                          <i class="fa fa-heart-o">
-                          </i>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 col-sm-6">
-                    <div class="products">
-                      <div class="thumbnail">
-                        <a href="details.html">
-                          <img src="images/products/small/products-06.png" alt="Product Name">
-                        </a>
-                      </div>
-                      <div class="productname">
-                        Iphone 5s Gold 32 Gb 2013
-                      </div>
-                      <h4 class="price">
-                        $451.00
-                      </h4>
-                      <div class="button_group">
-                        <button class="button add-cart" type="button">
-                          Add To Cart
-                        </button>
-                        <button class="button compare" type="button">
-                          <i class="fa fa-exchange">
-                          </i>
-                        </button>
-                        <button class="button wishlist" type="button">
-                          <i class="fa fa-heart-o">
-                          </i>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 col-sm-6">
-                    <div class="products">
-                      <div class="offer">
-                        New
-                      </div>
-                      <div class="thumbnail">
-                        <a href="details.html">
-                          <img src="images/products/small/products-07.png" alt="Product Name">
-                        </a>
-                      </div>
-                      <div class="productname">
-                        Iphone 5s Gold 32 Gb 2013
-                      </div>
-                      <h4 class="price">
-                        $451.00
-                      </h4>
-                      <div class="button_group">
-                        <button class="button add-cart" type="button">
-                          Add To Cart
-                        </button>
-                        <button class="button compare" type="button">
-                          <i class="fa fa-exchange">
-                          </i>
-                        </button>
-                        <button class="button wishlist" type="button">
-                          <i class="fa fa-heart-o">
-                          </i>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
+                @endforeach
                 </div>
                 <div class="clearfix">
                 </div>
@@ -665,11 +471,11 @@
                           Name
                         </option>
                         <option value="
-<strong>
-#
-</strong>
-">
-  Price
+                        <strong>
+                        #
+                        </strong>
+                        ">
+                          Price
                         </option>
                       </select>
                     </div>
@@ -689,23 +495,7 @@
                     </div>
                   </div>
                   <div class="pager">
-                    <a href="#" class="prev-page">
-                      <i class="fa fa-angle-left">
-                      </i>
-                    </a>
-                    <a href="#" class="active">
-                      1
-                    </a>
-                    <a href="#">
-                      2
-                    </a>
-                    <a href="#">
-                      3
-                    </a>
-                    <a href="#" class="next-page">
-                      <i class="fa fa-angle-right">
-                      </i>
-                    </a>
+                    {!! $shoe->links() !!}
                   </div>
                 </div>
                 <div class="clearfix">
@@ -813,4 +603,13 @@
           </div>
         </div>
 </div>
+</form>
+@endsection
+
+@section('script')
+  <script type="text/javascript">
+    $(document).ready(function(){
+      
+    });
+  </script>
 @endsection

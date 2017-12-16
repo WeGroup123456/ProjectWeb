@@ -116,3 +116,23 @@ Route::group(['prefix'=>'admin','middleware'=>'adminLogin'],function() {
 		Route::get('soluongsize/{idSize}/{soLuong}','AjaxController@getSoLuongSize');
 	});
 });
+
+/*shoppingcart*/
+Route::get('cart',['as'=>'cart','uses'=>'PagesController@getCart']);
+//Route::get('insertcart/{id}','PagesController@getInsertcart');
+Route::post('insertcart/{id}','PagesController@postInsertcart');
+Route::get('ajax/capnhat/{id}/{qty}','PagesAjaxController@getCapNhat');
+Route::get('deletecart/{rowId}','PagesController@getDeletecart');
+/*end-shoppingcart*/
+
+/*Product*/
+Route::get('product',['as'=>'product','uses'=>'PagesController@product']);
+Route::get('productdetail/{alias}/shoe{idShoe}.html','PagesController@productDetail');
+/*End Product*/
+
+/*Product Filter*/
+Route::get('productfilter',['as'=>'productfilter','uses'=>'PagesController@productFilter']);
+/*End Product Filter*/
+
+Route::get('errorpage','PagesController@errorPage');
+Route::get('home','PagesController@home');

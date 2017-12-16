@@ -4,6 +4,7 @@
       <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
       <meta name="description" content="">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <base href="{{ asset('') }}">
       <link rel="shortcut icon" href="images/favicon.png">
       <title>Welcome to FlatShop</title>
       <link href="{{asset('../public/css/bootstrap.css')}}" rel="stylesheet">
@@ -29,12 +30,14 @@
 
       </div>
       <!-- Bootstrap core JavaScript==================================================-->
-	  <script type="text/javascript" src="{{asset('../public/js/jquery-1.10.2.min.js')}}"></script>
-	  <script type="text/javascript" src="{{asset('../public/js/jquery.easing.1.3.js')}}"></script>
-	  <script type="text/javascript" src="{{asset('../public/js/bootstrap.min.js')}}"></script>
-	  <script type="text/javascript" src="{{asset('../public/js/jquery.sequence-min.js')}}"></script>
-	  <script type="text/javascript" src="{{asset('../public/js/jquery.carouFredSel-6.2.1-packed.js')}}"></script>
-	  <script defer src="{{asset('../public/js/jquery.flexslider.js')}}"></script>
-	  <script type="text/javascript" src="{{asset('../public/js/script.min.js')}}" ></script>
+     <script type="text/javascript" src="{{asset('../public/js/jquery-1.10.2.min.js')}}"></script>
+     <script type="text/javascript" src="{{asset('../public/js/jquery.easing.1.3.js')}}"></script>
+     <script type="text/javascript" src="{{asset('../public/js/bootstrap.min.js')}}"></script>
+     <script type="text/javascript" src="{{asset('../public/js/jquery.sequence-min.js')}}"></script>
+     <script type="text/javascript" src="{{asset('../public/js/jquery.carouFredSel-6.2.1-packed.js')}}"></script>
+     <script defer src="{{asset('../public/js/jquery.flexslider.js')}}"></script>
+     <script type="text/javascript" src="{{asset('../public/js/script.min.js')}}" ></script>
+
+     @yield('script')
    </body>
 </html>

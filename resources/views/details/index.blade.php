@@ -7,35 +7,17 @@
               <div class="products-details">
                 <div class="preview_image">
                   <div class="preview-small">
-                    <img id="zoom_03" src="images/products/medium/products-01.jpg" data-zoom-image="images/products/Large/products-01.jpg" alt="">
+                    <img id="zoom_03" src="upload/giay/{{$shoe->MaGiay}}/chinh/{{$shoe->HinhBe}}" data-zoom-image="upload/giay/{{$shoe->MaGiay}}/chinh/{{$shoe->HinhBe}}" alt="">
                   </div>
                   <div class="thum-image">
                     <ul id="gallery_01" class="prev-thum">
+                    @foreach ($shoe->hinhgiay as $hg)
                       <li>
-                        <a href="#" data-image="images/products/medium/products-01.jpg" data-zoom-image="images/products/Large/products-01.jpg">
-                          <img src="images/products/thum/products-01.png" alt="">
+                        <a href="#" data-image="upload/giay/{{$shoe->MaGiay}}/hinhphu/{{$hg->Hinh}}" data-zoom-image="upload/giay/{{$shoe->MaGiay}}/hinhphu/{{$hg->Hinh}}">
+                          <img src="upload/giay/{{$shoe->MaGiay}}/hinhphu/{{$hg->Hinh}}" alt="">
                         </a>
                       </li>
-                      <li>
-                        <a href="#" data-image="images/products/medium/products-02.jpg" data-zoom-image="images/products/Large/products-02.jpg">
-                          <img src="images/products/thum/products-02.png" alt="">
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#" data-image="images/products/medium/products-03.jpg" data-zoom-image="images/products/Large/products-03.jpg">
-                          <img src="images/products/thum/products-03.png" alt="">
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#" data-image="images/products/medium/products-04.jpg" data-zoom-image="images/products/Large/products-04.jpg">
-                          <img src="images/products/thum/products-04.png" alt="">
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#" data-image="images/products/medium/products-05.jpg" data-zoom-image="images/products/Large/products-05.jpg">
-                          <img src="images/products/thum/products-05.png" alt="">
-                        </a>
-                      </li>
+                    @endforeach
                     </ul>
                     <a class="control-left" id="thum-prev" href="javascript:void(0);">
                       <i class="fa fa-chevron-left">
@@ -47,9 +29,16 @@
                     </a>
                   </div>
                 </div>
+                <form action="insertcart/{{$shoe->id}}" method="POST" enctype="multipart/form-data">
+                <input type="hidden" name="_token" value="{{csrf_token()}}">
                 <div class="products-description">
                   <h5 class="name">
-                    Lincoln Corner Unit Products
+                    {{$shoe->giay->Ten}}<br><br>
+                    @if ($shoe->GioiTinh == 0)
+                      {{"Nam"}}
+                    @else
+                      {{"Nữ"}}
+                    @endif
                   </h5>
                   <p>
                     <img alt="" src="images/star.png">
@@ -57,26 +46,63 @@
                       02 Review(s)
                     </a>
                   </p>
+                    @if(count($errors) > 0)
+                        <div class="alert alert-danger">
+                            @foreach($errors->all() as $err)
+                                {{$err}}<br>
+                            @endforeach
+                        </div>
+                    @endif
+
+                    @if(session('thongbao'))
+                        <div class="alert alert-success">
+                            {{session('thongbao')}}
+                        </div>
+                    @endif
+                  <div class="available-size inline-block" style="margin: 10px 0px;">
+                    Size sẵn có:
+                    <ul class="list-inline" style="list-style: none;">
+                      @foreach ($sort as $so)
+                        <li>
+                            <input id="" type="radio" value="{{$so->Size}}" name="Size">
+                            <label>
+                              {{$so->Size}}
+                            </label>
+                        </li>
+                      @endforeach
+                    </ul>
+                  </div>
+                  <div class="available-color">
+                    Màu sẵn có:
+                    <ul class="list-inline" style="list-style: none; margin-top: 5px;">
+                      @foreach ($shoe_all as $sa)
+                      @if ($sa->idGiay == $shoe->idGiay)
+                      <li class="pr-color">
+                        <a href="productdetail/{{$sa->giay->TenKhongDau}}/shoe{{$sa->id}}.html">
+                          <img src="upload/giay/{{$sa->MaGiay}}/chinh/{{$sa->HinhBe}}" style="width: 50px; height: 50px;">
+                        </a>
+                      </li>
+                      @endif
+                      @endforeach
+                    </ul>
+                  </div>
                   <p>
                     Availability: 
                     <span class=" light-red">
                       In Stock
                     </span>
                   </p>
-                  <p>
-                    Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lorem nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrie ces posuere cubilia curae. Proin lectus ipsum, gravida etds mattis vulps utate, tristique ut lectus. Sed et lorem nunc...
-                  </p>
                   <hr class="border">
                   <div class="price">
                     Price : 
                     <span class="new_price">
-                      450.00
+                      {{number_format($shoe->GiaMoi)}}
                       <sup>
                         $
                       </sup>
                     </span>
                     <span class="old_price">
-                      450.00
+                      {{number_format($shoe->GiaCu)}}
                       <sup>
                         $
                       </sup>
@@ -92,29 +118,32 @@
                         </option>
                       </select>
                     </div>
-                    <div class="button_group">
-                      <button class="button" >
-                        Add To Cart
-                      </button>
-                      <button class="button compare">
-                        <i class="fa fa-exchange">
-                        </i>
-                      </button>
-                      <button class="button favorite">
-                        <i class="fa fa-heart-o">
-                        </i>
-                      </button>
-                      <button class="button favorite">
-                        <i class="fa fa-envelope-o">
-                        </i>
-                      </button>
-                    </div>
+                    
+                      <div class="button_group">
+                        <button class="button" >
+                          Add To Cart
+                        </button>
+                        <button class="button compare">
+                          <i class="fa fa-exchange">
+                          </i>
+                        </button>
+                        <button class="button favorite">
+                          <i class="fa fa-heart-o">
+                          </i>
+                        </button>
+                        <button class="button favorite">
+                          <i class="fa fa-envelope-o">
+                          </i>
+                        </button>
+                      </div>
+                    
                   </div>
                   <div class="clearfix">
                   </div>
                   <hr class="border">
                   <img src="images/share.png" alt="" class="pull-right">
                 </div>
+                </form>
               </div>
               <div class="clearfix">
               </div>

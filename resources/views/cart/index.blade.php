@@ -33,14 +33,16 @@
                   </tr>
                 </thead>
                 <tbody>
+
+                @foreach ($content as $item)
                   <tr>
                     <td>
-                      <img src="images/products/small/products-06.png" alt="">
+                      <img src="upload/giay/{{$item->id}}/chinh/{{$item->options->image}}" alt="">
                     </td>
                     <td>
                       <div class="shop-details">
                         <div class="productname">
-                          Lincoln Corner Unit Products
+                          {{$item->name}}
                         </div>
                         <p>
                           <img alt="" src="images/star.png">
@@ -48,214 +50,50 @@
                             02 Review(s)
                           </a>
                         </p>
-                        <div class="color-choser">
-                          <span class="text">
-                            Product Color : 
-                          </span>
-                          <ul>
-                            <li>
-                              <a class="black-bg " href="#">
-                                black
-                              </a>
-                            </li>
-                            <li>
-                              <a class="red-bg" href="#">
-                                light red
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
                         <p>
-                          Product Code : 
+                          Product Size : 
                           <strong class="pcode">
-                            Dress 120
+                            {{$item->options->size}}
+                          </strong>
+                        </p>
+                        <p>
+                          Product Brand : 
+                          <strong class="pcode">
+                            {{$item->options->brand}}
                           </strong>
                         </p>
                       </div>
                     </td>
                     <td>
                       <h5>
-                        $200.00
+                        {{number_format($item->price)}}
                       </h5>
                     </td>
                     <td>
-                      <select name="">
-                        <option selected value="1">
-                          1
-                        </option>
-                        <option value="1">
-                          2
-                        </option>
-                        <option value="1">
-                          3
-                        </option>
+                      <select class="SoLuong" name="SoLuong" id="{{$item->rowId}}">
+                        @for ($i = 1; $i <= (int)$item->options->exist ; $i++)
+                            <option value="{{$i}}" 
+                            @if ($i == $item->qty)
+                              {{"selected"}}
+                            @endif>{{$i}}</option>
+                        @endfor
                       </select>
                     </td>
                     <td>
                       <h5>
                         <strong class="red">
-                          $200.00
+                          {{number_format($item->price)}}
                         </strong>
                       </h5>
                     </td>
                     <td>
-                      <a href="#">
+                      <a href="deletecart/{{$item->rowId}}">
                         <img src="images/remove.png" alt="">
                       </a>
                     </td>
                   </tr>
-                  <tr>
-                    <td>
-                      <img src="images/products/small/products-02.png" alt="">
-                    </td>
-                    <td>
-                      <div class="shop-details">
-                        <div class="productname">
-                          Lincoln Corner Unit Products
-                        </div>
-                        <p>
-                          <img alt="" src="images/star.png">
-                          <a class="review_num" href="#">
-                            02 Review(s)
-                          </a>
-                        </p>
-                        <div class="color-choser">
-                          <span class="text">
-                            Product Color : 
-                          </span>
-                          <ul>
-                            <li>
-                              <a class="gray-bg" href="#">
-                                pink
-                              </a>
-                            </li>
-                            <li>
-                              <a class="black-bg " href="#">
-                                black
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                        <p>
-                          Product Code : 
-                          <strong class="pcode">
-                            Dress 132
-                          </strong>
-                        </p>
-                      </div>
-                    </td>
-                    <td>
-                      <h5>
-                        $200.00
-                      </h5>
-                    </td>
-                    <td>
-                      <select name="">
-                        <option selected value="1">
-                          1
-                        </option>
-                        <option value="2">
-                          2
-                        </option>
-                        <option value="3">
-                          3
-                        </option>
-                      </select>
-                    </td>
-                    <td>
-                      <h5>
-                        <strong class="red">
-                          $200.00
-                        </strong>
-                      </h5>
-                    </td>
-                    <td>
-                      <a href="#">
-                        <img src="images/remove.png" alt="">
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <img src="images/products/small/products-05.png" alt="">
-                    </td>
-                    <td>
-                      <div class="shop-details">
-                        <div class="productname">
-                          Lincoln Corner Unit Products
-                        </div>
-                        <p>
-                          <img alt="" src="images/star.png">
-                          <a class="review_num" href="#">
-                            02 Review(s)
-                          </a>
-                        </p>
-                        <div class="color-choser">
-                          <span class="text">
-                            Product Color : 
-                          </span>
-                          <ul>
-                            <li>
-                              <a class="red-bg" href="#">
-                                light red
-                              </a>
-                            </li>
-                            <li>
-                              <a class=" yellow-bg" href="#">
-                                yellow"
-                              </a>
-                            </li>
-                            <li>
-                              <a class="black-bg " href="#">
-                                black
-                              </a>
-                            </li>
-                            <li>
-                              <a class="pink-bg" href="#">
-                                pink
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                        <p>
-                          Product Code : 
-                          <strong class="pcode">
-                            Dress 050
-                          </strong>
-                        </p>
-                      </div>
-                    </td>
-                    <td>
-                      <h5>
-                        $200.00
-                      </h5>
-                    </td>
-                    <td>
-                      <select name="">
-                        <option selected value="1">
-                          1
-                        </option>
-                        <option value="2">
-                          2
-                        </option>
-                        <option value="3">
-                          3
-                        </option>
-                      </select>
-                    </td>
-                    <td>
-                      <h5>
-                        <strong class="red">
-                          $200.00
-                        </strong>
-                      </h5>
-                    </td>
-                    <td>
-                      <a href="#">
-                        <img src="images/remove.png" alt="">
-                      </a>
-                    </td>
-                  </tr>
+                @endforeach
+                  
                 </tbody>
                 <tfoot>
                   <tr>
@@ -786,7 +624,7 @@
                         Sub Total
                       </h5>
                       <span>
-                        $1.000.00
+                        ${{$total}}
                       </span>
                     </div>
                     <div class="grandtotal">
@@ -794,7 +632,7 @@
                         GRAND TOTAL 
                       </h5>
                       <span>
-                        $1.000.00
+                        ${{$total}}
                       </span>
                     </div>
                     <button>
@@ -905,4 +743,36 @@
           </div>
         </div>
 </div>
+@endsection
+
+<!-- không cần form token cũng đk -->
+@section('script')
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".SoLuong").change(function(){
+              var rowId = $(this).attr('id');
+              var qty = $(this).val();
+              var token = $("input[name='_token']").val();
+              $.ajax({
+                url:'ajax/update/'+rowId+'/'+qty,
+                type:'GET',
+                cache: false,
+                data:{
+                  "_token":token,
+                  "id":rowId,
+                  "qty":qty
+                },
+                success: function(data){
+                  if (data == "oke"){
+                    window.location = "cart";
+                  }else{
+                    alert("No");
+                  }
+                },error: function(){
+                  alert("error");
+                }
+              });
+            });
+        });
+    </script>
 @endsection
