@@ -49,7 +49,10 @@ class PagesController extends Controller
         $slide_all = Slide::all();
         $hot_shoes_1 = MauGiay::where('NoiBat',1)->take(4)->get();
         $hot_shoes_2 = MauGiay::where('NoiBat',1)->skip(4)->take(4)->get();
-    	return view('pages.homepage',['slide_all'=>$slide_all,'hot_shoes_1'=>$hot_shoes_1,'hot_shoes_2'=>$hot_shoes_2]);
+        
+        $new_shoes_1 = MauGiay::orderBy('created_at')->take(4)->get();
+        $new_shoes_2 = MauGiay::orderBy('created_at')->skip(4)->take(4)->get();
+    	return view('pages.homepage',['slide_all'=>$slide_all,'hot_shoes_1'=>$hot_shoes_1,'hot_shoes_2'=>$hot_shoes_2,'new_shoes_1'=>$new_shoes_1,'new_shoes_2'=>$new_shoes_2]);
     }
 
     function errorPage(){
