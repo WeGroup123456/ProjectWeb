@@ -13,7 +13,6 @@
                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
                         </div>
                         <div class="flat-button caption4 formLeft delay600 text-center"><a class="more" href="#">More Details</a></div>
-                        <div class="flat-images formBottom delay200" data-duration="5" data-bottom="true"><img src="images/slide/slider-images-01.png" alt=""></div>
                      </li>
                      <li>
                         <div class="flat-caption caption2 formLeft delay400">
@@ -23,7 +22,6 @@
                            <h2>Etiam velit purus, luctus vitae velit sedauctor<br>egestas diam, Etiam velit purus.</h2>
                         </div>
                         <div class="flat-button caption5 formLeft delay600"><a class="more" href="#">More Details</a></div>
-                        <div class="flat-images formBottom delay200" data-bottom="true"><img src="images/slide/slider-images-02.png" alt=""></div>
                      </li>
                      <li>
                         <div class="flat-caption caption2 formLeft delay400 text-center">
@@ -33,7 +31,6 @@
                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
                         </div>
                         <div class="flat-button caption4 formLeft delay600 text-center"><a class="more" href="#">More Details</a></div>
-                        <div class="flat-images formBottom delay200" data-bottom="true"><img src="images/slide/slider-images-03.png" alt=""></div>
                      </li>
                   </ul>
                </div>
@@ -42,13 +39,13 @@
                <div class="container">
                   <div class="row">
                      <div class="col-md-4 col-sm-4 col-xs-4">
-                        <div class="promo-box"><img src="images/promotion-01.png" alt=""></div>
+                        <div class="promo-box"><img class="img-responsive" src="images/promotion-01.jpg" alt=""></div>
                      </div>
                      <div class="col-md-4 col-sm-4 col-xs-4">
-                        <div class="promo-box"><img src="images/promotion-02.png" alt=""></div>
+                        <div class="promo-box"><img class="img-responsive" src="images/promotion-02.jpg" alt=""></div>
                      </div>
                      <div class="col-md-4 col-sm-4 col-xs-4">
-                        <div class="promo-box"><img src="images/promotion-03.png" alt=""></div>
+                        <div class="promo-box"><img class="img-responsive" src="images/promotion-03.jpg" alt=""></div>
                      </div>
                   </div>
                </div>
