@@ -54,7 +54,7 @@ Route::group(['prefix'=>'admin','middleware'=>'adminLogin'],function() {
 		Route::post('sua/{id}','GiayController@postSua');
 
 		Route::get('suachitiet/{idMauGiay}','GiayController@getSuaChiTiet');// /{size_id}
-		Route::post('suachitiet/{idMauGiay}/{idSize}','GiayController@postSuaChiTiet');// /{size_id}
+		Route::post('suachitiet/{idMauGiay}','GiayController@postSuaChiTiet');// /{size_id}
 
 		Route::get('them','GiayController@getThem');
 		Route::post('them','GiayController@postThem');
@@ -66,6 +66,9 @@ Route::group(['prefix'=>'admin','middleware'=>'adminLogin'],function() {
 
 		Route::get('chitiet/{id}','GiayController@getChiTiet');
 		Route::get('xoachitiet/{id}/{idGiay}','GiayController@getXoaChiTiet');
+
+		Route::get('themsize/{id}','GiayController@getThemSize');
+		Route::post('themsize/{id}','GiayController@postThemSize');
 	});
 
 	Route::group(['prefix'=>'comment'],function() {
