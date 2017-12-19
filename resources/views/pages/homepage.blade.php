@@ -11,80 +11,49 @@
          <div class="control"><a id="prev_hot" class="prev" href="#">&lt;</a><a id="next_hot" class="next" href="#">&gt;</a></div>
          <ul id="hot">
             <li>
-               <div class="row">
-                  <div class="col-md-3 col-sm-6">
-                     <div class="products">
-                        <div class="offer">- %20</div>
-                        <div class="thumbnail"><a href="details.html"><img src="images/products/small/products-01.png" alt="Product Name"></a>
-                           <div class="sizesanco">
-                              <h4>Size sẵn có:</h4>
-                              <span>
-                              <div class="pro-size">39</div>
-                              <div class="pro-size">40</div>
-                              <div class="pro-size">41</div>
-                              </span>
+               <div class="pr-sc row">
+                  @foreach ($hot_shoes_1 as $hs1)
+                     <div class="col-md-3 col-sm-6">
+                        <div class="products">
+                           <div class="offer">- %{{number_format((1-($hs1->GiaMoi/$hs1->GiaCu))*100)}}</div>
+                           <div class="thumbnail"><a href="product-detail/{{$hs1->id}}"><img src="upload/giay/{{$hs1->MaGiay}}/chinh/{{$hs1->HinhBe}}" alt="Product Name"></a>
+                              <div class="sizesanco">
+                                 <h4>Size sẵn có:</h4>
+                                 <span>
+                                    @foreach ($hs1->size as $size)
+                                       <div class="pro-size">{{$size->Size}}</div>
+                                    @endforeach
+                                 </span>
+                              </div>
                            </div>
+                           <div class="productname">{{$hs1->giay->Ten}}</div>
+                           <h4 class="price">${{number_format($hs1->GiaCu)}}</h4>
                         </div>
-                        <div class="productname">Iphone 5s Gold 32 Gb 2013</div>
-                        <h4 class="price">$451.00</h4>
                      </div>
-                  </div>
-                  <div class="col-md-3 col-sm-6">
-                     <div class="products">
-                        <div class="thumbnail"><a href="details.html"><img src="images/products/small/products-02.png" alt="Product Name"></a></div>
-                        <div class="productname">Iphone 5s Gold 32 Gb 2013</div>
-                        <h4 class="price">$451.00</h4>
-                     </div>
-                  </div>
-                  <div class="col-md-3 col-sm-6">
-                     <div class="products">
-                        <div class="offer">New</div>
-                        <div class="thumbnail"><a href="details.html"><img src="images/products/small/products-03.png" alt="Product Name"></a></div>
-                        <div class="productname">Iphone 5s Gold 32 Gb 2013</div>
-                        <h4 class="price">$451.00</h4>
-                     </div>
-                  </div>
-                  <div class="col-md-3 col-sm-6">
-                     <div class="products">
-                        <div class="thumbnail"><a href="details.html"><img src="images/products/small/products-04.png" alt="Product Name"></a></div>
-                        <div class="productname">Iphone 5s Gold 32 Gb 2013</div>
-                        <h4 class="price">$451.00</h4>
-                     </div>
-                  </div>
+                  @endforeach
                </div>
             </li>
             <li>
-               <div class="row">
-                  <div class="col-md-3 col-sm-6">
-                     <div class="products">
-                        <div class="offer">- %20</div>
-                        <div class="thumbnail"><a href="details.html"><img src="images/products/small/products-01.png" alt="Product Name"></a></div>
-                        <div class="productname">Iphone 5s Gold 32 Gb 2013</div>
-                        <h4 class="price">$451.00</h4>
+               <div class="pr-sc row">
+                  @foreach ($hot_shoes_2 as $hs2)
+                     <div class="col-md-3 col-sm-6">
+                        <div class="products">
+                           <div class="offer">- %{{number_format((1-($hs2->GiaMoi/$hs2->GiaCu))*100)}}</div>
+                           <div class="thumbnail"><a href="product-detail/{{$hs1->id}}"><img src="upload/giay/{{$hs2->MaGiay}}/chinh/{{$hs2->HinhBe}}" alt="Product Name"></a>
+                              <div class="sizesanco">
+                                 <h4>Size sẵn có:</h4>
+                                 <span>
+                                    @foreach ($hs2->size as $size)
+                                       <div class="pro-size">{{$size->Size}}</div>
+                                    @endforeach
+                                 </span>
+                              </div>
+                           </div>
+                           <div class="productname">{{$hs2->giay->Ten}}</div>
+                           <h4 class="price">${{number_format($hs2->GiaCu)}}</h4>
+                        </div>
                      </div>
-                  </div>
-                  <div class="col-md-3 col-sm-6">
-                     <div class="products">
-                        <div class="thumbnail"><a href="details.html"><img src="images/products/small/products-02.png" alt="Product Name"></a></div>
-                        <div class="productname">Iphone 5s Gold 32 Gb 2013</div>
-                        <h4 class="price">$451.00</h4>
-                     </div>
-                  </div>
-                  <div class="col-md-3 col-sm-6">
-                     <div class="products">
-                        <div class="offer">New</div>
-                        <div class="thumbnail"><a href="details.html"><img src="images/products/small/products-03.png" alt="Product Name"></a></div>
-                        <div class="productname">Iphone 5s Gold 32 Gb 2013</div>
-                        <h4 class="price">$451.00</h4>
-                     </div>
-                  </div>
-                  <div class="col-md-3 col-sm-6">
-                     <div class="products">
-                        <div class="thumbnail"><a href="details.html"><img src="images/products/small/products-04.png" alt="Product Name"></a></div>
-                        <div class="productname">Iphone 5s Gold 32 Gb 2013</div>
-                        <h4 class="price">$451.00</h4>
-                     </div>
-                  </div>
+                  @endforeach
                </div>
             </li>
          </ul>
@@ -95,76 +64,49 @@
          <div class="control"><a id="prev_featured" class="prev" href="#">&lt;</a><a id="next_featured" class="next" href="#">&gt;</a></div>
          <ul id="featured">
             <li>
-               <div class="row">
-                  <div class="col-md-3 col-sm-6">
-                     <div class="products">
-                        <div class="thumbnail"><a href="details.html"><img src="images/products/small/products-05.png" alt="Product Name"></a></div>
-                        <div class="productname">Iphone 5s Gold 32 Gb 2013</div>
-                        <h4 class="price">$451.00</h4>
-                        <div class="button_group"><button class="button add-cart" type="button">Add To Cart</button><button class="button compare" type="button"><i class="fa fa-exchange"></i></button><button class="button wishlist" type="button"><i class="fa fa-heart-o"></i></button></div>
+               <div class="pr-sc row">
+                  @foreach ($new_shoes_1 as $ns1)
+                     <div class="col-md-3 col-sm-6">
+                        <div class="products">
+                           <div class="offer">- %{{number_format((1-($ns1->GiaMoi/$ns1->GiaCu))*100)}}</div>
+                           <div class="thumbnail"><a href="details.html"><img src="upload/giay/{{$ns1->MaGiay}}/chinh/{{$ns1->HinhBe}}" alt="Product Name"></a>
+                              <div class="sizesanco">
+                                 <h4>Size sẵn có:</h4>
+                                 <span>
+                                    @foreach ($ns1->size as $size)
+                                       <div class="pro-size">{{$size->Size}}</div>
+                                    @endforeach
+                                 </span>
+                              </div>
+                           </div>
+                           <div class="productname">{{$ns1->giay->Ten}}</div>
+                           <h4 class="price">${{number_format($ns1->GiaCu)}}</h4>
+                        </div>
                      </div>
-                  </div>
-                  <div class="col-md-3 col-sm-6">
-                     <div class="products">
-                        <div class="thumbnail"><a href="details.html"><img src="images/products/small/products-06.png" alt="Product Name"></a></div>
-                        <div class="productname">Iphone 5s Gold 32 Gb 2013</div>
-                        <h4 class="price">$451.00</h4>
-                        <div class="button_group"><button class="button add-cart" type="button">Add To Cart</button><button class="button compare" type="button"><i class="fa fa-exchange"></i></button><button class="button wishlist" type="button"><i class="fa fa-heart-o"></i></button></div>
-                     </div>
-                  </div>
-                  <div class="col-md-3 col-sm-6">
-                     <div class="products">
-                        <div class="offer">New</div>
-                        <div class="thumbnail"><a href="details.html"><img src="images/products/small/products-07.png" alt="Product Name"></a></div>
-                        <div class="productname">Iphone 5s Gold 32 Gb 2013</div>
-                        <h4 class="price">$451.00</h4>
-                        <div class="button_group"><button class="button add-cart" type="button">Add To Cart</button><button class="button compare" type="button"><i class="fa fa-exchange"></i></button><button class="button wishlist" type="button"><i class="fa fa-heart-o"></i></button></div>
-                     </div>
-                  </div>
-                  <div class="col-md-3 col-sm-6">
-                     <div class="products">
-                        <div class="thumbnail"><a href="details.html"><img src="images/products/small/products-04.png" alt="Product Name"></a></div>
-                        <div class="productname">Iphone 5s Gold 32 Gb 2013</div>
-                        <h4 class="price">$451.00</h4>
-                        <div class="button_group"><button class="button add-cart" type="button">Add To Cart</button><button class="button compare" type="button"><i class="fa fa-exchange"></i></button><button class="button wishlist" type="button"><i class="fa fa-heart-o"></i></button></div>
-                     </div>
-                  </div>
+                  @endforeach
                </div>
             </li>
             <li>
-               <div class="row">
-                  <div class="col-md-3 col-sm-6">
-                     <div class="products">
-                        <div class="thumbnail"><a href="details.html"><img src="images/products/small/products-01.png" alt="Product Name"></a></div>
-                        <div class="productname">Iphone 5s Gold 32 Gb 2013</div>
-                        <h4 class="price">$451.00</h4>
-                        <div class="button_group"><button class="button add-cart" type="button">Add To Cart</button><button class="button compare" type="button"><i class="fa fa-exchange"></i></button><button class="button wishlist" type="button"><i class="fa fa-heart-o"></i></button></div>
+               <div class="pr-sc row">
+                  @foreach ($new_shoes_2 as $ns2)
+                     <div class="col-md-3 col-sm-6">
+                        <div class="products">
+                           <div class="offer">- %{{number_format((1-($ns2->GiaMoi/$ns2->GiaCu))*100)}}</div>
+                           <div class="thumbnail"><a href="details.html"><img src="upload/giay/{{$ns2->MaGiay}}/chinh/{{$ns2->HinhBe}}" alt="Product Name"></a>
+                              <div class="sizesanco">
+                                 <h4>Size sẵn có:</h4>
+                                 <span>
+                                    @foreach ($ns2->size as $size)
+                                       <div class="pro-size">{{$size->Size}}</div>
+                                    @endforeach
+                                 </span>
+                              </div>
+                           </div>
+                           <div class="productname">{{$ns2->giay->Ten}}</div>
+                           <h4 class="price">${{number_format($ns2->GiaCu)}}</h4>
+                        </div>
                      </div>
-                  </div>
-                  <div class="col-md-3 col-sm-6">
-                     <div class="products">
-                        <div class="thumbnail"><a href="details.html"><img src="images/products/small/products-02.png" alt="Product Name"></a></div>
-                        <div class="productname">Iphone 5s Gold 32 Gb 2013</div>
-                        <h4 class="price">$451.00</h4>
-                        <div class="button_group"><button class="button add-cart" type="button">Add To Cart</button><button class="button compare" type="button"><i class="fa fa-exchange"></i></button><button class="button wishlist" type="button"><i class="fa fa-heart-o"></i></button></div>
-                     </div>
-                  </div>
-                  <div class="col-md-3 col-sm-6">
-                     <div class="products">
-                        <div class="thumbnail"><a href="details.html"><img src="images/products/small/products-03.png" alt="Product Name"></a></div>
-                        <div class="productname">Iphone 5s Gold 32 Gb 2013</div>
-                        <h4 class="price">$451.00</h4>
-                        <div class="button_group"><button class="button add-cart" type="button">Add To Cart</button><button class="button compare" type="button"><i class="fa fa-exchange"></i></button><button class="button wishlist" type="button"><i class="fa fa-heart-o"></i></button></div>
-                     </div>
-                  </div>
-                  <div class="col-md-3 col-sm-6">
-                     <div class="products">
-                        <div class="thumbnail"><a href="details.html"><img src="images/products/small/products-04.png" alt="Product Name"></a></div>
-                        <div class="productname">Iphone 5s Gold 32 Gb 2013</div>
-                        <h4 class="price">$451.00</h4>
-                        <div class="button_group"><button class="button add-cart" type="button">Add To Cart</button><button class="button compare" type="button"><i class="fa fa-exchange"></i></button><button class="button wishlist" type="button"><i class="fa fa-heart-o"></i></button></div>
-                     </div>
-                  </div>
+                  @endforeach
                </div>
             </li>
          </ul>
