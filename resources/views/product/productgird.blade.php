@@ -1,4 +1,4 @@
- @extends('layout.index_general')
+ @extends('layout.index')
  @section('content')
  @php
    use Illuminate\Support\Facades\Input;
@@ -203,72 +203,6 @@
               </div>
               <div class="clearfix">
               </div>
-              <div class="product-tag leftbar">
-                <h3 class="title">
-                  Products 
-                  <strong>
-                    Tags
-                  </strong>
-                </h3>
-                <ul>
-                  <li>
-                    <a href="#">
-                      Lincoln us
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      SDress for Girl
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      Corner
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      Window
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      PG
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      Oscar
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      Bath room
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      PSD
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div class="clearfix">
-              </div>
-              <div class="others leftbar">
-                <h3 class="title">
-                  Others
-                </h3>
-              </div>
-              <div class="clearfix">
-              </div>
-              <div class="others leftbar">
-                <h3 class="title">
-                  Others
-                </h3>
-              </div>
-              <div class="clearfix">
-              </div>
               <div class="fbl-box leftbar">
                 <h3 class="title">
                   Facebook
@@ -336,12 +270,17 @@
                   <ul class="slides">
                     <li>
                       <a href="#">
-                        <img src="images/banner-01.jpg" alt=""/>
+                        <img src="images/banners/carousel1.jpg" alt=""/>
                       </a>
                     </li>
                     <li>
                       <a href="#">
-                        <img src="images/banner-02.jpg" alt=""/>
+                        <img src="images/banners/carousel2.jpg" alt=""/>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img src="images/banners/carousel3.jpg" alt=""/>
                       </a>
                     </li>
                   </ul>
@@ -418,33 +357,29 @@
                 @foreach ($shoe as $sh)
                   <div class="col-md-4 col-sm-6">
                     <div class="products">
-                      <div class="offer">
-                        New
+                      <div class="ribbon">
+                        <span>{{$sh->giay->brand->Ten}}</span>
                       </div>
                       <div class="thumbnail">
                         <a href="productdetail/{{$sh->giay->TenKhongDau}}/shoe{{$sh->id}}.html">
                           <img src="upload/giay/{{$sh->MaGiay}}/chinh/{{$sh->HinhBe}}" alt="Product Name">
                         </a>
+                        <div class="sizesanco">
+                           <h4>Size sẵn có:</h4>
+                           <span>
+                              @foreach ($sh->size as $size)
+                                 <div class="pro-size">{{$size->Size}}</div>
+                              @endforeach
+                           </span>
+                        </div>
                       </div>
                       <div class="productname">
-                        {{$sh->giay->Ten}}
+                        <a href="productdetail/{{$sh->giay->TenKhongDau}}/shoe{{$sh->id}}.html">{{$sh->giay->Ten}}
+                        </a>
                       </div>
-                      <h4 class="price">
-                        ${{number_format($sh->GiaMoi)}}
-                      </h4>
-                      <div class="button_group">
-                        <button class="button add-cart" type="button">
-                          Add To Cart
-                        </button>
-                        <button class="button compare" type="button">
-                          <i class="fa fa-exchange">
-                          </i>
-                        </button>
-                        <button class="button wishlist" type="button">
-                          <i class="fa fa-heart-o">
-                          </i>
-                        </button>
-                      </div>
+                      <div class="price">${{number_format($sh->GiaMoi)}}</div>
+                      <div class="old-price">${{number_format($sh->GiaCu)}}</div>
+                      <div class="sport-type">{{$sh->giay->loaigiay->Ten}}</div>
                     </div>
                   </div>
                 @endforeach
