@@ -15,8 +15,11 @@
                   @foreach ($hot_shoes_1 as $hs1)
                      <div class="col-md-3 col-sm-6">
                         <div class="products">
-                           <div class="offer">- %{{number_format((1-($hs1->GiaMoi/$hs1->GiaCu))*100)}}</div>
-                           <div class="thumbnail"><a href="product-detail/{{$hs1->id}}"><img src="upload/giay/{{$hs1->MaGiay}}/chinh/{{$hs1->HinhBe}}" alt="Product Name"></a>
+                           <div class="ribbon"><span>HOT</span></div>
+                           <div class="thumbnail">
+                              <a href="productdetail/{{$hs1->giay->TenKhongDau}}/shoe{{$hs1->id}}.html">
+                                 <img src="upload/giay/{{$hs1->MaGiay}}/chinh/{{$hs1->HinhBe}}" alt="Product Name">
+                              </a>
                               <div class="sizesanco">
                                  <h4>Size sẵn có:</h4>
                                  <span>
@@ -26,8 +29,12 @@
                                  </span>
                               </div>
                            </div>
-                           <div class="productname">{{$hs1->giay->Ten}}</div>
-                           <h4 class="price">${{number_format($hs1->GiaCu)}}</h4>
+                           <div class="productname">
+                              <a href="productdetail/{{$hs1->giay->TenKhongDau}}/shoe{{$hs1->id}}.html">{{$hs1->giay->Ten}}
+                              </a>
+                           </div>
+                           <div class="price">${{number_format($hs1->GiaMoi)}}</div>
+                           <div class="old-price">${{number_format($hs1->GiaCu)}}</div>
                         </div>
                      </div>
                   @endforeach
@@ -38,8 +45,8 @@
                   @foreach ($hot_shoes_2 as $hs2)
                      <div class="col-md-3 col-sm-6">
                         <div class="products">
-                           <div class="offer">- %{{number_format((1-($hs2->GiaMoi/$hs2->GiaCu))*100)}}</div>
-                           <div class="thumbnail"><a href="product-detail/{{$hs1->id}}"><img src="upload/giay/{{$hs2->MaGiay}}/chinh/{{$hs2->HinhBe}}" alt="Product Name"></a>
+                           <div class="ribbon"><span>HOT</span></div>
+                           <div class="thumbnail"><a href="productdetail/{{$hs2->giay->TenKhongDau}}/shoe{{$hs2->id}}.html"><img src="upload/giay/{{$hs2->MaGiay}}/chinh/{{$hs2->HinhBe}}" alt="Product Name"></a>
                               <div class="sizesanco">
                                  <h4>Size sẵn có:</h4>
                                  <span>
@@ -49,8 +56,12 @@
                                  </span>
                               </div>
                            </div>
-                           <div class="productname">{{$hs2->giay->Ten}}</div>
-                           <h4 class="price">${{number_format($hs2->GiaCu)}}</h4>
+                           <div class="productname">
+                              <a href="productdetail/{{$hs2->giay->TenKhongDau}}/shoe{{$hs2->id}}.html">{{$hs2->giay->Ten}}
+                              </a>
+                           </div>
+                           <div class="price">${{number_format($hs2->GiaMoi)}}</div>
+                           <div class="old-price">${{number_format($hs2->GiaCu)}}</div>
                         </div>
                      </div>
                   @endforeach
@@ -68,8 +79,8 @@
                   @foreach ($new_shoes_1 as $ns1)
                      <div class="col-md-3 col-sm-6">
                         <div class="products">
-                           <div class="offer">- %{{number_format((1-($ns1->GiaMoi/$ns1->GiaCu))*100)}}</div>
-                           <div class="thumbnail"><a href="details.html"><img src="upload/giay/{{$ns1->MaGiay}}/chinh/{{$ns1->HinhBe}}" alt="Product Name"></a>
+                           <div class="ribbon"><span>NEW</span></div>
+                           <div class="thumbnail"><a href="productdetail/{{$ns1->giay->TenKhongDau}}/shoe{{$ns1->id}}.html"><img src="upload/giay/{{$ns1->MaGiay}}/chinh/{{$ns1->HinhBe}}" alt="Product Name"></a>
                               <div class="sizesanco">
                                  <h4>Size sẵn có:</h4>
                                  <span>
@@ -79,8 +90,12 @@
                                  </span>
                               </div>
                            </div>
-                           <div class="productname">{{$ns1->giay->Ten}}</div>
-                           <h4 class="price">${{number_format($ns1->GiaCu)}}</h4>
+                           <div class="productname">
+                              <a href="productdetail/{{$ns1->giay->TenKhongDau}}/shoe{{$ns1->id}}.html">{{$ns1->giay->Ten}}
+                              </a>
+                           </div>
+                           <div class="price">${{number_format($ns1->GiaMoi)}}</div>
+                           <div class="old-price">${{number_format($ns1->GiaCu)}}</div>
                         </div>
                      </div>
                   @endforeach
@@ -91,8 +106,8 @@
                   @foreach ($new_shoes_2 as $ns2)
                      <div class="col-md-3 col-sm-6">
                         <div class="products">
-                           <div class="offer">- %{{number_format((1-($ns2->GiaMoi/$ns2->GiaCu))*100)}}</div>
-                           <div class="thumbnail"><a href="details.html"><img src="upload/giay/{{$ns2->MaGiay}}/chinh/{{$ns2->HinhBe}}" alt="Product Name"></a>
+                           <div class="ribbon"><span>NEW</span></div>
+                           <div class="thumbnail"><a href="productdetail/{{$ns2->giay->TenKhongDau}}/shoe{{$ns2->id}}.html"><img src="upload/giay/{{$ns2->MaGiay}}/chinh/{{$ns2->HinhBe}}" alt="Product Name"></a>
                               <div class="sizesanco">
                                  <h4>Size sẵn có:</h4>
                                  <span>
@@ -102,8 +117,12 @@
                                  </span>
                               </div>
                            </div>
-                           <div class="productname">{{$ns2->giay->Ten}}</div>
-                           <h4 class="price">${{number_format($ns2->GiaCu)}}</h4>
+                           <div class="productname">
+                              <a href="productdetail/{{$ns2->giay->TenKhongDau}}/shoe{{$ns2->id}}.html">{{$ns2->giay->Ten}}
+                              </a>
+                           </div>
+                           <div class="price">${{number_format($ns2->GiaMoi)}}</div>
+                           <div class="old-price">${{number_format($ns2->GiaCu)}}</div>
                         </div>
                      </div>
                   @endforeach
@@ -113,7 +132,7 @@
       </div>
       <div class="clearfix"></div>
       <div class="our-brand">
-         <h3 class="title"><strong>Our </strong> Brands</h3>
+         <marquee style="width: 150px;"><h3 class="title">Our Brands</h3></marquee>
          <div class="control"><a id="prev_brand" class="prev" href="#">&lt;</a><a id="next_brand" class="next" href="#">&gt;</a></div>
          <ul id="braldLogo">
             <li>

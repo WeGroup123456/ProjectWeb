@@ -385,7 +385,7 @@ button:hover {
 }
 .header {
     position: relative;
-    background: #1d0d18;
+    background: #000;
 }
 .logo {
     float: left;
@@ -524,8 +524,6 @@ button:hover {
     color: #fff;
     border: 1px solid;
     border-color: rgba(255, 255, 255, 0);
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
     text-transform: uppercase;
 }
 .nav li.active a,
@@ -1093,6 +1091,49 @@ ul.dropdown-menu > li > a:hover {
     -webkit-border-radius: 10px;
     border-radius: 10px;
 }
+.ribbon {
+  position: absolute;
+  right: -5px; top: -5px;
+  z-index: 1;
+  overflow: hidden;
+  width: 75px; height: 75px;
+  text-align: right;
+}
+.ribbon span {
+  font-size: 14px;
+  font-weight: bold;
+  color: #FFF;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 20px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  width: 100px;
+  display: block;
+  background: #79A70A;
+  background: linear-gradient(#34495e 0%, #c0392b 100%);
+  box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 19px; right: -21px;
+}
+.ribbon span::before {
+  content: "";
+  position: absolute; left: 0px; top: 100%;
+  z-index: -1;
+  border-left: 3px solid #79A70A;
+  border-right: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid #79A70A;
+}
+.ribbon span::after {
+  content: "";
+  position: absolute; right: 0px; top: 100%;
+  z-index: -1;
+  border-left: 3px solid transparent;
+  border-right: 3px solid #79A70A;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid #79A70A;
+}
 .thumbnail {
     float: left;
     position: relative;
@@ -1111,15 +1152,29 @@ ul.dropdown-menu > li > a:hover {
     margin-bottom: 10px;
 }
 .products .price {
-    background: #ecf0f1;
+    background: #34495e;
     float: left;
-    width: 100%;
-    color: #ff1e2c;
+    width: 50%;
+    color: #fff;
     text-align: center;
     font-weight: 500;
     margin-bottom: 15px;
     font-size: 20px;
     line-height: 24px;
+}
+.products .old-price {
+    background: #ecf0f1;
+    text-decoration: line-through;
+    float: right;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+.sport-type{
+    float: right;
+    color: #c0392b;
+    font-weight: 500;
 }
 .products .button_group {
     float: left;
@@ -1384,7 +1439,7 @@ ul.dropdown-menu > li > a:hover {
 
 .footer {
     width: 100%;
-    background: #242424;
+    background: #000;
 }
 .footer-info {
     position: relative;
