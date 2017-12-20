@@ -37,7 +37,19 @@
      <script type="text/javascript" src="{{asset('../public/js/jquery.carouFredSel-6.2.1-packed.js')}}"></script>
      <script defer src="{{asset('../public/js/jquery.flexslider.js')}}"></script>
      <script type="text/javascript" src="{{asset('../public/js/script.min.js')}}" ></script>
-
+     <script src="js/snowstorm.js"></script>
+     <script src="js/snowstorm-min.js"></script>
+     <script type="text/javascript">
+       snowStorm.snowCharacter = '❅';
+       snowStorm.followMouse = false; 
+       snowStorm.flakeWidth = 20; 
+       snowStorm.flakeHeight = 20; 
+       snowStorm.autoStart = true;
+       snowStorm.animationInterval = 33;  
+       snowStorm.vMaxX = 1;                 // Maximum X velocity range for snow
+       thsnowStormis.vMaxY = 1;                 // Maximum Y velocity range for snow
+       snowStorm.zIndex = 1000;                // CSS stacking order applied to each snowflake
+     </script>
      @yield('script')
    </body>
 </html>
