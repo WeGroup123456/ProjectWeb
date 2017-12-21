@@ -290,6 +290,7 @@ button,
 .products,
 .name,
 .price,
+.old-price,
 .fa,
 .sequence-next,
 .sequence-prev {
@@ -385,7 +386,7 @@ button:hover {
 }
 .header {
     position: relative;
-    background: #000;
+    background: #1d0d18;
 }
 .logo {
     float: left;
@@ -1087,7 +1088,7 @@ ul.dropdown-menu > li > a:hover {
     padding: 10px;
     font-size: 18px;
     color: #fff;
-    background: #f7544a;
+    background: #fff;
     -webkit-border-radius: 10px;
     border-radius: 10px;
 }
@@ -1152,7 +1153,7 @@ ul.dropdown-menu > li > a:hover {
     margin-bottom: 10px;
 }
 .products .price {
-    background: #34495e;
+    background: #2c3e50;
     float: left;
     width: 50%;
     color: #fff;
@@ -1165,16 +1166,11 @@ ul.dropdown-menu > li > a:hover {
 .products .old-price {
     background: #ecf0f1;
     text-decoration: line-through;
-    float: right;
+    float: left;
     width: 50%;
     text-align: center;
     margin-bottom: 15px;
     font-size: 15px;
-}
-.sport-type{
-    float: right;
-    color: #c0392b;
-    font-weight: 500;
 }
 .products .button_group {
     float: left;
@@ -1439,7 +1435,7 @@ ul.dropdown-menu > li > a:hover {
 
 .footer {
     width: 100%;
-    background: #000;
+    background: #242424;
 }
 .footer-info {
     position: relative;

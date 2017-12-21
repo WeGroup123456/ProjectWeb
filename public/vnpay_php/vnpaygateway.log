@@ -1,0 +1,903 @@
+Tue Aug 22 10:37:43 2017,106 [10956] INFO VnpayGatewaylogger - Connected successfully
+Tue Aug 22 10:37:43 2017,110 [10956] INFO VnpayGatewaylogger - 2017-08-22 10:37:43BEGIN INIT
+Tue Aug 22 10:37:43 2017,160 [10956] INFO VnpayGatewaylogger - New record created successfully
+Tue Aug 22 10:37:43 2017,160 [10956] INFO VnpayGatewaylogger - 2017-08-22 10:37:43     Connected close
+Tue Aug 22 10:37:43 2017,160 [10956] INFO VnpayGatewaylogger - 2017-08-22 10:37:43     END INIT
+Tue Aug 22 10:38:44 2017,162 [10956] INFO VnpayGatewaylogger - Connected successfully
+Tue Aug 22 10:38:44 2017,163 [10956] INFO VnpayGatewaylogger - 2017-08-22 10:38:44BEGIN INIT
+Tue Aug 22 10:38:44 2017,238 [10956] INFO VnpayGatewaylogger - New record created successfully
+Tue Aug 22 10:38:44 2017,239 [10956] INFO VnpayGatewaylogger - 2017-08-22 10:38:44     Connected close
+Tue Aug 22 10:38:44 2017,239 [10956] INFO VnpayGatewaylogger - 2017-08-22 10:38:44     END INIT
+Tue Aug 22 10:38:46 2017,648 [10956] INFO VnpayGatewaylogger - Connected successfully
+Tue Aug 22 10:38:46 2017,648 [10956] INFO VnpayGatewaylogger - 2017-08-22 10:38:46BEGIN INIT
+Tue Aug 22 10:38:46 2017,674 [10956] INFO VnpayGatewaylogger - New record created successfully
+Tue Aug 22 10:38:46 2017,674 [10956] INFO VnpayGatewaylogger - 2017-08-22 10:38:46     Connected close
+Tue Aug 22 10:38:46 2017,674 [10956] INFO VnpayGatewaylogger - 2017-08-22 10:38:46     END INIT
+Tue Aug 22 10:42:06 2017,297 [10956] INFO VnpayGatewaylogger - Connected successfully
+Tue Aug 22 10:42:06 2017,297 [10956] INFO VnpayGatewaylogger - 2017-08-22 10:42:06BEGIN INIT
+Tue Aug 22 10:42:06 2017,365 [10956] INFO VnpayGatewaylogger - New record created successfully
+Tue Aug 22 10:42:06 2017,366 [10956] INFO VnpayGatewaylogger - 2017-08-22 10:42:06     Connected close
+Tue Aug 22 10:42:06 2017,366 [10956] INFO VnpayGatewaylogger - 2017-08-22 10:42:06     END INIT
+Tue Aug 22 10:45:49 2017,014 [10956] INFO VnpayGatewaylogger - Connected successfully
+Tue Aug 22 10:45:49 2017,014 [10956] INFO VnpayGatewaylogger - 2017-08-22 10:45:49BEGIN INIT
+Tue Aug 22 10:45:49 2017,029 [10956] INFO VnpayGatewaylogger - New record created successfully
+Tue Aug 22 10:45:49 2017,029 [10956] INFO VnpayGatewaylogger - 2017-08-22 10:45:49     Connected close
+Tue Aug 22 10:45:49 2017,029 [10956] INFO VnpayGatewaylogger - 2017-08-22 10:45:49     END INIT
+Tue Aug 22 10:46:27 2017,731 [10956] INFO VnpayGatewaylogger - Connected successfully
+Tue Aug 22 10:46:27 2017,732 [10956] INFO VnpayGatewaylogger - 2017-08-22 10:46:27BEGIN INIT
+Tue Aug 22 10:46:27 2017,756 [10956] INFO VnpayGatewaylogger - New record created successfully
+Tue Aug 22 10:46:27 2017,756 [10956] INFO VnpayGatewaylogger - 2017-08-22 10:46:27     Connected close
+Tue Aug 22 10:46:27 2017,756 [10956] INFO VnpayGatewaylogger - 2017-08-22 10:46:27     END INIT
+Tue Aug 22 10:48:47 2017,606 [10956] INFO VnpayGatewaylogger - Connected successfully
+Tue Aug 22 10:48:47 2017,607 [10956] INFO VnpayGatewaylogger - 2017-08-22 10:48:47BEGIN INIT
+Tue Aug 22 10:48:47 2017,631 [10956] INFO VnpayGatewaylogger - New record created successfully
+Tue Aug 22 10:48:47 2017,631 [10956] INFO VnpayGatewaylogger - 2017-08-22 10:48:47     Connected close
+Tue Aug 22 10:48:47 2017,631 [10956] INFO VnpayGatewaylogger - 2017-08-22 10:48:47     END INIT
+Tue Aug 22 10:48:52 2017,917 [10956] INFO VnpayGatewaylogger - Connected successfully
+Tue Aug 22 10:48:52 2017,918 [10956] INFO VnpayGatewaylogger - 2017-08-22 10:48:52BEGIN INIT
+Tue Aug 22 10:48:52 2017,956 [10956] INFO VnpayGatewaylogger - New record created successfully
+Tue Aug 22 10:48:52 2017,957 [10956] INFO VnpayGatewaylogger - 2017-08-22 10:48:52     Connected close
+Tue Aug 22 10:48:52 2017,957 [10956] INFO VnpayGatewaylogger - 2017-08-22 10:48:52     END INIT
+Tue Aug 22 10:49:24 2017,691 [10956] INFO VnpayGatewaylogger - Connected successfully
+Tue Aug 22 10:49:24 2017,692 [10956] INFO VnpayGatewaylogger - 2017-08-22 10:49:24BEGIN INIT
+Tue Aug 22 10:49:24 2017,715 [10956] INFO VnpayGatewaylogger - New record created successfully
+Tue Aug 22 10:49:24 2017,715 [10956] INFO VnpayGatewaylogger - 2017-08-22 10:49:24     Connected close
+Tue Aug 22 10:49:24 2017,715 [10956] INFO VnpayGatewaylogger - 2017-08-22 10:49:24     END INIT
+Tue Aug 22 10:51:00 2017,755 [10956] INFO VnpayGatewaylogger - Connected successfully
+Tue Aug 22 10:51:00 2017,755 [10956] INFO VnpayGatewaylogger - 2017-08-22 10:51:00BEGIN INIT
+Tue Aug 22 10:51:00 2017,780 [10956] INFO VnpayGatewaylogger - New record created successfully
+Tue Aug 22 10:51:00 2017,781 [10956] INFO VnpayGatewaylogger - 2017-08-22 10:51:00     Connected close
+Tue Aug 22 10:51:00 2017,781 [10956] INFO VnpayGatewaylogger - 2017-08-22 10:51:00     END INIT
+Tue Aug 22 10:51:30 2017,706 [10956] INFO VnpayGatewaylogger - Connected successfully
+Tue Aug 22 10:51:30 2017,707 [10956] INFO VnpayGatewaylogger - 2017-08-22 10:51:30BEGIN INIT
+Tue Aug 22 10:51:30 2017,731 [10956] INFO VnpayGatewaylogger - New record created successfully
+Tue Aug 22 10:51:30 2017,731 [10956] INFO VnpayGatewaylogger - 2017-08-22 10:51:30     Connected close
+Tue Aug 22 10:51:30 2017,731 [10956] INFO VnpayGatewaylogger - 2017-08-22 10:51:30     END INIT
+Tue Aug 22 10:52:06 2017,393 [10956] INFO VnpayGatewaylogger - Connected successfully
+Tue Aug 22 10:52:06 2017,394 [10956] INFO VnpayGatewaylogger - 2017-08-22 10:52:06BEGIN INIT
+Tue Aug 22 10:52:06 2017,414 [10956] INFO VnpayGatewaylogger - New record created successfully
+Tue Aug 22 10:52:06 2017,414 [10956] INFO VnpayGatewaylogger - 2017-08-22 10:52:06     Connected close
+Tue Aug 22 10:52:06 2017,414 [10956] INFO VnpayGatewaylogger - 2017-08-22 10:52:06     END INIT
+Tue Aug 22 10:52:58 2017,239 [10956] INFO VnpayGatewaylogger - Connected successfully
+Tue Aug 22 10:52:58 2017,240 [10956] INFO VnpayGatewaylogger - 2017-08-22 10:52:58BEGIN INIT
+Tue Aug 22 10:52:58 2017,264 [10956] INFO VnpayGatewaylogger - New record created successfully
+Tue Aug 22 10:52:58 2017,264 [10956] INFO VnpayGatewaylogger - 2017-08-22 10:52:58     Connected close
+Tue Aug 22 10:52:58 2017,264 [10956] INFO VnpayGatewaylogger - 2017-08-22 10:52:58     END INIT
+Tue Aug 22 10:54:28 2017,505 [10956] INFO VnpayGatewaylogger - Connected successfully
+Tue Aug 22 10:54:28 2017,506 [10956] INFO VnpayGatewaylogger - 2017-08-22 10:54:28BEGIN INIT
+Tue Aug 22 10:54:28 2017,530 [10956] INFO VnpayGatewaylogger - New record created successfully
+Tue Aug 22 10:54:28 2017,530 [10956] INFO VnpayGatewaylogger - 2017-08-22 10:54:28     Connected close
+Tue Aug 22 10:54:28 2017,530 [10956] INFO VnpayGatewaylogger - 2017-08-22 10:54:28     END INIT
+Tue Aug 22 10:56:36 2017,144 [10956] INFO VnpayGatewaylogger - Connected successfully
+Tue Aug 22 10:56:36 2017,145 [10956] INFO VnpayGatewaylogger - 2017-08-22 10:56:36BEGIN INIT
+Tue Aug 22 10:56:36 2017,164 [10956] INFO VnpayGatewaylogger - New record created successfully
+Tue Aug 22 10:56:36 2017,164 [10956] INFO VnpayGatewaylogger - 2017-08-22 10:56:36     Connected close
+Tue Aug 22 10:56:36 2017,164 [10956] INFO VnpayGatewaylogger - 2017-08-22 10:56:36     END INIT
+Tue Aug 22 10:57:16 2017,613 [10956] INFO VnpayGatewaylogger - Connected successfully
+Tue Aug 22 10:57:16 2017,613 [10956] INFO VnpayGatewaylogger - 2017-08-22 10:57:16BEGIN INIT
+Tue Aug 22 10:57:16 2017,636 [10956] INFO VnpayGatewaylogger - New record created successfully
+Tue Aug 22 10:57:16 2017,636 [10956] INFO VnpayGatewaylogger - 2017-08-22 10:57:16     Connected close
+Tue Aug 22 10:57:16 2017,636 [10956] INFO VnpayGatewaylogger - 2017-08-22 10:57:16     END INIT
+Tue Aug 22 11:00:19 2017,486 [10956] INFO VnpayGatewaylogger - Connected successfully
+Tue Aug 22 11:00:19 2017,486 [10956] INFO VnpayGatewaylogger - 2017-08-22 11:00:19BEGIN INIT
+Tue Aug 22 11:00:19 2017,505 [10956] INFO VnpayGatewaylogger - New record created successfully
+Tue Aug 22 11:00:19 2017,505 [10956] INFO VnpayGatewaylogger - 2017-08-22 11:00:19     Connected close
+Tue Aug 22 11:00:19 2017,505 [10956] INFO VnpayGatewaylogger - 2017-08-22 11:00:19     END INIT
+Tue Aug 22 11:01:16 2017,882 [10956] INFO VnpayGatewaylogger - Connected successfully
+Tue Aug 22 11:01:16 2017,883 [10956] INFO VnpayGatewaylogger - 2017-08-22 11:01:16BEGIN INIT
+Tue Aug 22 11:01:16 2017,905 [10956] INFO VnpayGatewaylogger - New record created successfully
+Tue Aug 22 11:01:16 2017,905 [10956] INFO VnpayGatewaylogger - 2017-08-22 11:01:16     Connected close
+Tue Aug 22 11:01:16 2017,905 [10956] INFO VnpayGatewaylogger - 2017-08-22 11:01:16     END INIT
+Tue Aug 22 11:12:55 2017,182 [10956] INFO VnpayGatewaylogger - Connected successfully
+Tue Aug 22 11:12:55 2017,182 [10956] INFO VnpayGatewaylogger - 2017-08-22 11:12:55BEGIN INIT
+Tue Aug 22 11:12:55 2017,204 [10956] INFO VnpayGatewaylogger - New record created successfully
+Tue Aug 22 11:12:55 2017,204 [10956] INFO VnpayGatewaylogger - 2017-08-22 11:12:55     Connected close
+Tue Aug 22 11:12:55 2017,204 [10956] INFO VnpayGatewaylogger - 2017-08-22 11:12:55     END INIT
+Tue Aug 22 13:59:06 2017,140 [10956] INFO VnpayGatewaylogger - Connected successfully
+Tue Aug 22 13:59:06 2017,155 [10956] INFO VnpayGatewaylogger - 2017-08-22 13:59:06BEGIN INIT
+Tue Aug 22 13:59:06 2017,269 [10956] INFO VnpayGatewaylogger - New record created successfully
+Tue Aug 22 13:59:06 2017,280 [10956] INFO VnpayGatewaylogger - 2017-08-22 13:59:06     Connected close
+Tue Aug 22 13:59:06 2017,280 [10956] INFO VnpayGatewaylogger - 2017-08-22 13:59:06     END INIT
+08/22/17 14:19:02,191 [10960] INFO VnpayGatewaylogger - Connection failed: Unknown database 'vnpay_php_db'
+08/22/17 14:19:02,192 [10960] INFO VnpayGatewaylogger - Connected successfully
+08/22/17 14:19:02,192 [10960] INFO VnpayGatewaylogger - 2017-08-22 14:19:02BEGIN INIT
+08/22/17 14:19:02,193 [10960] INFO VnpayGatewaylogger - Error: INSERT INTO `orders` ( Amount, OrderDescription, IpAddr, UserAgent,CreatedDate,Status) VALUES ( 10000,'Thanh toan don hang test','117.6.131.222','Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) coc_coc_browser/64.4.146 Chrome/58.4.3029.146 Safari/537.36','2017-08-22 14:19:02',0)<br>
+08/22/17 14:19:02,193 [10960] INFO VnpayGatewaylogger - 2017-08-22 14:19:02     Connected close
+08/22/17 14:19:02,193 [10960] INFO VnpayGatewaylogger - 2017-08-22 14:19:02     END INIT
+08/22/17 14:19:09,046 [10960] INFO VnpayGatewaylogger - Connection failed: Unknown database 'vnpay_php_db'
+08/22/17 14:19:09,046 [10960] INFO VnpayGatewaylogger - Connected successfully
+08/22/17 14:19:09,047 [10960] INFO VnpayGatewaylogger - 2017-08-22 14:19:09BEGIN INIT
+08/22/17 14:19:09,047 [10960] INFO VnpayGatewaylogger - Error: INSERT INTO `orders` ( Amount, OrderDescription, IpAddr, UserAgent,CreatedDate,Status) VALUES ( 10000,'Thanh toan don hang test','117.6.131.222','Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) coc_coc_browser/64.4.146 Chrome/58.4.3029.146 Safari/537.36','2017-08-22 14:19:09',0)<br>
+08/22/17 14:19:09,048 [10960] INFO VnpayGatewaylogger - 2017-08-22 14:19:09     Connected close
+08/22/17 14:19:09,048 [10960] INFO VnpayGatewaylogger - 2017-08-22 14:19:09     END INIT
+08/22/17 14:19:11,223 [10960] INFO VnpayGatewaylogger - Connection failed: Unknown database 'vnpay_php_db'
+08/22/17 14:19:11,223 [10960] INFO VnpayGatewaylogger - Connected successfully
+08/22/17 14:19:11,224 [10960] INFO VnpayGatewaylogger - 2017-08-22 14:19:11BEGIN INIT
+08/22/17 14:19:11,235 [10960] INFO VnpayGatewaylogger - Error: INSERT INTO `orders` ( Amount, OrderDescription, IpAddr, UserAgent,CreatedDate,Status) VALUES ( 10000,'Thanh toan don hang test','117.6.131.222','Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) coc_coc_browser/64.4.146 Chrome/58.4.3029.146 Safari/537.36','2017-08-22 14:19:11',0)<br>
+08/22/17 14:19:11,235 [10960] INFO VnpayGatewaylogger - 2017-08-22 14:19:11     Connected close
+08/22/17 14:19:11,235 [10960] INFO VnpayGatewaylogger - 2017-08-22 14:19:11     END INIT
+08/22/17 14:24:20,147 [10960] INFO VnpayGatewaylogger - Connection failed: Unknown database 'vnpay_php_db'
+08/22/17 14:24:20,147 [10960] INFO VnpayGatewaylogger - Connected successfully
+08/22/17 14:24:20,147 [10960] INFO VnpayGatewaylogger - 2017-08-22 14:24:20BEGIN INIT
+08/22/17 14:24:20,159 [10960] INFO VnpayGatewaylogger - Error: INSERT INTO `orders` ( Amount, OrderDescription, IpAddr, UserAgent,CreatedDate,Status) VALUES ( 10000,'Thanh toan don hang test','117.6.131.222','Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) coc_coc_browser/64.4.146 Chrome/58.4.3029.146 Safari/537.36','2017-08-22 14:24:20',0)<br>
+08/22/17 14:24:20,160 [10960] INFO VnpayGatewaylogger - 2017-08-22 14:24:20     Connected close
+08/22/17 14:24:20,160 [10960] INFO VnpayGatewaylogger - 2017-08-22 14:24:20     END INIT
+08/22/17 14:24:29,998 [10960] INFO VnpayGatewaylogger - Connection failed: Unknown database 'vnpay_php_db'
+08/22/17 14:24:29,999 [10960] INFO VnpayGatewaylogger - Connected successfully
+08/22/17 14:24:29,999 [10960] INFO VnpayGatewaylogger - 2017-08-22 14:24:29BEGIN INIT
+08/22/17 14:24:30,010 [10960] INFO VnpayGatewaylogger - Error: INSERT INTO `orders` ( Amount, OrderDescription, IpAddr, UserAgent,CreatedDate,Status) VALUES ( 10000,'Thanh toan don hang test','117.6.131.222','Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) coc_coc_browser/64.4.146 Chrome/58.4.3029.146 Safari/537.36','2017-08-22 14:24:29',0)<br>
+08/22/17 14:24:30,011 [10960] INFO VnpayGatewaylogger - 2017-08-22 14:24:29     Connected close
+08/22/17 14:24:30,011 [10960] INFO VnpayGatewaylogger - 2017-08-22 14:24:29     END INIT
+08/22/17 14:35:15,137 [10960] INFO VnpayGatewaylogger - Connection failed: Access denied for user 'Giacngo79'@'117.6.131.222' (using password: YES)
+08/22/17 14:35:15,137 [10960] INFO VnpayGatewaylogger - Connected successfully
+08/22/17 14:35:15,137 [10960] INFO VnpayGatewaylogger - 2017-08-22 14:35:15BEGIN INIT
+08/22/17 14:35:15,150 [10960] INFO VnpayGatewaylogger - Error: INSERT INTO `orders` ( Amount, OrderDescription, IpAddr, UserAgent,CreatedDate,Status) VALUES ( 10000,'Thanh toan don hang test','117.6.131.222','Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) coc_coc_browser/64.4.146 Chrome/58.4.3029.146 Safari/537.36','2017-08-22 14:35:15',0)<br>
+08/22/17 14:35:15,150 [10960] INFO VnpayGatewaylogger - 2017-08-22 14:35:15     Connected close
+08/22/17 14:35:15,150 [10960] INFO VnpayGatewaylogger - 2017-08-22 14:35:15     END INIT
+08/22/17 14:36:10,556 [10960] INFO VnpayGatewaylogger - Connection failed: Access denied for user 'Giacngo79'@'117.6.131.222' (using password: YES)
+08/22/17 14:36:10,556 [10960] INFO VnpayGatewaylogger - Connected successfully
+08/22/17 14:36:10,556 [10960] INFO VnpayGatewaylogger - 2017-08-22 14:36:10BEGIN INIT
+08/22/17 14:36:10,571 [10960] INFO VnpayGatewaylogger - Error: INSERT INTO `orders` ( Amount, OrderDescription, IpAddr, UserAgent,CreatedDate,Status) VALUES ( 10000,'Thanh toan don hang test','117.6.131.222','Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) coc_coc_browser/64.4.146 Chrome/58.4.3029.146 Safari/537.36','2017-08-22 14:36:10',0)<br>
+08/22/17 14:36:10,571 [10960] INFO VnpayGatewaylogger - 2017-08-22 14:36:10     Connected close
+08/22/17 14:36:10,571 [10960] INFO VnpayGatewaylogger - 2017-08-22 14:36:10     END INIT
+08/22/17 14:37:46,646 [10960] INFO VnpayGatewaylogger - Connection failed: Access denied for user 'Giacngo79'@'117.6.131.222' (using password: YES)
+08/22/17 14:37:46,646 [10960] INFO VnpayGatewaylogger - Connected successfully
+08/22/17 14:37:46,646 [10960] INFO VnpayGatewaylogger - 2017-08-22 14:37:46BEGIN INIT
+08/22/17 14:37:46,657 [10960] INFO VnpayGatewaylogger - Error: INSERT INTO `orders` ( Amount, OrderDescription, IpAddr, UserAgent,CreatedDate,Status) VALUES ( 10000,'Thanh toan don hang test','117.6.131.222','Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) coc_coc_browser/64.4.146 Chrome/58.4.3029.146 Safari/537.36','2017-08-22 14:37:46',0)<br>
+08/22/17 14:37:46,658 [10960] INFO VnpayGatewaylogger - 2017-08-22 14:37:46     Connected close
+08/22/17 14:37:46,658 [10960] INFO VnpayGatewaylogger - 2017-08-22 14:37:46     END INIT
+08/22/17 14:49:11,606 [10960] INFO VnpayGatewaylogger - Connection failed: Access denied for user 'Giacngo79'@'117.6.131.222' (using password: YES)
+08/22/17 14:49:11,606 [10960] INFO VnpayGatewaylogger - Connected successfully
+08/22/17 14:49:11,607 [10960] INFO VnpayGatewaylogger - 2017-08-22 14:49:11BEGIN INIT
+08/22/17 14:49:11,609 [10960] INFO VnpayGatewaylogger - Error: INSERT INTO `orders` ( Amount, OrderDescription, IpAddr, UserAgent,CreatedDate,Status) VALUES ( 10000,'Thanh toan don hang test','117.6.131.222','Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) coc_coc_browser/64.4.146 Chrome/58.4.3029.146 Safari/537.36','2017-08-22 14:49:11',0)<br>
+08/22/17 14:49:11,609 [10960] INFO VnpayGatewaylogger - 2017-08-22 14:49:11     Connected close
+08/22/17 14:49:11,609 [10960] INFO VnpayGatewaylogger - 2017-08-22 14:49:11     END INIT
+08/22/17 14:49:24,414 [10960] INFO VnpayGatewaylogger - Connection failed: Access denied for user 'Giacngo79'@'117.6.131.222' (using password: YES)
+08/22/17 14:49:24,415 [10960] INFO VnpayGatewaylogger - Connected successfully
+08/22/17 14:49:24,415 [10960] INFO VnpayGatewaylogger - 2017-08-22 14:49:24BEGIN INIT
+08/22/17 14:49:24,426 [10960] INFO VnpayGatewaylogger - Error: INSERT INTO `orders` ( Amount, OrderDescription, IpAddr, UserAgent,CreatedDate,Status) VALUES ( 10000,'Thanh toan don hang test','117.6.131.222','Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) coc_coc_browser/64.4.146 Chrome/58.4.3029.146 Safari/537.36','2017-08-22 14:49:24',0)<br>
+08/22/17 14:49:24,427 [10960] INFO VnpayGatewaylogger - 2017-08-22 14:49:24     Connected close
+08/22/17 14:49:24,427 [10960] INFO VnpayGatewaylogger - 2017-08-22 14:49:24     END INIT
+08/22/17 14:55:15,086 [10960] INFO VnpayGatewaylogger - Connection failed: Access denied for user 'admin'@'117.6.131.222' (using password: YES)
+08/22/17 14:55:15,087 [10960] INFO VnpayGatewaylogger - Connected successfully
+08/22/17 14:55:15,087 [10960] INFO VnpayGatewaylogger - 2017-08-22 14:55:15BEGIN INIT
+08/22/17 14:55:15,102 [10960] INFO VnpayGatewaylogger - Error: INSERT INTO `orders` ( Amount, OrderDescription, IpAddr, UserAgent,CreatedDate,Status) VALUES ( 10000,'Thanh toan don hang test','117.6.131.222','Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) coc_coc_browser/64.4.146 Chrome/58.4.3029.146 Safari/537.36','2017-08-22 14:55:15',0)<br>
+08/22/17 14:55:15,102 [10960] INFO VnpayGatewaylogger - 2017-08-22 14:55:15     Connected close
+08/22/17 14:55:15,102 [10960] INFO VnpayGatewaylogger - 2017-08-22 14:55:15     END INIT
+08/22/17 14:55:32,817 [10960] INFO VnpayGatewaylogger - Connection failed: Access denied for user 'admin'@'117.6.131.222' (using password: YES)
+08/22/17 14:55:32,817 [10960] INFO VnpayGatewaylogger - Connected successfully
+08/22/17 14:55:32,817 [10960] INFO VnpayGatewaylogger - 2017-08-22 14:55:32BEGIN INIT
+08/22/17 14:55:32,829 [10960] INFO VnpayGatewaylogger - Error: INSERT INTO `orders` ( Amount, OrderDescription, IpAddr, UserAgent,CreatedDate,Status) VALUES ( 10000,'Thanh toan don hang test','117.6.131.222','Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) coc_coc_browser/64.4.146 Chrome/58.4.3029.146 Safari/537.36','2017-08-22 14:55:32',0)<br>
+08/22/17 14:55:32,830 [10960] INFO VnpayGatewaylogger - 2017-08-22 14:55:32     Connected close
+08/22/17 14:55:32,830 [10960] INFO VnpayGatewaylogger - 2017-08-22 14:55:32     END INIT
+08/22/17 14:55:36,287 [10960] INFO VnpayGatewaylogger - Connection failed: Access denied for user 'admin'@'117.6.131.222' (using password: YES)
+08/22/17 14:55:36,287 [10960] INFO VnpayGatewaylogger - Connected successfully
+08/22/17 14:55:36,288 [10960] INFO VnpayGatewaylogger - 2017-08-22 14:55:36BEGIN INIT
+08/22/17 14:55:36,299 [10960] INFO VnpayGatewaylogger - Error: INSERT INTO `orders` ( Amount, OrderDescription, IpAddr, UserAgent,CreatedDate,Status) VALUES ( 10000,'Thanh toan don hang test','117.6.131.222','Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) coc_coc_browser/64.4.146 Chrome/58.4.3029.146 Safari/537.36','2017-08-22 14:55:36',0)<br>
+08/22/17 14:55:36,299 [10960] INFO VnpayGatewaylogger - 2017-08-22 14:55:36     Connected close
+08/22/17 14:55:36,299 [10960] INFO VnpayGatewaylogger - 2017-08-22 14:55:36     END INIT
+08/22/17 14:58:33,451 [10960] INFO VnpayGatewaylogger - Connection failed: Access denied for user 'admin'@'117.6.131.222' (using password: YES)
+08/22/17 14:58:33,451 [10960] INFO VnpayGatewaylogger - Connected successfully
+08/22/17 14:58:33,451 [10960] INFO VnpayGatewaylogger - 2017-08-22 14:58:33BEGIN INIT
+08/22/17 14:58:33,464 [10960] INFO VnpayGatewaylogger - Error: INSERT INTO `orders` ( Amount, OrderDescription, IpAddr, UserAgent,CreatedDate,Status) VALUES ( 10000,'Thanh toan don hang test','117.6.131.222','Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) coc_coc_browser/64.4.146 Chrome/58.4.3029.146 Safari/537.36','2017-08-22 14:58:33',0)<br>
+08/22/17 14:58:33,464 [10960] INFO VnpayGatewaylogger - 2017-08-22 14:58:33     Connected close
+08/22/17 14:58:33,464 [10960] INFO VnpayGatewaylogger - 2017-08-22 14:58:33     END INIT
+08/22/17 14:58:44,847 [10960] INFO VnpayGatewaylogger - Connection failed: Access denied for user 'admin'@'117.6.131.222' (using password: YES)
+08/22/17 14:58:44,848 [10960] INFO VnpayGatewaylogger - Connected successfully
+08/22/17 14:58:44,848 [10960] INFO VnpayGatewaylogger - 2017-08-22 14:58:44BEGIN INIT
+08/22/17 14:58:44,860 [10960] INFO VnpayGatewaylogger - Error: INSERT INTO `orders` ( Amount, OrderDescription, IpAddr, UserAgent,CreatedDate,Status) VALUES ( 10000,'Thanh toan don hang test','117.6.131.222','Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) coc_coc_browser/64.4.146 Chrome/58.4.3029.146 Safari/537.36','2017-08-22 14:58:44',0)<br>
+08/22/17 14:58:44,860 [10960] INFO VnpayGatewaylogger - 2017-08-22 14:58:44     Connected close
+08/22/17 14:58:44,860 [10960] INFO VnpayGatewaylogger - 2017-08-22 14:58:44     END INIT
+08/22/17 15:00:45,060 [10960] INFO VnpayGatewaylogger - Connection failed: Access denied for user 'admin'@'117.6.131.222' (using password: YES)
+08/22/17 15:00:45,061 [10960] INFO VnpayGatewaylogger - Connected successfully
+08/22/17 15:00:45,061 [10960] INFO VnpayGatewaylogger - 2017-08-22 15:00:45BEGIN INIT
+08/22/17 15:00:45,075 [10960] INFO VnpayGatewaylogger - Error: INSERT INTO `orders` ( Amount, OrderDescription, IpAddr, UserAgent,CreatedDate,Status) VALUES ( 10000,'Thanh toan don hang test','117.6.131.222','Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) coc_coc_browser/64.4.146 Chrome/58.4.3029.146 Safari/537.36','2017-08-22 15:00:45',0)<br>
+08/22/17 15:00:45,076 [10960] INFO VnpayGatewaylogger - 2017-08-22 15:00:45     Connected close
+08/22/17 15:00:45,076 [10960] INFO VnpayGatewaylogger - 2017-08-22 15:00:45     END INIT
+08/22/17 15:00:47,899 [10960] INFO VnpayGatewaylogger - Connection failed: Access denied for user 'admin'@'117.6.131.222' (using password: YES)
+08/22/17 15:00:47,899 [10960] INFO VnpayGatewaylogger - Connected successfully
+08/22/17 15:00:47,899 [10960] INFO VnpayGatewaylogger - 2017-08-22 15:00:47BEGIN INIT
+08/22/17 15:00:47,900 [10960] INFO VnpayGatewaylogger - Error: INSERT INTO `orders` ( Amount, OrderDescription, IpAddr, UserAgent,CreatedDate,Status) VALUES ( 10000,'Thanh toan don hang test','117.6.131.222','Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) coc_coc_browser/64.4.146 Chrome/58.4.3029.146 Safari/537.36','2017-08-22 15:00:47',0)<br>
+08/22/17 15:00:47,900 [10960] INFO VnpayGatewaylogger - 2017-08-22 15:00:47     Connected close
+08/22/17 15:00:47,900 [10960] INFO VnpayGatewaylogger - 2017-08-22 15:00:47     END INIT
+08/22/17 15:00:53,814 [10960] INFO VnpayGatewaylogger - Connection failed: Access denied for user 'admin'@'117.6.131.222' (using password: YES)
+08/22/17 15:00:53,815 [10960] INFO VnpayGatewaylogger - Connected successfully
+08/22/17 15:00:53,815 [10960] INFO VnpayGatewaylogger - 2017-08-22 15:00:53BEGIN INIT
+08/22/17 15:00:53,825 [10960] INFO VnpayGatewaylogger - Error: INSERT INTO `orders` ( Amount, OrderDescription, IpAddr, UserAgent,CreatedDate,Status) VALUES ( 10000,'Thanh toan don hang test','117.6.131.222','Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) coc_coc_browser/64.4.146 Chrome/58.4.3029.146 Safari/537.36','2017-08-22 15:00:53',0)<br>
+08/22/17 15:00:53,826 [10960] INFO VnpayGatewaylogger - 2017-08-22 15:00:53     Connected close
+08/22/17 15:00:53,826 [10960] INFO VnpayGatewaylogger - 2017-08-22 15:00:53     END INIT
+08/22/17 15:02:50,877 [10960] INFO VnpayGatewaylogger - Connection failed: Access denied for user 'admin'@'117.6.131.222' (using password: YES)
+08/22/17 15:02:50,878 [10960] INFO VnpayGatewaylogger - Connected successfully
+08/22/17 15:02:50,878 [10960] INFO VnpayGatewaylogger - 2017-08-22 15:02:50BEGIN INIT
+08/22/17 15:02:50,893 [10960] INFO VnpayGatewaylogger - Error: INSERT INTO `orders` ( Amount, OrderDescription, IpAddr, UserAgent,CreatedDate,Status) VALUES ( 10000,'Thanh toan don hang test','117.6.131.222','Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) coc_coc_browser/64.4.146 Chrome/58.4.3029.146 Safari/537.36','2017-08-22 15:02:50',0)<br>
+08/22/17 15:02:50,893 [10960] INFO VnpayGatewaylogger - 2017-08-22 15:02:50     Connected close
+08/22/17 15:02:50,893 [10960] INFO VnpayGatewaylogger - 2017-08-22 15:02:50     END INIT
+08/22/17 15:05:18,956 [10960] INFO VnpayGatewaylogger - Connection failed: Access denied for user 'admin'@'117.6.131.222' (using password: YES)
+08/22/17 15:05:18,957 [10960] INFO VnpayGatewaylogger - Connected successfully
+08/22/17 15:05:18,957 [10960] INFO VnpayGatewaylogger - 2017-08-22 15:05:18BEGIN INIT
+08/22/17 15:05:18,968 [10960] INFO VnpayGatewaylogger - Error: INSERT INTO `orders` ( Amount, OrderDescription, IpAddr, UserAgent,CreatedDate,Status) VALUES ( 10000,'Thanh toan don hang test','117.6.131.222','Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) coc_coc_browser/64.4.146 Chrome/58.4.3029.146 Safari/537.36','2017-08-22 15:05:18',0)<br>
+08/22/17 15:05:18,968 [10960] INFO VnpayGatewaylogger - 2017-08-22 15:05:18     Connected close
+08/22/17 15:05:18,968 [10960] INFO VnpayGatewaylogger - 2017-08-22 15:05:18     END INIT
+08/22/17 15:11:09,342 [10960] INFO VnpayGatewaylogger - Connection failed: Access denied for user 'admin'@'117.6.131.222' (using password: YES)
+08/22/17 15:11:09,343 [10960] INFO VnpayGatewaylogger - Connected successfully
+08/22/17 15:11:09,343 [10960] INFO VnpayGatewaylogger - 2017-08-22 15:11:09BEGIN INIT
+08/22/17 15:11:09,354 [10960] INFO VnpayGatewaylogger - Error: INSERT INTO `orders` ( Amount, OrderDescription, IpAddr, UserAgent,CreatedDate,Status) VALUES ( 10000,'Thanh toan don hang test','117.6.131.222','Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) coc_coc_browser/64.4.146 Chrome/58.4.3029.146 Safari/537.36','2017-08-22 15:11:09',0)<br>
+08/22/17 15:11:09,355 [10960] INFO VnpayGatewaylogger - 2017-08-22 15:11:09     Connected close
+08/22/17 15:11:09,355 [10960] INFO VnpayGatewaylogger - 2017-08-22 15:11:09     END INIT
+08/22/17 15:12:36,386 [10960] INFO VnpayGatewaylogger - Connection failed: Access denied for user 'admin'@'117.6.131.222' (using password: YES)
+08/22/17 15:12:36,387 [10960] INFO VnpayGatewaylogger - Connected successfully
+08/22/17 15:12:36,387 [10960] INFO VnpayGatewaylogger - 2017-08-22 15:12:36BEGIN INIT
+08/22/17 15:12:36,401 [10960] INFO VnpayGatewaylogger - Error: INSERT INTO `orders` ( Amount, OrderDescription, IpAddr, UserAgent,CreatedDate,Status) VALUES ( 10000,'Thanh toan don hang test','117.6.131.222','Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) coc_coc_browser/64.4.146 Chrome/58.4.3029.146 Safari/537.36','2017-08-22 15:12:36',0)<br>
+08/22/17 15:12:36,401 [10960] INFO VnpayGatewaylogger - 2017-08-22 15:12:36     Connected close
+08/22/17 15:12:36,402 [10960] INFO VnpayGatewaylogger - 2017-08-22 15:12:36     END INIT
+08/22/17 15:12:57,211 [10960] INFO VnpayGatewaylogger - Connection failed: Access denied for user 'admin'@'117.6.131.222' (using password: YES)
+08/22/17 15:12:57,212 [10960] INFO VnpayGatewaylogger - Connected successfully
+08/22/17 15:12:57,212 [10960] INFO VnpayGatewaylogger - 2017-08-22 15:12:57BEGIN INIT
+08/22/17 15:12:57,227 [10960] INFO VnpayGatewaylogger - Error: INSERT INTO `orders` ( Amount, OrderDescription, IpAddr, UserAgent,CreatedDate,Status) VALUES ( 10000,'Thanh toan don hang test','117.6.131.222','Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) coc_coc_browser/64.4.146 Chrome/58.4.3029.146 Safari/537.36','2017-08-22 15:12:57',0)<br>
+08/22/17 15:12:57,227 [10960] INFO VnpayGatewaylogger - 2017-08-22 15:12:57     Connected close
+08/22/17 15:12:57,227 [10960] INFO VnpayGatewaylogger - 2017-08-22 15:12:57     END INIT
+08/22/17 15:25:47,309 [10960] INFO VnpayGatewaylogger - Connection failed: Access denied for user 'admin'@'117.6.131.222' (using password: YES)
+08/22/17 15:25:47,309 [10960] INFO VnpayGatewaylogger - Connected successfully
+08/22/17 15:25:47,309 [10960] INFO VnpayGatewaylogger - 2017-08-22 15:25:47BEGIN INIT
+08/22/17 15:25:47,320 [10960] INFO VnpayGatewaylogger - Error: INSERT INTO `orders` ( Amount, OrderDescription, IpAddr, UserAgent,CreatedDate,Status) VALUES ( 10000,'Thanh toan don hang test','117.6.131.222','Mozilla/5.0 (Linux; Android 7.0; BLL-L22 Build/HUAWEIBLL-L22; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/59.0.3071.125 Mobile Safari/537.36','2017-08-22 15:25:47',0)<br>
+08/22/17 15:25:47,321 [10960] INFO VnpayGatewaylogger - 2017-08-22 15:25:47     Connected close
+08/22/17 15:25:47,321 [10960] INFO VnpayGatewaylogger - 2017-08-22 15:25:47     END INIT
+08/22/17 15:56:47,053 [10960] INFO VnpayGatewaylogger - Connection failed: Access denied for user 'admin'@'117.6.131.222' (using password: YES)
+08/22/17 15:56:47,057 [10960] INFO VnpayGatewaylogger - Connected successfully
+08/22/17 15:56:47,057 [10960] INFO VnpayGatewaylogger - 2017-08-22 15:56:47BEGIN INIT
+08/22/17 15:56:47,059 [10960] INFO VnpayGatewaylogger - Error: INSERT INTO `orders` ( Amount, OrderDescription, IpAddr, UserAgent,CreatedDate,Status) VALUES ( 10000,'Thanh toan don hang test','117.6.131.222','Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) coc_coc_browser/64.4.146 Chrome/58.4.3029.146 Safari/537.36','2017-08-22 15:56:47',0)<br>
+08/22/17 15:56:47,059 [10960] INFO VnpayGatewaylogger - 2017-08-22 15:56:47     Connected close
+08/22/17 15:56:47,060 [10960] INFO VnpayGatewaylogger - 2017-08-22 15:56:47     END INIT
+08/22/17 16:20:01,886 [10960] INFO VnpayGatewaylogger - Connected successfully
+08/22/17 16:20:01,887 [10960] INFO VnpayGatewaylogger - 2017-08-22 16:20:01BEGIN INIT
+08/22/17 16:20:01,952 [10960] INFO VnpayGatewaylogger - New record created successfully
+08/22/17 16:20:01,953 [10960] INFO VnpayGatewaylogger - 2017-08-22 16:20:01     Connected close
+08/22/17 16:20:01,953 [10960] INFO VnpayGatewaylogger - 2017-08-22 16:20:01     END INIT
+08/22/17 11:33:39,187 [10960] INFO VnpayGatewaylogger - BEGIN CALL IPN_URL
+08/22/17 11:33:39,199 [10960] INFO VnpayGatewaylogger - Connected successfully
+08/22/17 11:33:39,201 [10960] INFO VnpayGatewaylogger - Connected close
+08/22/17 11:33:39,201 [10960] INFO VnpayGatewaylogger - END IPNURL
+08/22/17 11:34:11,878 [10960] INFO VnpayGatewaylogger - BEGIN CALL IPN_URL
+08/22/17 11:34:11,890 [10960] INFO VnpayGatewaylogger - Connected successfully
+08/22/17 11:34:11,892 [10960] INFO VnpayGatewaylogger - Connected close
+08/22/17 11:34:11,892 [10960] INFO VnpayGatewaylogger - END IPNURL
+08/22/17 11:34:17,483 [10960] INFO VnpayGatewaylogger - BEGIN CALL IPN_URL
+08/22/17 11:34:17,495 [10960] INFO VnpayGatewaylogger - Connected successfully
+08/22/17 11:34:17,507 [10960] INFO VnpayGatewaylogger - Connected close
+08/22/17 11:34:17,507 [10960] INFO VnpayGatewaylogger - END IPNURL
+08/22/17 11:34:17,543 [10960] INFO VnpayGatewaylogger - BEGIN CALL IPN_URL
+08/22/17 11:34:17,555 [10960] INFO VnpayGatewaylogger - Connected successfully
+08/22/17 11:34:17,567 [10960] INFO VnpayGatewaylogger - Connected close
+08/22/17 11:34:17,567 [10960] INFO VnpayGatewaylogger - END IPNURL
+08/22/17 11:34:30,369 [10960] INFO VnpayGatewaylogger - BEGIN CALL IPN_URL
+08/22/17 11:34:30,380 [10960] INFO VnpayGatewaylogger - Connected successfully
+08/22/17 11:34:30,392 [10960] INFO VnpayGatewaylogger - Connected close
+08/22/17 11:34:30,392 [10960] INFO VnpayGatewaylogger - END IPNURL
+08/22/17 11:35:10,002 [10960] INFO VnpayGatewaylogger - BEGIN CALL IPN_URL
+08/22/17 11:35:10,013 [10960] INFO VnpayGatewaylogger - Connected successfully
+08/22/17 11:35:10,025 [10960] INFO VnpayGatewaylogger - Connected close
+08/22/17 11:35:10,025 [10960] INFO VnpayGatewaylogger - END IPNURL
+08/22/17 11:35:11,263 [10960] INFO VnpayGatewaylogger - BEGIN CALL IPN_URL
+08/22/17 11:35:11,275 [10960] INFO VnpayGatewaylogger - Connected successfully
+08/22/17 11:35:11,277 [10960] INFO VnpayGatewaylogger - Connected close
+08/22/17 11:35:11,277 [10960] INFO VnpayGatewaylogger - END IPNURL
+08/22/17 16:35:32,972 [10960] INFO VnpayGatewaylogger - Connected successfully
+08/22/17 16:35:32,972 [10960] INFO VnpayGatewaylogger - 2017-08-22 16:35:32BEGIN INIT
+08/22/17 16:35:33,031 [10960] INFO VnpayGatewaylogger - New record created successfully
+08/22/17 16:35:33,031 [10960] INFO VnpayGatewaylogger - 2017-08-22 16:35:32     Connected close
+08/22/17 16:35:33,031 [10960] INFO VnpayGatewaylogger - 2017-08-22 16:35:32     END INIT
+08/22/17 11:36:32,892 [10960] INFO VnpayGatewaylogger - BEGIN CALL IPN_URL
+08/22/17 11:36:32,904 [10960] INFO VnpayGatewaylogger - Connected successfully
+08/22/17 11:36:32,915 [10960] INFO VnpayGatewaylogger - 2
+08/22/17 11:36:32,979 [10960] INFO VnpayGatewaylogger - Update record created successfully
+08/22/17 11:36:32,979 [10960] INFO VnpayGatewaylogger - Connected close
+08/22/17 11:36:32,979 [10960] INFO VnpayGatewaylogger - END IPNURL
+08/22/17 22:30:25,663 [10960] INFO VnpayGatewaylogger - Connected successfully
+08/22/17 22:30:25,664 [10960] INFO VnpayGatewaylogger - 2017-08-22 22:30:25BEGIN INIT
+08/22/17 22:30:25,756 [10960] INFO VnpayGatewaylogger - New record created successfully
+08/22/17 22:30:25,757 [10960] INFO VnpayGatewaylogger - 2017-08-22 22:30:25     Connected close
+08/22/17 22:30:25,757 [10960] INFO VnpayGatewaylogger - 2017-08-22 22:30:25     END INIT
+08/22/17 17:31:23,660 [10960] INFO VnpayGatewaylogger - BEGIN CALL IPN_URL
+08/22/17 17:31:23,673 [10960] INFO VnpayGatewaylogger - Connected successfully
+08/22/17 17:31:23,686 [10960] INFO VnpayGatewaylogger - 3
+08/22/17 17:31:23,796 [10960] INFO VnpayGatewaylogger - Update record created successfully
+08/22/17 17:31:23,796 [10960] INFO VnpayGatewaylogger - Connected close
+08/22/17 17:31:23,796 [10960] INFO VnpayGatewaylogger - END IPNURL
+08/31/17 07:01:22,502 [5176] INFO VnpayGatewaylogger - BEGIN CALL IPN_URL
+08/31/17 07:01:23,519 [5176] INFO VnpayGatewaylogger - Connection failed: No connection could be made because the target machine actively refused it.
+
+08/31/17 07:01:23,519 [5176] INFO VnpayGatewaylogger - Connected successfully
+08/31/17 07:01:25,537 [5176] INFO VnpayGatewaylogger - Connected close
+08/31/17 07:01:25,537 [5176] INFO VnpayGatewaylogger - END IPNURL
+10/13/17 11:28:58,483 [5488] INFO VnpayGatewaylogger - Connected successfully
+10/13/17 11:28:58,492 [5488] INFO VnpayGatewaylogger - 2017-10-13 11:28:58BEGIN INIT
+10/13/17 11:28:58,596 [5488] INFO VnpayGatewaylogger - New record created successfully
+10/13/17 11:28:58,606 [5488] INFO VnpayGatewaylogger - 2017-10-13 11:28:58     Connected close
+10/13/17 11:28:58,606 [5488] INFO VnpayGatewaylogger - 2017-10-13 11:28:58     END INIT
+10/13/17 11:29:04,772 [5488] INFO VnpayGatewaylogger - Connected successfully
+10/13/17 11:29:04,772 [5488] INFO VnpayGatewaylogger - 2017-10-13 11:29:04BEGIN INIT
+10/13/17 11:29:04,835 [5488] INFO VnpayGatewaylogger - New record created successfully
+10/13/17 11:29:04,835 [5488] INFO VnpayGatewaylogger - 2017-10-13 11:29:04     Connected close
+10/13/17 11:29:04,835 [5488] INFO VnpayGatewaylogger - 2017-10-13 11:29:04     END INIT
+10/13/17 11:29:19,154 [5488] INFO VnpayGatewaylogger - Connected successfully
+10/13/17 11:29:19,155 [5488] INFO VnpayGatewaylogger - 2017-10-13 11:29:19BEGIN INIT
+10/13/17 11:29:19,209 [5488] INFO VnpayGatewaylogger - New record created successfully
+10/13/17 11:29:19,210 [5488] INFO VnpayGatewaylogger - 2017-10-13 11:29:19     Connected close
+10/13/17 11:29:19,210 [5488] INFO VnpayGatewaylogger - 2017-10-13 11:29:19     END INIT
+10/13/17 06:30:17,176 [5488] INFO VnpayGatewaylogger - BEGIN CALL IPN_URL
+10/13/17 06:30:17,179 [5488] INFO VnpayGatewaylogger - Connected successfully
+10/13/17 06:30:17,181 [5488] INFO VnpayGatewaylogger - 6
+10/13/17 06:30:17,243 [5488] INFO VnpayGatewaylogger - Update record created successfully
+10/13/17 06:30:17,243 [5488] INFO VnpayGatewaylogger - Connected close
+10/13/17 06:30:17,243 [5488] INFO VnpayGatewaylogger - END IPNURL
+10/13/17 11:34:36,296 [5488] INFO VnpayGatewaylogger - Connected successfully
+10/13/17 11:34:36,296 [5488] INFO VnpayGatewaylogger - 2017-10-13 11:34:36BEGIN INIT
+10/13/17 11:34:36,357 [5488] INFO VnpayGatewaylogger - New record created successfully
+10/13/17 11:34:36,357 [5488] INFO VnpayGatewaylogger - 2017-10-13 11:34:36     Connected close
+10/13/17 11:34:36,357 [5488] INFO VnpayGatewaylogger - 2017-10-13 11:34:36     END INIT
+10/13/17 11:34:39,138 [5488] INFO VnpayGatewaylogger - Connected successfully
+10/13/17 11:34:39,138 [5488] INFO VnpayGatewaylogger - 2017-10-13 11:34:39BEGIN INIT
+10/13/17 11:34:39,274 [5488] INFO VnpayGatewaylogger - New record created successfully
+10/13/17 11:34:39,274 [5488] INFO VnpayGatewaylogger - 2017-10-13 11:34:39     Connected close
+10/13/17 11:34:39,274 [5488] INFO VnpayGatewaylogger - 2017-10-13 11:34:39     END INIT
+10/13/17 11:34:45,980 [5488] INFO VnpayGatewaylogger - Connected successfully
+10/13/17 11:34:45,980 [5488] INFO VnpayGatewaylogger - 2017-10-13 11:34:45BEGIN INIT
+10/13/17 11:34:46,090 [5488] INFO VnpayGatewaylogger - New record created successfully
+10/13/17 11:34:46,090 [5488] INFO VnpayGatewaylogger - 2017-10-13 11:34:45     Connected close
+10/13/17 11:34:46,090 [5488] INFO VnpayGatewaylogger - 2017-10-13 11:34:45     END INIT
+10/13/17 11:35:00,283 [5488] INFO VnpayGatewaylogger - Connected successfully
+10/13/17 11:35:00,283 [5488] INFO VnpayGatewaylogger - 2017-10-13 11:35:00BEGIN INIT
+10/13/17 11:35:00,356 [5488] INFO VnpayGatewaylogger - New record created successfully
+10/13/17 11:35:00,356 [5488] INFO VnpayGatewaylogger - 2017-10-13 11:35:00     Connected close
+10/13/17 11:35:00,357 [5488] INFO VnpayGatewaylogger - 2017-10-13 11:35:00     END INIT
+10/13/17 06:37:50,502 [5488] INFO VnpayGatewaylogger - BEGIN CALL IPN_URL
+10/13/17 06:37:50,505 [5488] INFO VnpayGatewaylogger - Connected successfully
+10/13/17 06:37:50,508 [5488] INFO VnpayGatewaylogger - Connected close
+10/13/17 06:37:50,508 [5488] INFO VnpayGatewaylogger - END IPNURL
+10/16/17 08:50:36,459 [1316] INFO VnpayGatewaylogger - Connected successfully
+10/16/17 08:50:36,466 [1316] INFO VnpayGatewaylogger - 2017-10-16 08:50:36BEGIN INIT
+10/16/17 08:50:36,580 [1316] INFO VnpayGatewaylogger - New record created successfully
+10/16/17 08:50:36,590 [1316] INFO VnpayGatewaylogger - 2017-10-16 08:50:36     Connected close
+10/16/17 08:50:36,590 [1316] INFO VnpayGatewaylogger - 2017-10-16 08:50:36     END INIT
+10/16/17 08:50:58,127 [1316] INFO VnpayGatewaylogger - Connected successfully
+10/16/17 08:50:58,127 [1316] INFO VnpayGatewaylogger - 2017-10-16 08:50:58BEGIN INIT
+10/16/17 08:50:58,185 [1316] INFO VnpayGatewaylogger - New record created successfully
+10/16/17 08:50:58,185 [1316] INFO VnpayGatewaylogger - 2017-10-16 08:50:58     Connected close
+10/16/17 08:50:58,185 [1316] INFO VnpayGatewaylogger - 2017-10-16 08:50:58     END INIT
+10/16/17 10:39:37,811 [1316] INFO VnpayGatewaylogger - Connected successfully
+10/16/17 10:39:37,811 [1316] INFO VnpayGatewaylogger - 2017-10-16 10:39:37BEGIN INIT
+10/16/17 10:39:37,864 [1316] INFO VnpayGatewaylogger - New record created successfully
+10/16/17 10:39:37,882 [1316] INFO VnpayGatewaylogger - 2017-10-16 10:39:37     Connected close
+10/16/17 10:39:37,882 [1316] INFO VnpayGatewaylogger - 2017-10-16 10:39:37     END INIT
+10/16/17 05:40:57,827 [1316] INFO VnpayGatewaylogger - BEGIN CALL IPN_URL
+10/16/17 05:40:57,838 [1316] INFO VnpayGatewaylogger - Connected successfully
+10/16/17 05:40:57,841 [1316] INFO VnpayGatewaylogger - 13
+10/16/17 05:40:57,908 [1316] INFO VnpayGatewaylogger - Update record created successfully
+10/16/17 05:40:57,908 [1316] INFO VnpayGatewaylogger - Connected close
+10/16/17 05:40:57,908 [1316] INFO VnpayGatewaylogger - END IPNURL
+10/16/17 10:43:24,077 [1316] INFO VnpayGatewaylogger - Connected successfully
+10/16/17 10:43:24,078 [1316] INFO VnpayGatewaylogger - 2017-10-16 10:43:24BEGIN INIT
+10/16/17 10:43:24,137 [1316] INFO VnpayGatewaylogger - New record created successfully
+10/16/17 10:43:24,137 [1316] INFO VnpayGatewaylogger - 2017-10-16 10:43:24     Connected close
+10/16/17 10:43:24,137 [1316] INFO VnpayGatewaylogger - 2017-10-16 10:43:24     END INIT
+10/16/17 10:43:39,363 [1316] INFO VnpayGatewaylogger - Connected successfully
+10/16/17 10:43:39,366 [1316] INFO VnpayGatewaylogger - 2017-10-16 10:43:39BEGIN INIT
+10/16/17 10:43:39,422 [1316] INFO VnpayGatewaylogger - New record created successfully
+10/16/17 10:43:39,423 [1316] INFO VnpayGatewaylogger - 2017-10-16 10:43:39     Connected close
+10/16/17 10:43:39,423 [1316] INFO VnpayGatewaylogger - 2017-10-16 10:43:39     END INIT
+10/16/17 10:43:42,010 [1316] INFO VnpayGatewaylogger - Connected successfully
+10/16/17 10:43:42,011 [1316] INFO VnpayGatewaylogger - 2017-10-16 10:43:42BEGIN INIT
+10/16/17 10:43:42,078 [1316] INFO VnpayGatewaylogger - New record created successfully
+10/16/17 10:43:42,078 [1316] INFO VnpayGatewaylogger - 2017-10-16 10:43:42     Connected close
+10/16/17 10:43:42,078 [1316] INFO VnpayGatewaylogger - 2017-10-16 10:43:42     END INIT
+10/16/17 10:43:42,858 [1316] INFO VnpayGatewaylogger - Connected successfully
+10/16/17 10:43:42,858 [1316] INFO VnpayGatewaylogger - 2017-10-16 10:43:42BEGIN INIT
+10/16/17 10:43:42,919 [1316] INFO VnpayGatewaylogger - New record created successfully
+10/16/17 10:43:42,920 [1316] INFO VnpayGatewaylogger - 2017-10-16 10:43:42     Connected close
+10/16/17 10:43:42,920 [1316] INFO VnpayGatewaylogger - 2017-10-16 10:43:42     END INIT
+10/16/17 10:44:03,958 [1316] INFO VnpayGatewaylogger - Connected successfully
+10/16/17 10:44:03,958 [1316] INFO VnpayGatewaylogger - 2017-10-16 10:44:03BEGIN INIT
+10/16/17 10:44:04,019 [1316] INFO VnpayGatewaylogger - New record created successfully
+10/16/17 10:44:04,019 [1316] INFO VnpayGatewaylogger - 2017-10-16 10:44:03     Connected close
+10/16/17 10:44:04,019 [1316] INFO VnpayGatewaylogger - 2017-10-16 10:44:03     END INIT
+10/16/17 10:50:52,679 [1316] INFO VnpayGatewaylogger - Connected successfully
+10/16/17 10:50:52,679 [1316] INFO VnpayGatewaylogger - 2017-10-16 10:50:52BEGIN INIT
+10/16/17 10:50:52,738 [1316] INFO VnpayGatewaylogger - New record created successfully
+10/16/17 10:50:52,739 [1316] INFO VnpayGatewaylogger - 2017-10-16 10:50:52     Connected close
+10/16/17 10:50:52,739 [1316] INFO VnpayGatewaylogger - 2017-10-16 10:50:52     END INIT
+10/16/17 05:51:42,283 [1316] INFO VnpayGatewaylogger - BEGIN CALL IPN_URL
+10/16/17 05:51:42,287 [1316] INFO VnpayGatewaylogger - Connected successfully
+10/16/17 05:51:42,289 [1316] INFO VnpayGatewaylogger - 19
+10/16/17 05:51:42,354 [1316] INFO VnpayGatewaylogger - Update record created successfully
+10/16/17 05:51:42,354 [1316] INFO VnpayGatewaylogger - Connected close
+10/16/17 05:51:42,354 [1316] INFO VnpayGatewaylogger - END IPNURL
+10/16/17 11:07:49,148 [1316] INFO VnpayGatewaylogger - Connected successfully
+10/16/17 11:07:49,149 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:07:49BEGIN INIT
+10/16/17 11:07:49,161 [1316] INFO VnpayGatewaylogger - Error: INSERT INTO `orders` ( Amount,UserId, OrderDescription, IpAddr, UserAgent,CreatedDate,Status) VALUES ( 1000000,,'Thanh toan don hang test','117.6.131.222','Mozilla/5.0 (Linux; Android 7.0; BLL-L22 Build/HUAWEIBLL-L22; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/61.0.3163.98 Mobile Safari/537.36','2017-10-16 11:07:49',0)<br>You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''Thanh toan don hang test','117.6.131.222','Mozilla/5.0 (Linux; Android 7.0; BLL' at line 1
+10/16/17 11:07:49,235 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:07:49     Connected close
+10/16/17 11:07:49,235 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:07:49     END INIT
+10/16/17 11:07:58,616 [1316] INFO VnpayGatewaylogger - Connected successfully
+10/16/17 11:07:58,616 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:07:58BEGIN INIT
+10/16/17 11:07:58,628 [1316] INFO VnpayGatewaylogger - Error: INSERT INTO `orders` ( Amount,UserId, OrderDescription, IpAddr, UserAgent,CreatedDate,Status) VALUES ( 500000,,'Thanh toan don hang test','117.6.131.222','Mozilla/5.0 (Linux; Android 7.0; BLL-L22 Build/HUAWEIBLL-L22; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/61.0.3163.98 Mobile Safari/537.36','2017-10-16 11:07:58',0)<br>You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''Thanh toan don hang test','117.6.131.222','Mozilla/5.0 (Linux; Android 7.0; BLL' at line 1
+10/16/17 11:07:58,628 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:07:58     Connected close
+10/16/17 11:07:58,628 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:07:58     END INIT
+10/16/17 11:08:10,344 [1316] INFO VnpayGatewaylogger - Connected successfully
+10/16/17 11:08:10,345 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:08:10BEGIN INIT
+10/16/17 11:08:10,356 [1316] INFO VnpayGatewaylogger - Error: INSERT INTO `orders` ( Amount,UserId, OrderDescription, IpAddr, UserAgent,CreatedDate,Status) VALUES ( 50000,,'Thanh toan don hang test','117.6.131.222','Mozilla/5.0 (Linux; Android 7.0; BLL-L22 Build/HUAWEIBLL-L22; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/61.0.3163.98 Mobile Safari/537.36','2017-10-16 11:08:10',0)<br>You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''Thanh toan don hang test','117.6.131.222','Mozilla/5.0 (Linux; Android 7.0; BLL' at line 1
+10/16/17 11:08:10,356 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:08:10     Connected close
+10/16/17 11:08:10,356 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:08:10     END INIT
+10/16/17 11:09:01,319 [1316] INFO VnpayGatewaylogger - Connected successfully
+10/16/17 11:09:01,319 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:09:01BEGIN INIT
+10/16/17 11:09:01,331 [1316] INFO VnpayGatewaylogger - Error: INSERT INTO `orders` ( Amount,UserId, OrderDescription, IpAddr, UserAgent,CreatedDate,Status) VALUES ( 1000000,'Thanh toan don hang test','117.6.131.222','Mozilla/5.0 (Linux; Android 7.0; BLL-L22 Build/HUAWEIBLL-L22; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/61.0.3163.98 Mobile Safari/537.36','2017-10-16 11:09:01',0)<br>Column count doesn't match value count at row 1
+10/16/17 11:09:01,331 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:09:01     Connected close
+10/16/17 11:09:01,331 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:09:01     END INIT
+10/16/17 11:09:46,112 [1316] INFO VnpayGatewaylogger - Connected successfully
+10/16/17 11:09:46,113 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:09:46BEGIN INIT
+10/16/17 11:09:46,114 [1316] INFO VnpayGatewaylogger - Error: INSERT INTO `orders` ( Amount,UserId, OrderDescription, IpAddr, UserAgent,CreatedDate,Status) VALUES ( ,'Thanh toan don hang test','117.6.131.222','Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) coc_coc_browser/66.4.120 Chrome/60.4.3112.120 Safari/537.36','2017-10-16 11:09:46',0)<br>You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''Thanh toan don hang test','117.6.131.222','Mozilla/5.0 (Windows NT 10.0; WOW64)' at line 1
+10/16/17 11:09:46,115 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:09:46     Connected close
+10/16/17 11:09:46,115 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:09:46     END INIT
+10/16/17 11:10:05,003 [1316] INFO VnpayGatewaylogger - Connected successfully
+10/16/17 11:10:05,003 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:10:05BEGIN INIT
+10/16/17 11:10:05,005 [1316] INFO VnpayGatewaylogger - Error: INSERT INTO `orders` ( Amount,UserId, OrderDescription, IpAddr, UserAgent,CreatedDate,Status) VALUES ( 100000,'Thanh toan don hang test','117.6.131.222','Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) coc_coc_browser/66.4.120 Chrome/60.4.3112.120 Safari/537.36','2017-10-16 11:10:05',0)<br>Column count doesn't match value count at row 1
+10/16/17 11:10:05,005 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:10:05     Connected close
+10/16/17 11:10:05,005 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:10:05     END INIT
+10/16/17 11:10:16,913 [1316] INFO VnpayGatewaylogger - Connected successfully
+10/16/17 11:10:16,913 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:10:16BEGIN INIT
+10/16/17 11:10:16,925 [1316] INFO VnpayGatewaylogger - Error: INSERT INTO `orders` ( Amount,UserId, OrderDescription, IpAddr, UserAgent,CreatedDate,Status) VALUES ( 100000,'Thanh toan don hang test','117.6.131.222','Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) coc_coc_browser/66.4.120 Chrome/60.4.3112.120 Safari/537.36','2017-10-16 11:10:16',0)<br>Column count doesn't match value count at row 1
+10/16/17 11:10:16,925 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:10:16     Connected close
+10/16/17 11:10:16,925 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:10:16     END INIT
+10/16/17 11:12:10,966 [1316] INFO VnpayGatewaylogger - Connected successfully
+10/16/17 11:12:10,966 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:12:10BEGIN INIT
+10/16/17 11:12:10,969 [1316] INFO VnpayGatewaylogger - Error: INSERT INTO `orders` ( Amount,UserId, OrderDescription, IpAddr, UserAgent,CreatedDate,Status) VALUES ( 10000,'Thanh toan don hang test','117.6.131.222','Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) coc_coc_browser/66.4.120 Chrome/60.4.3112.120 Safari/537.36','2017-10-16 11:12:10',0)<br>Column count doesn't match value count at row 1
+10/16/17 11:12:10,969 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:12:10     Connected close
+10/16/17 11:12:10,969 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:12:10     END INIT
+10/16/17 11:12:17,058 [1316] INFO VnpayGatewaylogger - Connected successfully
+10/16/17 11:12:17,058 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:12:17BEGIN INIT
+10/16/17 11:12:17,060 [1316] INFO VnpayGatewaylogger - Error: INSERT INTO `orders` ( Amount,UserId, OrderDescription, IpAddr, UserAgent,CreatedDate,Status) VALUES ( 100000,'Thanh toan don hang test','117.6.131.222','Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) coc_coc_browser/66.4.120 Chrome/60.4.3112.120 Safari/537.36','2017-10-16 11:12:17',0)<br>Column count doesn't match value count at row 1
+10/16/17 11:12:17,060 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:12:17     Connected close
+10/16/17 11:12:17,061 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:12:17     END INIT
+10/16/17 11:12:35,931 [1316] INFO VnpayGatewaylogger - Connected successfully
+10/16/17 11:12:35,932 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:12:35BEGIN INIT
+10/16/17 11:12:35,988 [1316] INFO VnpayGatewaylogger - New record created successfully
+10/16/17 11:12:35,988 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:12:35     Connected close
+10/16/17 11:12:35,988 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:12:35     END INIT
+10/16/17 11:12:40,255 [1316] INFO VnpayGatewaylogger - Connected successfully
+10/16/17 11:12:40,256 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:12:40BEGIN INIT
+10/16/17 11:12:40,337 [1316] INFO VnpayGatewaylogger - New record created successfully
+10/16/17 11:12:40,337 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:12:40     Connected close
+10/16/17 11:12:40,338 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:12:40     END INIT
+10/16/17 11:13:22,658 [1316] INFO VnpayGatewaylogger - Connected successfully
+10/16/17 11:13:22,658 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:13:22BEGIN INIT
+10/16/17 11:13:22,719 [1316] INFO VnpayGatewaylogger - New record created successfully
+10/16/17 11:13:22,720 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:13:22     Connected close
+10/16/17 11:13:22,720 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:13:22     END INIT
+10/16/17 11:13:37,090 [1316] INFO VnpayGatewaylogger - Connected successfully
+10/16/17 11:13:37,090 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:13:37BEGIN INIT
+10/16/17 11:13:37,152 [1316] INFO VnpayGatewaylogger - New record created successfully
+10/16/17 11:13:37,152 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:13:37     Connected close
+10/16/17 11:13:37,152 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:13:37     END INIT
+10/16/17 11:14:26,503 [1316] INFO VnpayGatewaylogger - Connected successfully
+10/16/17 11:14:26,504 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:14:26BEGIN INIT
+10/16/17 11:14:26,506 [1316] INFO VnpayGatewaylogger - Error: INSERT INTO `orders` ( Amount,UserId, OrderDescription, IpAddr, UserAgent,CreatedDate,Status) VALUES ( 100000,,'Thanh toan don hang test','117.6.131.222','Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) coc_coc_browser/66.4.120 Chrome/60.4.3112.120 Safari/537.36','2017-10-16 11:14:26',0)<br>You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''Thanh toan don hang test','117.6.131.222','Mozilla/5.0 (Windows NT 10.0; WOW64)' at line 1
+10/16/17 11:14:26,506 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:14:26     Connected close
+10/16/17 11:14:26,506 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:14:26     END INIT
+10/16/17 11:20:31,984 [1316] INFO VnpayGatewaylogger - Connected successfully
+10/16/17 11:20:31,984 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:20:31BEGIN INIT
+10/16/17 11:20:31,996 [1316] INFO VnpayGatewaylogger - Error: INSERT INTO `orders` ( Amount,UserId, OrderDescription, IpAddr, UserAgent,CreatedDate,Status) VALUES ( 100000,,'Thanh toan don hang test','117.6.131.222','Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) coc_coc_browser/66.4.120 Chrome/60.4.3112.120 Safari/537.36','2017-10-16 11:20:31',0)<br>You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''Thanh toan don hang test','117.6.131.222','Mozilla/5.0 (Windows NT 10.0; WOW64)' at line 1
+10/16/17 11:20:31,996 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:20:31     Connected close
+10/16/17 11:20:31,996 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:20:31     END INIT
+10/16/17 11:20:34,851 [1316] INFO VnpayGatewaylogger - Connected successfully
+10/16/17 11:20:34,851 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:20:34BEGIN INIT
+10/16/17 11:20:34,853 [1316] INFO VnpayGatewaylogger - Error: INSERT INTO `orders` ( Amount,UserId, OrderDescription, IpAddr, UserAgent,CreatedDate,Status) VALUES ( 100000,,'Thanh toan don hang test','117.6.131.222','Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) coc_coc_browser/66.4.120 Chrome/60.4.3112.120 Safari/537.36','2017-10-16 11:20:34',0)<br>You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''Thanh toan don hang test','117.6.131.222','Mozilla/5.0 (Windows NT 10.0; WOW64)' at line 1
+10/16/17 11:20:34,853 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:20:34     Connected close
+10/16/17 11:20:34,853 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:20:34     END INIT
+10/16/17 11:21:43,421 [1316] INFO VnpayGatewaylogger - Connected successfully
+10/16/17 11:21:43,421 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:21:43BEGIN INIT
+10/16/17 11:21:43,433 [1316] INFO VnpayGatewaylogger - Error: INSERT INTO `orders` ( Amount,UserId, OrderDescription, IpAddr, UserAgent,CreatedDate,Status) VALUES ( 10000,,'Thanh toan don hang test','117.6.131.222','Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) coc_coc_browser/66.4.120 Chrome/60.4.3112.120 Safari/537.36','2017-10-16 11:21:43',0)<br>You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''Thanh toan don hang test','117.6.131.222','Mozilla/5.0 (Windows NT 10.0; WOW64)' at line 1
+10/16/17 11:21:43,433 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:21:43     Connected close
+10/16/17 11:21:43,433 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:21:43     END INIT
+10/16/17 11:22:02,466 [1316] INFO VnpayGatewaylogger - Connected successfully
+10/16/17 11:22:02,467 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:22:02BEGIN INIT
+10/16/17 11:22:02,518 [1316] INFO VnpayGatewaylogger - New record created successfully
+10/16/17 11:22:02,519 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:22:02     Connected close
+10/16/17 11:22:02,519 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:22:02     END INIT
+10/16/17 11:22:06,637 [1316] INFO VnpayGatewaylogger - Connected successfully
+10/16/17 11:22:06,637 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:22:06BEGIN INIT
+10/16/17 11:22:06,702 [1316] INFO VnpayGatewaylogger - New record created successfully
+10/16/17 11:22:06,702 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:22:06     Connected close
+10/16/17 11:22:06,702 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:22:06     END INIT
+10/16/17 11:24:49,772 [1316] INFO VnpayGatewaylogger - Connected successfully
+10/16/17 11:24:49,773 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:24:49BEGIN INIT
+10/16/17 11:24:49,830 [1316] INFO VnpayGatewaylogger - New record created successfully
+10/16/17 11:24:49,830 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:24:49     Connected close
+10/16/17 11:24:49,830 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:24:49     END INIT
+10/16/17 11:25:54,475 [1316] INFO VnpayGatewaylogger - Connected successfully
+10/16/17 11:25:54,475 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:25:54BEGIN INIT
+10/16/17 11:25:54,528 [1316] INFO VnpayGatewaylogger - New record created successfully
+10/16/17 11:25:54,528 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:25:54     Connected close
+10/16/17 11:25:54,528 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:25:54     END INIT
+10/16/17 11:26:31,160 [1316] INFO VnpayGatewaylogger - Connected successfully
+10/16/17 11:26:31,160 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:26:31BEGIN INIT
+10/16/17 11:26:31,218 [1316] INFO VnpayGatewaylogger - New record created successfully
+10/16/17 11:26:31,218 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:26:31     Connected close
+10/16/17 11:26:31,218 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:26:31     END INIT
+10/16/17 11:44:42,563 [1316] INFO VnpayGatewaylogger - Connected successfully
+10/16/17 11:44:42,563 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:44:42BEGIN INIT
+10/16/17 11:44:42,624 [1316] INFO VnpayGatewaylogger - New record created successfully
+10/16/17 11:44:42,624 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:44:42     Connected close
+10/16/17 11:44:42,624 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:44:42     END INIT
+10/16/17 11:45:27,264 [1316] INFO VnpayGatewaylogger - Connected successfully
+10/16/17 11:45:27,264 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:45:27BEGIN INIT
+10/16/17 11:45:27,397 [1316] INFO VnpayGatewaylogger - New record created successfully
+10/16/17 11:45:27,398 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:45:27     Connected close
+10/16/17 11:45:27,398 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:45:27     END INIT
+10/16/17 11:47:00,962 [1316] INFO VnpayGatewaylogger - Connected successfully
+10/16/17 11:47:00,963 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:47:00BEGIN INIT
+10/16/17 11:47:01,028 [1316] INFO VnpayGatewaylogger - New record created successfully
+10/16/17 11:47:01,028 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:47:00     Connected close
+10/16/17 11:47:01,028 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:47:00     END INIT
+10/16/17 11:47:16,707 [1316] INFO VnpayGatewaylogger - Connected successfully
+10/16/17 11:47:16,707 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:47:16BEGIN INIT
+10/16/17 11:47:16,769 [1316] INFO VnpayGatewaylogger - New record created successfully
+10/16/17 11:47:16,769 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:47:16     Connected close
+10/16/17 11:47:16,769 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:47:16     END INIT
+10/16/17 11:47:50,857 [1316] INFO VnpayGatewaylogger - Connected successfully
+10/16/17 11:47:50,857 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:47:50BEGIN INIT
+10/16/17 11:47:50,869 [1316] INFO VnpayGatewaylogger - Error: INSERT INTO `orders` ( Amount, OrderDescription, IpAddr, UserAgent,CreatedDate,Status) VALUES ( ,'Thanh toan don hang test','117.6.131.222','Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) coc_coc_browser/66.4.120 Chrome/60.4.3112.120 Safari/537.36','2017-10-16 11:47:50',0)<br>You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''Thanh toan don hang test','117.6.131.222','Mozilla/5.0 (Windows NT 10.0; WOW64)' at line 1
+10/16/17 11:47:50,869 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:47:50     Connected close
+10/16/17 11:47:50,869 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:47:50     END INIT
+10/16/17 11:50:51,138 [1316] INFO VnpayGatewaylogger - Connected successfully
+10/16/17 11:50:51,138 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:50:51BEGIN INIT
+10/16/17 11:50:51,140 [1316] INFO VnpayGatewaylogger - Error: INSERT INTO `orders` ( Amount,UserId OrderDescription, IpAddr, UserAgent,CreatedDate,Status) VALUES ( 200000, , 'Thanh toan don hang test','117.6.131.222','Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) coc_coc_browser/66.4.120 Chrome/60.4.3112.120 Safari/537.36','2017-10-16 11:50:51',0)<br>You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'OrderDescription, IpAddr, UserAgent,CreatedDate,Status) VALUES ( 200000, , 'Than' at line 1
+10/16/17 11:50:51,140 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:50:51     Connected close
+10/16/17 11:50:51,140 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:50:51     END INIT
+10/16/17 11:51:13,632 [1316] INFO VnpayGatewaylogger - Connected successfully
+10/16/17 11:51:13,632 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:51:13BEGIN INIT
+10/16/17 11:51:13,636 [1316] INFO VnpayGatewaylogger - Error: INSERT INTO `orders` ( Amount,UserId OrderDescription, IpAddr, UserAgent,CreatedDate,Status) VALUES ( 200000, 10, 'Thanh toan don hang test','117.6.131.222','Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) coc_coc_browser/66.4.120 Chrome/60.4.3112.120 Safari/537.36','2017-10-16 11:51:13',0)<br>You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'OrderDescription, IpAddr, UserAgent,CreatedDate,Status) VALUES ( 200000, 10, 'Th' at line 1
+10/16/17 11:51:13,636 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:51:13     Connected close
+10/16/17 11:51:13,636 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:51:13     END INIT
+10/16/17 11:52:02,639 [1316] INFO VnpayGatewaylogger - Connected successfully
+10/16/17 11:52:02,639 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:52:02BEGIN INIT
+10/16/17 11:52:02,701 [1316] INFO VnpayGatewaylogger - New record created successfully
+10/16/17 11:52:02,701 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:52:02     Connected close
+10/16/17 11:52:02,701 [1316] INFO VnpayGatewaylogger - 2017-10-16 11:52:02     END INIT
+10/16/17 06:52:54,757 [1316] INFO VnpayGatewaylogger - BEGIN CALL IPN_URL
+10/16/17 06:52:54,769 [1316] INFO VnpayGatewaylogger - Connected successfully
+10/16/17 06:52:54,771 [1316] INFO VnpayGatewaylogger - 33
+10/16/17 06:52:54,832 [1316] INFO VnpayGatewaylogger - Update record created successfully
+10/16/17 06:52:54,833 [1316] INFO VnpayGatewaylogger - Connected close
+10/16/17 06:52:54,833 [1316] INFO VnpayGatewaylogger - END IPNURL
+10/16/17 18:31:52,317 [1316] INFO VnpayGatewaylogger - Connected successfully
+10/16/17 18:31:52,318 [1316] INFO VnpayGatewaylogger - 2017-10-16 18:31:52BEGIN INIT
+10/16/17 18:31:52,378 [1316] INFO VnpayGatewaylogger - New record created successfully
+10/16/17 18:31:52,378 [1316] INFO VnpayGatewaylogger - 2017-10-16 18:31:52     Connected close
+10/16/17 18:31:52,378 [1316] INFO VnpayGatewaylogger - 2017-10-16 18:31:52     END INIT
+10/23/17 17:22:59,751 [1316] INFO VnpayGatewaylogger - Connected successfully
+10/23/17 17:22:59,760 [1316] INFO VnpayGatewaylogger - 2017-10-23 17:22:59BEGIN INIT
+10/23/17 17:22:59,820 [1316] INFO VnpayGatewaylogger - New record created successfully
+10/23/17 17:22:59,820 [1316] INFO VnpayGatewaylogger - 2017-10-23 17:22:59     Connected close
+10/23/17 17:22:59,820 [1316] INFO VnpayGatewaylogger - 2017-10-23 17:22:59     END INIT
+10/23/17 17:30:58,648 [1316] INFO VnpayGatewaylogger - Connected successfully
+10/23/17 17:30:58,648 [1316] INFO VnpayGatewaylogger - 2017-10-23 17:30:58BEGIN INIT
+10/23/17 17:30:58,650 [1316] INFO VnpayGatewaylogger - Error: INSERT INTO `orders` ( Amount,UserId, OrderDescription, IpAddr, UserAgent,CreatedDate,Status) VALUES ( , , 'Thanh toan don hang test','14.162.223.38','Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:56.0) Gecko/20100101 Firefox/56.0','2017-10-23 17:30:58',0)<br>You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' , 'Thanh toan don hang test','14.162.223.38','Mozilla/5.0 (Windows NT 10.0; Win' at line 1
+10/23/17 17:30:58,650 [1316] INFO VnpayGatewaylogger - 2017-10-23 17:30:58     Connected close
+10/23/17 17:30:58,650 [1316] INFO VnpayGatewaylogger - 2017-10-23 17:30:58     END INIT
+10/23/17 17:31:06,058 [1316] INFO VnpayGatewaylogger - Connected successfully
+10/23/17 17:31:06,059 [1316] INFO VnpayGatewaylogger - 2017-10-23 17:31:06BEGIN INIT
+10/23/17 17:31:06,062 [1316] INFO VnpayGatewaylogger - Error: INSERT INTO `orders` ( Amount,UserId, OrderDescription, IpAddr, UserAgent,CreatedDate,Status) VALUES ( , , 'Thanh toan don hang test','14.162.223.38','Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:56.0) Gecko/20100101 Firefox/56.0','2017-10-23 17:31:06',0)<br>You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' , 'Thanh toan don hang test','14.162.223.38','Mozilla/5.0 (Windows NT 10.0; Win' at line 1
+10/23/17 17:31:06,062 [1316] INFO VnpayGatewaylogger - 2017-10-23 17:31:06     Connected close
+10/23/17 17:31:06,062 [1316] INFO VnpayGatewaylogger - 2017-10-23 17:31:06     END INIT
+11/06/17 00:20:48,963 [2796] INFO VnpayGatewaylogger - Connected successfully
+11/06/17 00:20:48,971 [2796] INFO VnpayGatewaylogger - 2017-11-06 00:20:48BEGIN INIT
+11/06/17 00:20:48,975 [2796] INFO VnpayGatewaylogger - Error: INSERT INTO `orders` ( Amount,UserId, OrderDescription, IpAddr, UserAgent,CreatedDate,Status) VALUES ( , , 'Thanh toan don hang test','42.112.157.254','Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) coc_coc_browser/66.4.120 Chrome/60.4.3112.120 Safari/537.36','2017-11-06 00:20:48',0)<br>You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' , 'Thanh toan don hang test','42.112.157.254','Mozilla/5.0 (Windows NT 10.0; WO' at line 1
+11/06/17 00:20:48,975 [2796] INFO VnpayGatewaylogger - 2017-11-06 00:20:48     Connected close
+11/06/17 00:20:48,975 [2796] INFO VnpayGatewaylogger - 2017-11-06 00:20:48     END INIT
+11/06/17 00:21:04,819 [2796] INFO VnpayGatewaylogger - Connected successfully
+11/06/17 00:21:04,819 [2796] INFO VnpayGatewaylogger - 2017-11-06 00:21:04BEGIN INIT
+11/06/17 00:21:04,881 [2796] INFO VnpayGatewaylogger - New record created successfully
+11/06/17 00:21:04,882 [2796] INFO VnpayGatewaylogger - 2017-11-06 00:21:04     Connected close
+11/06/17 00:21:04,882 [2796] INFO VnpayGatewaylogger - 2017-11-06 00:21:04     END INIT
+11/06/17 01:33:56,443 [2796] INFO VnpayGatewaylogger - Connected successfully
+11/06/17 01:33:56,443 [2796] INFO VnpayGatewaylogger - 2017-11-06 01:33:56BEGIN INIT
+11/06/17 01:33:56,456 [2796] INFO VnpayGatewaylogger - Error: INSERT INTO `orders` ( Amount,UserId, OrderDescription, IpAddr, UserAgent,CreatedDate,Status) VALUES ( , , '','42.112.157.254','Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) coc_coc_browser/66.4.120 Chrome/60.4.3112.120 Safari/537.36','2017-11-06 01:33:56',0)<br>You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' , '','42.112.157.254','Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 ' at line 1
+11/06/17 01:33:56,456 [2796] INFO VnpayGatewaylogger - 2017-11-06 01:33:56     Connected close
+11/06/17 01:33:56,456 [2796] INFO VnpayGatewaylogger - 2017-11-06 01:33:56     END INIT
+11/06/17 01:34:18,476 [2796] INFO VnpayGatewaylogger - Connected successfully
+11/06/17 01:34:18,476 [2796] INFO VnpayGatewaylogger - 2017-11-06 01:34:18BEGIN INIT
+11/06/17 01:34:18,478 [2796] INFO VnpayGatewaylogger - Error: INSERT INTO `orders` ( Amount,UserId, OrderDescription, IpAddr, UserAgent,CreatedDate,Status) VALUES ( , , '','42.112.157.254','Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) coc_coc_browser/66.4.120 Chrome/60.4.3112.120 Safari/537.36','2017-11-06 01:34:18',0)<br>You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' , '','42.112.157.254','Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 ' at line 1
+11/06/17 01:34:18,478 [2796] INFO VnpayGatewaylogger - 2017-11-06 01:34:18     Connected close
+11/06/17 01:34:18,478 [2796] INFO VnpayGatewaylogger - 2017-11-06 01:34:18     END INIT
+11/06/17 03:33:25,345 [2796] INFO VnpayGatewaylogger - BEGIN CALL IPN_URL
+11/06/17 03:33:25,349 [2796] INFO VnpayGatewaylogger - Connected successfully
+11/06/17 03:33:25,351 [2796] INFO VnpayGatewaylogger - Connected close
+11/06/17 03:33:25,352 [2796] INFO VnpayGatewaylogger - END IPNURL
+11/06/17 08:06:41,712 [2796] INFO VnpayGatewaylogger - BEGIN CALL IPN_URL
+11/06/17 08:06:41,715 [2796] INFO VnpayGatewaylogger - Connected successfully
+11/06/17 08:06:41,718 [2796] INFO VnpayGatewaylogger - Connected close
+11/06/17 08:06:41,718 [2796] INFO VnpayGatewaylogger - END IPNURL
+11/06/17 14:09:01,283 [2796] INFO VnpayGatewaylogger - Connected successfully
+11/06/17 14:09:01,283 [2796] INFO VnpayGatewaylogger - 2017-11-06 14:09:01BEGIN INIT
+11/06/17 14:09:01,296 [2796] INFO VnpayGatewaylogger - Error: INSERT INTO `orders` ( Amount,UserId, OrderDescription, IpAddr, UserAgent,CreatedDate,Status) VALUES ( 9191, , 'Thanh toan don hang test','117.6.131.222','Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) coc_coc_browser/66.4.120 Chrome/60.4.3112.120 Safari/537.36','2017-11-06 14:09:01',0)<br>You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' 'Thanh toan don hang test','117.6.131.222','Mozilla/5.0 (Windows NT 10.0; WOW64' at line 1
+11/06/17 14:09:01,296 [2796] INFO VnpayGatewaylogger - 2017-11-06 14:09:01     Connected close
+11/06/17 14:09:01,296 [2796] INFO VnpayGatewaylogger - 2017-11-06 14:09:01     END INIT
+11/06/17 14:09:03,988 [2796] INFO VnpayGatewaylogger - Connected successfully
+11/06/17 14:09:03,988 [2796] INFO VnpayGatewaylogger - 2017-11-06 14:09:03BEGIN INIT
+11/06/17 14:09:03,990 [2796] INFO VnpayGatewaylogger - Error: INSERT INTO `orders` ( Amount,UserId, OrderDescription, IpAddr, UserAgent,CreatedDate,Status) VALUES ( 9191, , 'Thanh toan don hang test','117.6.131.222','Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) coc_coc_browser/66.4.120 Chrome/60.4.3112.120 Safari/537.36','2017-11-06 14:09:03',0)<br>You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' 'Thanh toan don hang test','117.6.131.222','Mozilla/5.0 (Windows NT 10.0; WOW64' at line 1
+11/06/17 14:09:03,990 [2796] INFO VnpayGatewaylogger - 2017-11-06 14:09:03     Connected close
+11/06/17 14:09:03,990 [2796] INFO VnpayGatewaylogger - 2017-11-06 14:09:03     END INIT
+11/06/17 14:09:18,899 [2796] INFO VnpayGatewaylogger - Connected successfully
+11/06/17 14:09:18,900 [2796] INFO VnpayGatewaylogger - 2017-11-06 14:09:18BEGIN INIT
+11/06/17 14:09:19,006 [2796] INFO VnpayGatewaylogger - New record created successfully
+11/06/17 14:09:19,006 [2796] INFO VnpayGatewaylogger - 2017-11-06 14:09:18     Connected close
+11/06/17 14:09:19,007 [2796] INFO VnpayGatewaylogger - 2017-11-06 14:09:18     END INIT
+11/06/17 08:09:59,523 [2796] INFO VnpayGatewaylogger - BEGIN CALL IPN_URL
+11/06/17 08:09:59,529 [2796] INFO VnpayGatewaylogger - Connected successfully
+11/06/17 08:09:59,531 [2796] INFO VnpayGatewaylogger - 37
+11/06/17 08:09:59,600 [2796] INFO VnpayGatewaylogger - Update record created successfully
+11/06/17 08:09:59,600 [2796] INFO VnpayGatewaylogger - Connected close
+11/06/17 08:09:59,600 [2796] INFO VnpayGatewaylogger - END IPNURL
+11/06/17 08:17:23,294 [2796] INFO VnpayGatewaylogger - BEGIN CALL IPN_URL
+11/06/17 08:17:23,306 [2796] INFO VnpayGatewaylogger - Connected successfully
+11/06/17 08:17:23,309 [2796] INFO VnpayGatewaylogger - Connected close
+11/06/17 08:17:23,309 [2796] INFO VnpayGatewaylogger - END IPNURL
+11/06/17 08:19:36,591 [2796] INFO VnpayGatewaylogger - BEGIN CALL IPN_URL
+11/06/17 08:19:36,594 [2796] INFO VnpayGatewaylogger - Connected successfully
+11/06/17 08:19:36,606 [2796] INFO VnpayGatewaylogger - Connected close
+11/06/17 08:19:36,607 [2796] INFO VnpayGatewaylogger - END IPNURL
+11/06/17 08:25:50,465 [2796] INFO VnpayGatewaylogger - BEGIN CALL IPN_URL
+11/06/17 08:25:50,477 [2796] INFO VnpayGatewaylogger - Connected successfully
+11/06/17 08:25:50,480 [2796] INFO VnpayGatewaylogger - Connected close
+11/06/17 08:25:50,480 [2796] INFO VnpayGatewaylogger - END IPNURL
+11/06/17 08:35:58,323 [2796] INFO VnpayGatewaylogger - BEGIN CALL IPN_URL
+11/06/17 08:35:58,335 [2796] INFO VnpayGatewaylogger - Connected successfully
+11/06/17 08:35:58,337 [2796] INFO VnpayGatewaylogger - Connected close
+11/06/17 08:35:58,337 [2796] INFO VnpayGatewaylogger - END IPNURL
+11/06/17 09:01:24,139 [2796] INFO VnpayGatewaylogger - BEGIN CALL IPN_URL
+11/06/17 09:01:24,151 [2796] INFO VnpayGatewaylogger - Connected successfully
+11/06/17 09:01:24,163 [2796] INFO VnpayGatewaylogger - Connected close
+11/06/17 09:01:24,163 [2796] INFO VnpayGatewaylogger - END IPNURL
+11/06/17 09:03:12,657 [2796] INFO VnpayGatewaylogger - BEGIN CALL IPN_URL
+11/06/17 09:03:12,670 [2796] INFO VnpayGatewaylogger - Connected successfully
+11/06/17 09:03:12,682 [2796] INFO VnpayGatewaylogger - Connected close
+11/06/17 09:03:12,682 [2796] INFO VnpayGatewaylogger - END IPNURL
+11/06/17 09:07:44,037 [2796] INFO VnpayGatewaylogger - BEGIN CALL IPN_URL
+11/06/17 09:07:44,049 [2796] INFO VnpayGatewaylogger - Connected successfully
+11/06/17 09:07:44,051 [2796] INFO VnpayGatewaylogger - Connected close
+11/06/17 09:07:44,051 [2796] INFO VnpayGatewaylogger - END IPNURL
+11/06/17 09:16:52,500 [2796] INFO VnpayGatewaylogger - BEGIN CALL IPN_URL
+11/06/17 09:16:52,503 [2796] INFO VnpayGatewaylogger - Connected successfully
+11/06/17 09:16:52,506 [2796] INFO VnpayGatewaylogger - Connected close
+11/06/17 09:16:52,506 [2796] INFO VnpayGatewaylogger - END IPNURL
+11/06/17 09:28:47,689 [2796] INFO VnpayGatewaylogger - BEGIN CALL IPN_URL
+11/06/17 09:28:47,692 [2796] INFO VnpayGatewaylogger - Connected successfully
+11/06/17 09:28:47,695 [2796] INFO VnpayGatewaylogger - Connected close
+11/06/17 09:28:47,695 [2796] INFO VnpayGatewaylogger - END IPNURL
+11/06/17 09:30:30,352 [2796] INFO VnpayGatewaylogger - BEGIN CALL IPN_URL
+11/06/17 09:30:30,364 [2796] INFO VnpayGatewaylogger - Connected successfully
+11/06/17 09:30:30,366 [2796] INFO VnpayGatewaylogger - Connected close
+11/06/17 09:30:30,366 [2796] INFO VnpayGatewaylogger - END IPNURL
+11/24/17 11:03:55,715 [6504] INFO VnpayGatewaylogger - Connected successfully
+11/24/17 11:03:55,744 [6504] INFO VnpayGatewaylogger - 2017-11-24 11:03:55BEGIN INIT
+11/24/17 11:03:55,868 [6504] INFO VnpayGatewaylogger - New record created successfully
+11/24/17 11:03:55,868 [6504] INFO VnpayGatewaylogger - 2017-11-24 11:03:55     Connected close
+11/24/17 11:03:55,868 [6504] INFO VnpayGatewaylogger - 2017-11-24 11:03:55     END INIT
+11/24/17 11:04:02,661 [6504] INFO VnpayGatewaylogger - Connected successfully
+11/24/17 11:04:02,662 [6504] INFO VnpayGatewaylogger - 2017-11-24 11:04:02BEGIN INIT
+11/24/17 11:04:02,745 [6504] INFO VnpayGatewaylogger - New record created successfully
+11/24/17 11:04:02,745 [6504] INFO VnpayGatewaylogger - 2017-11-24 11:04:02     Connected close
+11/24/17 11:04:02,745 [6504] INFO VnpayGatewaylogger - 2017-11-24 11:04:02     END INIT
+11/24/17 11:05:37,055 [6504] INFO VnpayGatewaylogger - Connected successfully
+11/24/17 11:05:37,056 [6504] INFO VnpayGatewaylogger - 2017-11-24 11:05:37BEGIN INIT
+11/24/17 11:05:37,170 [6504] INFO VnpayGatewaylogger - New record created successfully
+11/24/17 11:05:37,170 [6504] INFO VnpayGatewaylogger - 2017-11-24 11:05:37     Connected close
+11/24/17 11:05:37,171 [6504] INFO VnpayGatewaylogger - 2017-11-24 11:05:37     END INIT
+11/24/17 11:05:46,248 [6504] INFO VnpayGatewaylogger - Connected successfully
+11/24/17 11:05:46,249 [6504] INFO VnpayGatewaylogger - 2017-11-24 11:05:46BEGIN INIT
+11/24/17 11:05:46,342 [6504] INFO VnpayGatewaylogger - New record created successfully
+11/24/17 11:05:46,342 [6504] INFO VnpayGatewaylogger - 2017-11-24 11:05:46     Connected close
+11/24/17 11:05:46,343 [6504] INFO VnpayGatewaylogger - 2017-11-24 11:05:46     END INIT
+11/24/17 11:05:52,332 [6504] INFO VnpayGatewaylogger - Connected successfully
+11/24/17 11:05:52,333 [6504] INFO VnpayGatewaylogger - 2017-11-24 11:05:52BEGIN INIT
+11/24/17 11:05:52,438 [6504] INFO VnpayGatewaylogger - New record created successfully
+11/24/17 11:05:52,438 [6504] INFO VnpayGatewaylogger - 2017-11-24 11:05:52     Connected close
+11/24/17 11:05:52,439 [6504] INFO VnpayGatewaylogger - 2017-11-24 11:05:52     END INIT
+11/24/17 11:06:01,850 [6504] INFO VnpayGatewaylogger - Connected successfully
+11/24/17 11:06:01,851 [6504] INFO VnpayGatewaylogger - 2017-11-24 11:06:01BEGIN INIT
+11/24/17 11:06:01,905 [6504] INFO VnpayGatewaylogger - New record created successfully
+11/24/17 11:06:01,905 [6504] INFO VnpayGatewaylogger - 2017-11-24 11:06:01     Connected close
+11/24/17 11:06:01,905 [6504] INFO VnpayGatewaylogger - 2017-11-24 11:06:01     END INIT
+11/24/17 11:11:02,528 [6504] INFO VnpayGatewaylogger - Connected successfully
+11/24/17 11:11:02,529 [6504] INFO VnpayGatewaylogger - 2017-11-24 11:11:02BEGIN INIT
+11/24/17 11:11:02,531 [6504] INFO VnpayGatewaylogger - Error: INSERT INTO `orders` ( Amount,UserId, OrderDescription, IpAddr, UserAgent,CreatedDate,Status) VALUES ( , , 'Thanh toan don hang test','::1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36','2017-11-24 11:11:02',0)<br>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' , 'Thanh toan don hang test','::1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) A' at line 1
+11/24/17 11:11:02,531 [6504] INFO VnpayGatewaylogger - 2017-11-24 11:11:02     Connected close
+11/24/17 11:11:02,532 [6504] INFO VnpayGatewaylogger - 2017-11-24 11:11:02     END INIT
+11/24/17 11:11:47,364 [6504] INFO VnpayGatewaylogger - Connected successfully
+11/24/17 11:11:47,366 [6504] INFO VnpayGatewaylogger - 2017-11-24 11:11:47BEGIN INIT
+11/24/17 11:11:47,369 [6504] INFO VnpayGatewaylogger - Error: INSERT INTO `orders` ( Amount,UserId, OrderDescription, IpAddr, UserAgent,CreatedDate,Status) VALUES ( , , 'Thanh toan don hang test','::1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36','2017-11-24 11:11:47',0)<br>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' , 'Thanh toan don hang test','::1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) A' at line 1
+11/24/17 11:11:47,422 [6504] INFO VnpayGatewaylogger - 2017-11-24 11:11:47     Connected close
+11/24/17 11:11:47,422 [6504] INFO VnpayGatewaylogger - 2017-11-24 11:11:47     END INIT
+11/24/17 11:12:40,390 [6504] INFO VnpayGatewaylogger - Connected successfully
+11/24/17 11:12:40,391 [6504] INFO VnpayGatewaylogger - 2017-11-24 11:12:40BEGIN INIT
+11/24/17 11:12:40,392 [6504] INFO VnpayGatewaylogger - Error: INSERT INTO `orders` ( Amount,UserId, OrderDescription, IpAddr, UserAgent,CreatedDate,Status) VALUES ( , , 'Thanh toan don hang test','::1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36','2017-11-24 11:12:40',0)<br>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' , 'Thanh toan don hang test','::1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) A' at line 1
+11/24/17 11:12:40,393 [6504] INFO VnpayGatewaylogger - 2017-11-24 11:12:40     Connected close
+11/24/17 11:12:40,393 [6504] INFO VnpayGatewaylogger - 2017-11-24 11:12:40     END INIT
+11/24/17 11:20:43,906 [6504] INFO VnpayGatewaylogger - Connected successfully
+11/24/17 11:20:43,906 [6504] INFO VnpayGatewaylogger - 2017-11-24 11:20:43BEGIN INIT
+11/24/17 11:20:44,000 [6504] INFO VnpayGatewaylogger - New record created successfully
+11/24/17 11:20:44,000 [6504] INFO VnpayGatewaylogger - 2017-11-24 11:20:43     Connected close
+11/24/17 11:20:44,000 [6504] INFO VnpayGatewaylogger - 2017-11-24 11:20:43     END INIT
+11/24/17 11:27:34,600 [6504] INFO VnpayGatewaylogger - Connected successfully
+11/24/17 11:27:34,601 [6504] INFO VnpayGatewaylogger - 2017-11-24 11:27:34BEGIN INIT
+11/24/17 11:27:34,780 [6504] INFO VnpayGatewaylogger - New record created successfully
+11/24/17 11:27:34,781 [6504] INFO VnpayGatewaylogger - 2017-11-24 11:27:34     Connected close
+11/24/17 11:27:34,781 [6504] INFO VnpayGatewaylogger - 2017-11-24 11:27:34     END INIT
+11/24/17 11:27:51,175 [6504] INFO VnpayGatewaylogger - Connected successfully
+11/24/17 11:27:51,176 [6504] INFO VnpayGatewaylogger - 2017-11-24 11:27:51BEGIN INIT
+11/24/17 11:27:51,371 [6504] INFO VnpayGatewaylogger - New record created successfully
+11/24/17 11:27:51,372 [6504] INFO VnpayGatewaylogger - 2017-11-24 11:27:51     Connected close
+11/24/17 11:27:51,372 [6504] INFO VnpayGatewaylogger - 2017-11-24 11:27:51     END INIT
+11/29/17 13:44:38,895 [9728] INFO VnpayGatewaylogger - Connected successfully
+11/29/17 13:44:38,955 [9728] INFO VnpayGatewaylogger - 2017-11-29 13:44:38BEGIN INIT
+11/29/17 13:44:39,364 [9728] INFO VnpayGatewaylogger - New record created successfully
+11/29/17 13:44:39,364 [9728] INFO VnpayGatewaylogger - 2017-11-29 13:44:38     Connected close
+11/29/17 13:44:39,364 [9728] INFO VnpayGatewaylogger - 2017-11-29 13:44:38     END INIT
+11/29/17 15:39:24,597 [9728] INFO VnpayGatewaylogger - Connected successfully
+11/29/17 15:39:24,655 [9728] INFO VnpayGatewaylogger - 2017-11-29 15:39:24BEGIN INIT
+11/29/17 15:39:24,754 [9728] INFO VnpayGatewaylogger - Error: INSERT INTO `orders` ( Amount,UserId, OrderDescription, IpAddr, UserAgent,CreatedDate,Status) VALUES ( , , 'Thanh toan don hang test','::1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36','2017-11-29 15:39:24',0)<br>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' , 'Thanh toan don hang test','::1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) A' at line 1
+11/29/17 15:39:24,780 [9728] INFO VnpayGatewaylogger - 2017-11-29 15:39:24     Connected close
+11/29/17 15:39:24,781 [9728] INFO VnpayGatewaylogger - 2017-11-29 15:39:24     END INIT
+11/29/17 15:39:58,599 [9728] INFO VnpayGatewaylogger - Connected successfully
+11/29/17 15:39:58,600 [9728] INFO VnpayGatewaylogger - 2017-11-29 15:39:58BEGIN INIT
+11/29/17 15:39:59,014 [9728] INFO VnpayGatewaylogger - New record created successfully
+11/29/17 15:39:59,015 [9728] INFO VnpayGatewaylogger - 2017-11-29 15:39:58     Connected close
+11/29/17 15:39:59,015 [9728] INFO VnpayGatewaylogger - 2017-11-29 15:39:58     END INIT
+11/29/17 15:45:17,384 [9728] INFO VnpayGatewaylogger - Connected successfully
+11/29/17 15:45:17,439 [9728] INFO VnpayGatewaylogger - 2017-11-29 15:45:17BEGIN INIT
+11/29/17 15:45:17,441 [9728] INFO VnpayGatewaylogger - Error: INSERT INTO `orders` ( Amount,UserId, OrderDescription, IpAddr, UserAgent,CreatedDate,Status) VALUES ( , , 'Thanh toan don hang test','::1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36','2017-11-29 15:45:17',0)<br>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' , 'Thanh toan don hang test','::1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) A' at line 1
+11/29/17 15:45:17,441 [9728] INFO VnpayGatewaylogger - 2017-11-29 15:45:17     Connected close
+11/29/17 15:45:17,441 [9728] INFO VnpayGatewaylogger - 2017-11-29 15:45:17     END INIT
+11/29/17 15:45:34,253 [9728] INFO VnpayGatewaylogger - Connected successfully
+11/29/17 15:45:34,254 [9728] INFO VnpayGatewaylogger - 2017-11-29 15:45:34BEGIN INIT
+11/29/17 15:45:34,255 [9728] INFO VnpayGatewaylogger - Error: INSERT INTO `orders` ( Amount,UserId, OrderDescription, IpAddr, UserAgent,CreatedDate,Status) VALUES ( , 7, 'Thanh toan don hang test','::1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36','2017-11-29 15:45:34',0)<br>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' 7, 'Thanh toan don hang test','::1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) ' at line 1
+11/29/17 15:45:34,256 [9728] INFO VnpayGatewaylogger - 2017-11-29 15:45:34     Connected close
+11/29/17 15:45:34,256 [9728] INFO VnpayGatewaylogger - 2017-11-29 15:45:34     END INIT
+11/29/17 15:45:43,594 [9728] INFO VnpayGatewaylogger - Connected successfully
+11/29/17 15:45:43,595 [9728] INFO VnpayGatewaylogger - 2017-11-29 15:45:43BEGIN INIT
+11/29/17 15:45:43,597 [9728] INFO VnpayGatewaylogger - Error: INSERT INTO `orders` ( Amount,UserId, OrderDescription, IpAddr, UserAgent,CreatedDate,Status) VALUES ( , 7, 'Thanh toan don hang test','::1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36','2017-11-29 15:45:43',0)<br>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' 7, 'Thanh toan don hang test','::1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) ' at line 1
+11/29/17 15:45:43,597 [9728] INFO VnpayGatewaylogger - 2017-11-29 15:45:43     Connected close
+11/29/17 15:45:43,597 [9728] INFO VnpayGatewaylogger - 2017-11-29 15:45:43     END INIT
+11/29/17 15:51:33,210 [9728] INFO VnpayGatewaylogger - Connected successfully
+11/29/17 15:51:33,211 [9728] INFO VnpayGatewaylogger - 2017-11-29 15:51:33BEGIN INIT
+11/29/17 15:51:33,214 [9728] INFO VnpayGatewaylogger - Error: INSERT INTO `orders` ( Amount,UserId, OrderDescription, IpAddr, UserAgent,CreatedDate,Status) VALUES ( , 7, 'Thanh toan don hang test','::1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36','2017-11-29 15:51:33',0)<br>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' 7, 'Thanh toan don hang test','::1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) ' at line 1
+11/29/17 15:51:33,215 [9728] INFO VnpayGatewaylogger - 2017-11-29 15:51:33     Connected close
+11/29/17 15:51:33,216 [9728] INFO VnpayGatewaylogger - 2017-11-29 15:51:33     END INIT
+11/29/17 15:51:39,668 [9728] INFO VnpayGatewaylogger - Connected successfully
+11/29/17 15:51:39,671 [9728] INFO VnpayGatewaylogger - 2017-11-29 15:51:39BEGIN INIT
+11/29/17 15:51:39,674 [9728] INFO VnpayGatewaylogger - Error: INSERT INTO `orders` ( Amount,UserId, OrderDescription, IpAddr, UserAgent,CreatedDate,Status) VALUES ( , 7, 'Thanh toan don hang test','::1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36','2017-11-29 15:51:39',0)<br>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' 7, 'Thanh toan don hang test','::1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) ' at line 1
+11/29/17 15:51:39,674 [9728] INFO VnpayGatewaylogger - 2017-11-29 15:51:39     Connected close
+11/29/17 15:51:39,674 [9728] INFO VnpayGatewaylogger - 2017-11-29 15:51:39     END INIT
+11/29/17 15:51:48,526 [9728] INFO VnpayGatewaylogger - Connected successfully
+11/29/17 15:51:48,527 [9728] INFO VnpayGatewaylogger - 2017-11-29 15:51:48BEGIN INIT
+11/29/17 15:51:48,531 [9728] INFO VnpayGatewaylogger - Error: INSERT INTO `orders` ( Amount,UserId, OrderDescription, IpAddr, UserAgent,CreatedDate,Status) VALUES ( , 7, 'Thanh toan don hang test','::1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36','2017-11-29 15:51:48',0)<br>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' 7, 'Thanh toan don hang test','::1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) ' at line 1
+11/29/17 15:51:48,531 [9728] INFO VnpayGatewaylogger - 2017-11-29 15:51:48     Connected close
+11/29/17 15:51:48,531 [9728] INFO VnpayGatewaylogger - 2017-11-29 15:51:48     END INIT
+11/29/17 15:52:23,733 [9728] INFO VnpayGatewaylogger - Connected successfully
+11/29/17 15:52:23,734 [9728] INFO VnpayGatewaylogger - 2017-11-29 15:52:23BEGIN INIT
+11/29/17 15:52:23,795 [9728] INFO VnpayGatewaylogger - New record created successfully
+11/29/17 15:52:23,795 [9728] INFO VnpayGatewaylogger - 2017-11-29 15:52:23     Connected close
+11/29/17 15:52:23,796 [9728] INFO VnpayGatewaylogger - 2017-11-29 15:52:23     END INIT
+11/29/17 15:53:41,751 [9728] INFO VnpayGatewaylogger - Connected successfully
+11/29/17 15:53:41,752 [9728] INFO VnpayGatewaylogger - 2017-11-29 15:53:41BEGIN INIT
+11/29/17 15:53:41,755 [9728] INFO VnpayGatewaylogger - Error: INSERT INTO `orders` ( Amount,UserId, OrderDescription, IpAddr, UserAgent,CreatedDate,Status) VALUES ( , 7, 'Thanh toan don hang test','::1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36','2017-11-29 15:53:41',0)<br>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' 7, 'Thanh toan don hang test','::1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) ' at line 1
+11/29/17 15:53:41,756 [9728] INFO VnpayGatewaylogger - 2017-11-29 15:53:41     Connected close
+11/29/17 15:53:41,756 [9728] INFO VnpayGatewaylogger - 2017-11-29 15:53:41     END INIT
+11/29/17 15:54:06,213 [9728] INFO VnpayGatewaylogger - Connected successfully
+11/29/17 15:54:06,214 [9728] INFO VnpayGatewaylogger - 2017-11-29 15:54:06BEGIN INIT
+11/29/17 15:54:06,219 [9728] INFO VnpayGatewaylogger - Error: INSERT INTO `orders` ( Amount,UserId, OrderDescription, IpAddr, UserAgent,CreatedDate,Status) VALUES ( , 7, 'Thanh toan don hang test','::1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36','2017-11-29 15:54:06',0)<br>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' 7, 'Thanh toan don hang test','::1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) ' at line 1
+11/29/17 15:54:06,219 [9728] INFO VnpayGatewaylogger - 2017-11-29 15:54:06     Connected close
+11/29/17 15:54:06,219 [9728] INFO VnpayGatewaylogger - 2017-11-29 15:54:06     END INIT
+11/29/17 15:58:21,493 [9728] INFO VnpayGatewaylogger - Connected successfully
+11/29/17 15:58:21,495 [9728] INFO VnpayGatewaylogger - 2017-11-29 15:58:21BEGIN INIT
+11/29/17 15:58:21,564 [9728] INFO VnpayGatewaylogger - New record created successfully
+11/29/17 15:58:21,565 [9728] INFO VnpayGatewaylogger - 2017-11-29 15:58:21     Connected close
+11/29/17 15:58:21,565 [9728] INFO VnpayGatewaylogger - 2017-11-29 15:58:21     END INIT
+11/29/17 15:59:38,093 [9728] INFO VnpayGatewaylogger - Connected successfully
+11/29/17 15:59:38,094 [9728] INFO VnpayGatewaylogger - 2017-11-29 15:59:38BEGIN INIT
+11/29/17 15:59:38,096 [9728] INFO VnpayGatewaylogger - Error: INSERT INTO `orders` ( Amount,UserId, OrderDescription, IpAddr, UserAgent,CreatedDate,Status) VALUES ( , 8, 'Thanh toan don hang test','::1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36','2017-11-29 15:59:38',0)<br>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' 8, 'Thanh toan don hang test','::1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) ' at line 1
+11/29/17 15:59:38,096 [9728] INFO VnpayGatewaylogger - 2017-11-29 15:59:38     Connected close
+11/29/17 15:59:38,096 [9728] INFO VnpayGatewaylogger - 2017-11-29 15:59:38     END INIT
+11/29/17 17:01:27,650 [9728] INFO VnpayGatewaylogger - Connected successfully
+11/29/17 17:01:27,736 [9728] INFO VnpayGatewaylogger - 2017-11-29 17:01:27BEGIN INIT
+11/29/17 17:01:27,778 [9728] INFO VnpayGatewaylogger - Error: INSERT INTO `orders` ( Amount,UserId, OrderDescription, IpAddr, UserAgent,CreatedDate,Status) VALUES ( , 8, 'Thanh toan don hang test','::1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36','2017-11-29 17:01:27',0)<br>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' 8, 'Thanh toan don hang test','::1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) ' at line 1
+11/29/17 17:01:27,779 [9728] INFO VnpayGatewaylogger - 2017-11-29 17:01:27     Connected close
+11/29/17 17:01:27,779 [9728] INFO VnpayGatewaylogger - 2017-11-29 17:01:27     END INIT
+11/29/17 17:04:05,390 [9728] INFO VnpayGatewaylogger - Connected successfully
+11/29/17 17:04:05,392 [9728] INFO VnpayGatewaylogger - 2017-11-29 17:04:05BEGIN INIT
+11/29/17 17:04:05,398 [9728] INFO VnpayGatewaylogger - Error: INSERT INTO `orders` ( Amount,UserId, OrderDescription, IpAddr, UserAgent,CreatedDate,Status) VALUES ( , 8, 'Thanh toan don hang test','::1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36','2017-11-29 17:04:05',0)<br>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' 8, 'Thanh toan don hang test','::1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) ' at line 1
+11/29/17 17:04:05,399 [9728] INFO VnpayGatewaylogger - 2017-11-29 17:04:05     Connected close
+11/29/17 17:04:05,399 [9728] INFO VnpayGatewaylogger - 2017-11-29 17:04:05     END INIT
+11/29/17 17:05:31,961 [9728] INFO VnpayGatewaylogger - Connected successfully
+11/29/17 17:05:32,034 [9728] INFO VnpayGatewaylogger - 2017-11-29 17:05:32BEGIN INIT
+11/29/17 17:05:32,036 [9728] INFO VnpayGatewaylogger - Error: INSERT INTO `orders` ( Amount,UserId, OrderDescription, IpAddr, UserAgent,CreatedDate,Status) VALUES ( , 8, 'Thanh toan don hang test','::1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36','2017-11-29 17:05:32',0)<br>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' 8, 'Thanh toan don hang test','::1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) ' at line 1
+11/29/17 17:05:32,037 [9728] INFO VnpayGatewaylogger - 2017-11-29 17:05:32     Connected close
+11/29/17 17:05:32,037 [9728] INFO VnpayGatewaylogger - 2017-11-29 17:05:32     END INIT
+11/29/17 17:06:23,461 [9728] INFO VnpayGatewaylogger - Connected successfully
+11/29/17 17:06:23,462 [9728] INFO VnpayGatewaylogger - 2017-11-29 17:06:23BEGIN INIT
+11/29/17 17:06:23,464 [9728] INFO VnpayGatewaylogger - Error: INSERT INTO `orders` ( Amount,UserId, OrderDescription, IpAddr, UserAgent,CreatedDate,Status) VALUES ( , 8, 'Thanh toan don hang test','::1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36','2017-11-29 17:06:23',0)<br>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' 8, 'Thanh toan don hang test','::1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) ' at line 1
+11/29/17 17:06:23,465 [9728] INFO VnpayGatewaylogger - 2017-11-29 17:06:23     Connected close
+11/29/17 17:06:23,465 [9728] INFO VnpayGatewaylogger - 2017-11-29 17:06:23     END INIT
+11/29/17 17:07:23,301 [9728] INFO VnpayGatewaylogger - Connected successfully
+11/29/17 17:07:23,302 [9728] INFO VnpayGatewaylogger - 2017-11-29 17:07:23BEGIN INIT
+11/29/17 17:07:23,304 [9728] INFO VnpayGatewaylogger - Error: INSERT INTO `orders` ( Amount,UserId, OrderDescription, IpAddr, UserAgent,CreatedDate,Status) VALUES ( , 8, 'Thanh toan don hang test','::1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36','2017-11-29 17:07:23',0)<br>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' 8, 'Thanh toan don hang test','::1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) ' at line 1
+11/29/17 17:07:23,304 [9728] INFO VnpayGatewaylogger - 2017-11-29 17:07:23     Connected close
+11/29/17 17:07:23,304 [9728] INFO VnpayGatewaylogger - 2017-11-29 17:07:23     END INIT
+11/29/17 17:07:54,195 [9728] INFO VnpayGatewaylogger - Connected successfully
+11/29/17 17:07:54,196 [9728] INFO VnpayGatewaylogger - 2017-11-29 17:07:54BEGIN INIT
+11/29/17 17:07:54,199 [9728] INFO VnpayGatewaylogger - Error: INSERT INTO `orders` ( Amount,UserId, OrderDescription, IpAddr, UserAgent,CreatedDate,Status) VALUES ( , 1, 'Thanh toan don hang test','::1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36','2017-11-29 17:07:54',0)<br>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' 1, 'Thanh toan don hang test','::1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) ' at line 1
+11/29/17 17:07:54,199 [9728] INFO VnpayGatewaylogger - 2017-11-29 17:07:54     Connected close
+11/29/17 17:07:54,199 [9728] INFO VnpayGatewaylogger - 2017-11-29 17:07:54     END INIT
+11/29/17 17:10:27,594 [9728] INFO VnpayGatewaylogger - Connected successfully
+11/29/17 17:10:27,597 [9728] INFO VnpayGatewaylogger - 2017-11-29 17:10:27BEGIN INIT
+11/29/17 17:10:27,599 [9728] INFO VnpayGatewaylogger - Error: INSERT INTO `orders` ( Amount,UserId, OrderDescription, IpAddr, UserAgent,CreatedDate,Status) VALUES ( , 8, 'Thanh toan don hang test','::1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36','2017-11-29 17:10:27',0)<br>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' 8, 'Thanh toan don hang test','::1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) ' at line 1
+11/29/17 17:10:27,599 [9728] INFO VnpayGatewaylogger - 2017-11-29 17:10:27     Connected close
+11/29/17 17:10:27,599 [9728] INFO VnpayGatewaylogger - 2017-11-29 17:10:27     END INIT
+12/01/17 09:06:10,544 [3292] INFO VnpayGatewaylogger - Connected successfully
+12/01/17 09:06:11,595 [3292] INFO VnpayGatewaylogger - 2017-12-01 09:06:11BEGIN INIT
+12/01/17 09:06:11,597 [3292] INFO VnpayGatewaylogger - Connected successfully
+12/01/17 09:06:11,605 [3292] INFO VnpayGatewaylogger - 2017-12-01 09:06:11BEGIN INIT
+12/01/17 09:06:11,746 [3292] INFO VnpayGatewaylogger - Error: INSERT INTO `orders` ( Amount,UserId, OrderDescription, IpAddr, UserAgent,CreatedDate,Status) VALUES ( , 9, 'Thanh toan don hang test','::1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36','2017-12-01 09:06:11',0)<br>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' 9, 'Thanh toan don hang test','::1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) ' at line 1
+12/01/17 09:06:11,746 [3292] INFO VnpayGatewaylogger - Error: INSERT INTO `orders` ( Amount,UserId, OrderDescription, IpAddr, UserAgent,CreatedDate,Status) VALUES ( , 9, 'Thanh toan don hang test','::1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36','2017-12-01 09:06:11',0)<br>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' 9, 'Thanh toan don hang test','::1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) ' at line 1
+12/01/17 09:06:11,849 [3292] INFO VnpayGatewaylogger - 2017-12-01 09:06:11     Connected close
+12/01/17 09:06:11,849 [3292] INFO VnpayGatewaylogger - 2017-12-01 09:06:11     Connected close
+12/01/17 09:06:11,849 [3292] INFO VnpayGatewaylogger - 2017-12-01 09:06:11     END INIT
+12/01/17 09:06:11,849 [3292] INFO VnpayGatewaylogger - 2017-12-01 09:06:11     END INIT
+12/01/17 09:06:12,518 [3292] INFO VnpayGatewaylogger - Connected successfully
+12/01/17 09:06:12,519 [3292] INFO VnpayGatewaylogger - 2017-12-01 09:06:12BEGIN INIT
+12/01/17 09:06:12,521 [3292] INFO VnpayGatewaylogger - Error: INSERT INTO `orders` ( Amount,UserId, OrderDescription, IpAddr, UserAgent,CreatedDate,Status) VALUES ( , 9, 'Thanh toan don hang test','::1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36','2017-12-01 09:06:12',0)<br>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' 9, 'Thanh toan don hang test','::1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) ' at line 1
+12/01/17 09:06:12,521 [3292] INFO VnpayGatewaylogger - 2017-12-01 09:06:12     Connected close
+12/01/17 09:06:12,521 [3292] INFO VnpayGatewaylogger - 2017-12-01 09:06:12     END INIT
+12/01/17 15:40:09,182 [9468] INFO VnpayGatewaylogger - Connected successfully
+12/01/17 15:40:09,311 [9468] INFO VnpayGatewaylogger - 2017-12-01 15:40:09BEGIN INIT
+12/01/17 15:40:10,111 [9468] INFO VnpayGatewaylogger - New record created successfully
+12/01/17 15:40:10,112 [9468] INFO VnpayGatewaylogger - 2017-12-01 15:40:09     Connected close
+12/01/17 15:40:10,112 [9468] INFO VnpayGatewaylogger - 2017-12-01 15:40:09     END INIT
+12/01/17 15:40:32,357 [9468] INFO VnpayGatewaylogger - Connected successfully
+12/01/17 15:40:32,358 [9468] INFO VnpayGatewaylogger - 2017-12-01 15:40:32BEGIN INIT
+12/01/17 15:40:32,360 [9468] INFO VnpayGatewaylogger - Error: INSERT INTO `orders` ( Amount,UserId, OrderDescription, IpAddr, UserAgent,CreatedDate,Status) VALUES ( , 9, 'Thanh toan don hang test','::1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36','2017-12-01 15:40:32',0)<br>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' 9, 'Thanh toan don hang test','::1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) ' at line 1
+12/01/17 15:40:32,360 [9468] INFO VnpayGatewaylogger - 2017-12-01 15:40:32     Connected close
+12/01/17 15:40:32,360 [9468] INFO VnpayGatewaylogger - 2017-12-01 15:40:32     END INIT
+12/11/17 18:20:42,016 [1228] INFO VnpayGatewaylogger - Connected successfully
+12/11/17 18:20:42,023 [1228] INFO VnpayGatewaylogger - 2017-12-11 18:20:42BEGIN INIT
+12/11/17 18:20:42,044 [1228] INFO VnpayGatewaylogger - Error: INSERT INTO `orders` ( Amount,UserId, OrderDescription, IpAddr, UserAgent,CreatedDate,Status) VALUES ( 20000, , 'Thanh toan don hang test','::1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36','2017-12-11 18:20:42',0)<br>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' 'Thanh toan don hang test','::1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) App' at line 1
+12/11/17 18:20:42,044 [1228] INFO VnpayGatewaylogger - 2017-12-11 18:20:42     Connected close
+12/11/17 18:20:42,044 [1228] INFO VnpayGatewaylogger - 2017-12-11 18:20:42     END INIT
+12/11/17 18:21:43,198 [1228] INFO VnpayGatewaylogger - Connected successfully
+12/11/17 18:21:43,203 [1228] INFO VnpayGatewaylogger - 2017-12-11 18:21:43BEGIN INIT
+12/11/17 18:21:43,378 [1228] INFO VnpayGatewaylogger - New record created successfully
+12/11/17 18:21:43,426 [1228] INFO VnpayGatewaylogger - 2017-12-11 18:21:43     Connected close
+12/11/17 18:21:43,426 [1228] INFO VnpayGatewaylogger - 2017-12-11 18:21:43     END INIT
+12/11/17 18:23:41,815 [1228] INFO VnpayGatewaylogger - Connected successfully
+12/11/17 18:23:41,817 [1228] INFO VnpayGatewaylogger - 2017-12-11 18:23:41BEGIN INIT
+12/11/17 18:23:41,818 [1228] INFO VnpayGatewaylogger - Error: INSERT INTO `orders` ( Amount,UserId, OrderDescription, IpAddr, UserAgent,CreatedDate,Status) VALUES ( , , 'Thanh toan don hang test','::1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36','2017-12-11 18:23:41',0)<br>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' , 'Thanh toan don hang test','::1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) A' at line 1
+12/11/17 18:23:41,819 [1228] INFO VnpayGatewaylogger - 2017-12-11 18:23:41     Connected close
+12/11/17 18:23:41,819 [1228] INFO VnpayGatewaylogger - 2017-12-11 18:23:41     END INIT
+12/11/17 18:24:01,724 [1228] INFO VnpayGatewaylogger - Connected successfully
+12/11/17 18:24:01,725 [1228] INFO VnpayGatewaylogger - 2017-12-11 18:24:01BEGIN INIT
+12/11/17 18:24:01,727 [1228] INFO VnpayGatewaylogger - Error: INSERT INTO `orders` ( Amount,UserId, OrderDescription, IpAddr, UserAgent,CreatedDate,Status) VALUES ( , , 'Thanh toan don hang test','::1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36','2017-12-11 18:24:01',0)<br>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' , 'Thanh toan don hang test','::1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) A' at line 1
+12/11/17 18:24:01,727 [1228] INFO VnpayGatewaylogger - 2017-12-11 18:24:01     Connected close
+12/11/17 18:24:01,728 [1228] INFO VnpayGatewaylogger - 2017-12-11 18:24:01     END INIT
+12/11/17 18:25:14,643 [1228] INFO VnpayGatewaylogger - Connected successfully
+12/11/17 18:25:14,646 [1228] INFO VnpayGatewaylogger - 2017-12-11 18:25:14BEGIN INIT
+12/11/17 18:25:14,728 [1228] INFO VnpayGatewaylogger - New record created successfully
+12/11/17 18:25:14,729 [1228] INFO VnpayGatewaylogger - 2017-12-11 18:25:14     Connected close
+12/11/17 18:25:14,729 [1228] INFO VnpayGatewaylogger - 2017-12-11 18:25:14     END INIT
+12/19/17 23:02:48,248 [10100] INFO VnpayGatewaylogger - Connected successfully
+12/19/17 23:02:48,287 [10100] INFO VnpayGatewaylogger - 2017-12-19 23:02:48BEGIN INIT
+12/19/17 23:02:48,646 [10100] INFO VnpayGatewaylogger - New record created successfully
+12/19/17 23:02:48,646 [10100] INFO VnpayGatewaylogger - 2017-12-19 23:02:48     Connected close
+12/19/17 23:02:48,647 [10100] INFO VnpayGatewaylogger - 2017-12-19 23:02:48     END INIT
+12/19/17 23:02:58,663 [10100] INFO VnpayGatewaylogger - Connected successfully
+12/19/17 23:02:58,663 [10100] INFO VnpayGatewaylogger - 2017-12-19 23:02:58BEGIN INIT
+12/19/17 23:02:58,728 [10100] INFO VnpayGatewaylogger - New record created successfully
+12/19/17 23:02:58,728 [10100] INFO VnpayGatewaylogger - 2017-12-19 23:02:58     Connected close
+12/19/17 23:02:58,728 [10100] INFO VnpayGatewaylogger - 2017-12-19 23:02:58     END INIT
