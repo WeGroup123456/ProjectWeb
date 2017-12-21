@@ -1,4 +1,7 @@
- @extends('layout.index_general')
+@section('title')
+  Product Detail
+@endsection
+ @extends('layout.index')
  @section('content')
 <div class="container_fullwidth">
         <div class="container">
@@ -151,17 +154,17 @@
                 <div id="tabnav">
                   <ul>
                     <li>
-                      <a href="#Descraption">
+                      <a href="productdetail/nemeziz-tango-17-1-trainers/shoe22.html#Descraption">
                         DESCRIPTION
                       </a>
                     </li>
                     <li>
-                      <a href="#Reviews">
+                      <a href="productdetail/nemeziz-tango-17-1-trainers/shoe22.html#Reviews">
                         REVIEW
                       </a>
                     </li>
                     <li>
-                      <a href="#tags">
+                      <a href="productdetail/nemeziz-tango-17-1-trainers/shoe22.html#tags">
                         PRODUCT TAGS
                       </a>
                     </li>
@@ -170,10 +173,10 @@
                 <div class="tab-content-wrap">
                   <div class="tab-content" id="Descraption">
                     <p>
-                      Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lorem nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultri ces posuere cubilia curae Aenean eleifend laoreet congue. Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lorem nunc. Vestibu um ante ipsum primis in faucibus orci luctus et ultri ces posuere cubilia curae Aenean eleifend laoreet congue. Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lorem nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultri ces posuere cubilia curae Aenean eleifend laoreet congue. Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lorem nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultri ces posuere cubilia curae...
+                      <article>{!!$shoe->giay->TomTat!!}
                     </p>
                     <p>
-                      Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lorem nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultri ces posuere cubilia curae Aenean eleifend laoreet congue. Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lorem nunc. Vestibu um ante ipsum primis in faucibus orci luctus et ultri ces posuere cubilia curae Aenean eleifend laoreet congue. Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lorem nunc...
+                      {!!$shoe->giay->NoiDung!!}</article>
                     </p>
                   </div>
                   <div class="tab-content" id="Reviews">
@@ -367,10 +370,25 @@
                       <input type="submit" value="Tag">
                     </div>
                   </div>
+                  
                 </div>
+
               </div>
               <div class="clearfix">
               </div>
+              <div class="tab-content" id="Descraption">
+                    <!-- Facebook API Comment -->
+                    <div id="fb-root"></div>
+                    <script>(function(d, s, id) {
+                      var js, fjs = d.getElementsByTagName(s)[0];
+                      if (d.getElementById(id)) return;
+                      js = d.createElement(s); js.id = id;
+                      js.src = 'https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.11&appId=316215622172670';
+                      fjs.parentNode.insertBefore(js, fjs);
+                    }(document, 'script', 'facebook-jssdk'));</script>
+                  
+                    <div class="fb-comments" data-href="http://localhost/ProjectWebFront/ProjectWeb/public/productdetail/{{$shoe->giay->TenKhongDau}}/shoe{{$shoe->id}}.html" data-numposts="5" data-width="100%"></div>
+                  </div>
               <div id="productsDetails" class="hot-products">
                 <h3 class="title">
                   <strong>
@@ -388,267 +406,80 @@
                 </div>
                 <ul id="hot">
                   <li>
-                    <div class="row">
-                      <div class="col-md-4 col-sm-4">
-                        <div class="products">
-                          <div class="offer">
-                            - %20
-                          </div>
-                          <div class="thumbnail">
-                            <img src="images/products/small/products-01.png" alt="Product Name">
-                          </div>
-                          <div class="productname">
-                            Iphone 5s Gold 32 Gb 2013
-                          </div>
-                          <h4 class="price">
-                            $451.00
-                          </h4>
-                          <div class="button_group">
-                            <button class="button add-cart" type="button">
-                              Add To Cart
-                            </button>
-                            <button class="button compare" type="button">
-                              <i class="fa fa-exchange">
-                              </i>
-                            </button>
-                            <button class="button wishlist" type="button">
-                              <i class="fa fa-heart-o">
-                              </i>
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-4 col-sm-4">
-                        <div class="products">
-                          <div class="thumbnail">
-                            <img src="images/products/small/products-02.png" alt="Product Name">
-                          </div>
-                          <div class="productname">
-                            Iphone 5s Gold 32 Gb 2013
-                          </div>
-                          <h4 class="price">
-                            $451.00
-                          </h4>
-                          <div class="button_group">
-                            <button class="button add-cart" type="button">
-                              Add To Cart
-                            </button>
-                            <button class="button compare" type="button">
-                              <i class="fa fa-exchange">
-                              </i>
-                            </button>
-                            <button class="button wishlist" type="button">
-                              <i class="fa fa-heart-o">
-                              </i>
-                            </button>
+                    <div class="row" style="margin-top: 20px;">
+                     @foreach ($hot_shoes_1 as $hs1)
+                        {{-- <div class="col-md-4 col-sm-4">
+                           <div class="products">
+                              <div class="offer">- %{{number_format((1-($hs1->GiaMoi/$hs1->GiaCu))*100)}}</div>
+                              <div class="thumbnail"><a href="productdetail/{{$hs1->giay->TenKhongDau}}/shoe{{$hs1->id}}.html"><img src="upload/giay/{{$hs1->MaGiay}}/chinh/{{$hs1->HinhBe}}" alt="Product Name"></a></div>
+                              <div class="productname">{{$hs1->giay->Ten}}</div>
+                              <h4 class="price">${{number_format($hs1->GiaCu)}}</h4>
+                              <div class="button_group"><button class="button add-cart" type="button">Add To Cart</button><button class="button compare" type="button"><i class="fa fa-exchange"></i></button><button class="button wishlist" type="button"><i class="fa fa-heart-o"></i></button></div>
+                           </div>
+                        </div> --}}
+                        <div class="col-md-4 col-sm-6">
+                          <div class="products">
+                            <div class="ribbon">
+                              <span>{{$hs1->giay->brand->Ten}}</span>
+                            </div>
+                            <div class="thumbnail">
+                              <a href="productdetail/{{$hs1->giay->TenKhongDau}}/shoe{{$hs1->id}}.html">
+                                <img src="upload/giay/{{$hs1->MaGiay}}/chinh/{{$hs1->HinhBe}}" alt="Product Name">
+                              </a>
+                              <div class="sizesanco">
+                                 <h4>Size sẵn có:</h4>
+                                 <span>
+                                    @foreach ($hs1->size as $size)
+                                       <div class="pro-size">{{$size->Size}}</div>
+                                    @endforeach
+                                 </span>
+                              </div>
+                            </div>
+                            <div class="productname">
+                              <a href="productdetail/{{$hs1->giay->TenKhongDau}}/shoe{{$hs1->id}}.html">
+                              {{$hs1->giay->Ten}}
+                              </a>
+                            </div>
+                            <div class="price">${{number_format($hs1->GiaMoi)}}</div>
+                            <div class="old-price">${{number_format($hs1->GiaCu)}}</div>
+                            <div class="sport-type">{{$hs1->giay->loaigiay->Ten}}</div>
                           </div>
                         </div>
-                      </div>
-                      <div class="col-md-4 col-sm-4">
-                        <div class="products">
-                          <div class="offer">
-                            New
-                          </div>
-                          <div class="thumbnail">
-                            <img src="images/products/small/products-03.png" alt="Product Name">
-                          </div>
-                          <div class="productname">
-                            Iphone 5s Gold 32 Gb 2013
-                          </div>
-                          <h4 class="price">
-                            $451.00
-                          </h4>
-                          <div class="button_group">
-                            <button class="button add-cart" type="button">
-                              Add To Cart
-                            </button>
-                            <button class="button compare" type="button">
-                              <i class="fa fa-exchange">
-                              </i>
-                            </button>
-                            <button class="button wishlist" type="button">
-                              <i class="fa fa-heart-o">
-                              </i>
-                            </button>
-                          </div>
-                        </div>
-                      </div>
+                     @endforeach
                     </div>
                   </li>
                   <li>
                     <div class="row">
-                      <div class="col-md-4 col-sm-4">
-                        <div class="products">
-                          <div class="offer">
-                            - %20
-                          </div>
-                          <div class="thumbnail">
-                            <img src="images/products/small/products-01.png" alt="Product Name">
-                          </div>
-                          <div class="productname">
-                            Iphone 5s Gold 32 Gb 2013
-                          </div>
-                          <h4 class="price">
-                            $451.00
-                          </h4>
-                          <div class="button_group">
-                            <button class="button add-cart" type="button">
-                              Add To Cart
-                            </button>
-                            <button class="button compare" type="button">
-                              <i class="fa fa-exchange">
-                              </i>
-                            </button>
-                            <button class="button wishlist" type="button">
-                              <i class="fa fa-heart-o">
-                              </i>
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-4 col-sm-4">
-                        <div class="products">
-                          <div class="thumbnail">
-                            <img src="images/products/small/products-02.png" alt="Product Name">
-                          </div>
-                          <div class="productname">
-                            Iphone 5s Gold 32 Gb 2013
-                          </div>
-                          <h4 class="price">
-                            $451.00
-                          </h4>
-                          <div class="button_group">
-                            <button class="button add-cart" type="button">
-                              Add To Cart
-                            </button>
-                            <button class="button compare" type="button">
-                              <i class="fa fa-exchange">
-                              </i>
-                            </button>
-                            <button class="button wishlist" type="button">
-                              <i class="fa fa-heart-o">
-                              </i>
-                            </button>
+                      @foreach ($hot_shoes_2 as $hs2)
+                        <div class="col-md-4 col-sm-6">
+                          <div class="products">
+                            <div class="ribbon">
+                              <span>{{$hs2->giay->brand->Ten}}</span>
+                            </div>
+                            <div class="thumbnail">
+                              <a href="productdetail/{{$hs2->giay->TenKhongDau}}/shoe{{$hs2->id}}.html">
+                                <img src="upload/giay/{{$hs2->MaGiay}}/chinh/{{$hs2->HinhBe}}" alt="Product Name">
+                              </a>
+                              <div class="sizesanco">
+                                 <h4>Size sẵn có:</h4>
+                                 <span>
+                                    @foreach ($hs2->size as $size)
+                                       <div class="pro-size">{{$size->Size}}</div>
+                                    @endforeach
+                                 </span>
+                              </div>
+                            </div>
+                            <div class="productname">
+                              <a href="productdetail/{{$hs2->giay->TenKhongDau}}/shoe{{$hs2->id}}.html">
+                              {{$hs2->giay->Ten}}
+                              </a>
+                            </div>
+                            <div class="price">${{number_format($hs2->GiaMoi)}}</div>
+                            <div class="old-price">${{number_format($hs2->GiaCu)}}</div>
+                            <div class="sport-type">{{$hs2->giay->loaigiay->Ten}}</div>
                           </div>
                         </div>
-                      </div>
-                      <div class="col-md-4 col-sm-4">
-                        <div class="products">
-                          <div class="offer">
-                            New
-                          </div>
-                          <div class="thumbnail">
-                            <img src="images/products/small/products-03.png" alt="Product Name">
-                          </div>
-                          <div class="productname">
-                            Iphone 5s Gold 32 Gb 2013
-                          </div>
-                          <h4 class="price">
-                            $451.00
-                          </h4>
-                          <div class="button_group">
-                            <button class="button add-cart" type="button">
-                              Add To Cart
-                            </button>
-                            <button class="button compare" type="button">
-                              <i class="fa fa-exchange">
-                              </i>
-                            </button>
-                            <button class="button wishlist" type="button">
-                              <i class="fa fa-heart-o">
-                              </i>
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="row">
-                      <div class="col-md-4 col-sm-4">
-                        <div class="products">
-                          <div class="offer">
-                            - %20
-                          </div>
-                          <div class="thumbnail">
-                            <img src="images/products/small/products-01.png" alt="Product Name">
-                          </div>
-                          <div class="productname">
-                            Iphone 5s Gold 32 Gb 2013
-                          </div>
-                          <h4 class="price">
-                            $451.00
-                          </h4>
-                          <div class="button_group">
-                            <button class="button add-cart" type="button">
-                              Add To Cart
-                            </button>
-                            <button class="button compare" type="button">
-                              <i class="fa fa-exchange">
-                              </i>
-                            </button>
-                            <button class="button wishlist" type="button">
-                              <i class="fa fa-heart-o">
-                              </i>
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-4 col-sm-4">
-                        <div class="products">
-                          <div class="thumbnail">
-                            <img src="images/products/small/products-02.png" alt="Product Name">
-                          </div>
-                          <div class="productname">
-                            Iphone 5s Gold 32 Gb 2013
-                          </div>
-                          <h4 class="price">
-                            $451.00
-                          </h4>
-                          <div class="button_group">
-                            <button class="button add-cart" type="button">
-                              Add To Cart
-                            </button>
-                            <button class="button compare" type="button">
-                              <i class="fa fa-exchange">
-                              </i>
-                            </button>
-                            <button class="button wishlist" type="button">
-                              <i class="fa fa-heart-o">
-                              </i>
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-4 col-sm-4">
-                        <div class="products">
-                          <div class="offer">
-                            New
-                          </div>
-                          <div class="thumbnail">
-                            <img src="images/products/small/products-03.png" alt="Product Name">
-                          </div>
-                          <div class="productname">
-                            Iphone 5s Gold 32 Gb 2013
-                          </div>
-                          <h4 class="price">
-                            $451.00
-                          </h4>
-                          <div class="button_group">
-                            <button class="button add-cart" type="button">
-                              Add To Cart
-                            </button>
-                            <button class="button compare" type="button">
-                              <i class="fa fa-exchange">
-                              </i>
-                            </button>
-                            <button class="button wishlist" type="button">
-                              <i class="fa fa-heart-o">
-                              </i>
-                            </button>
-                          </div>
-                        </div>
-                      </div>
+                     @endforeach
                     </div>
                   </li>
                 </ul>
@@ -664,55 +495,28 @@
                     Deals
                   </strong>
                 </h4>
+                @foreach ($special_deals as $sd)
                 <div class="special-item">
+                  
                   <div class="product-image">
-                    <a href="#">
-                      <img src="images/products/thum/products-01.png" alt="">
+                    <a href="productdetail/{{$sd->giay->TenKhongDau}}/shoe{{$sd->id}}.html">
+                      <img src="upload/giay/{{$sd->MaGiay}}/chinh/{{$sd->HinhBe}}" alt="">
                     </a>
                   </div>
                   <div class="product-info">
                     <p>
-                      Licoln Corner Unit
+                      {{$sd->giay->Ten}}
                     </p>
                     <h5 class="price">
-                      $300.00
+                      {{number_format($sd->GiaCu)}}<p><div class="offer" style="position: static !important; color: #fff; background-color: #f7544a;">- %{{number_format((1-($sd->GiaMoi/$sd->GiaCu))*100)}}</div></p>
                     </h5>
                   </div>
                 </div>
-                <div class="special-item">
-                  <div class="product-image">
-                    <a href="#">
-                      <img src="images/products/thum/products-02.png" alt="">
-                    </a>
-                  </div>
-                  <div class="product-info">
-                    <p>
-                      Licoln Corner Unit
-                    </p>
-                    <h5 class="price">
-                      $300.00
-                    </h5>
-                  </div>
-                </div>
-                <div class="special-item">
-                  <div class="product-image">
-                    <a href="#">
-                      <img src="images/products/thum/products-03.png" alt="">
-                    </a>
-                  </div>
-                  <div class="product-info">
-                    <p>
-                      Licoln Corner Unit
-                    </p>
-                    <h5 class="price">
-                      $300.00
-                    </h5>
-                  </div>
-                </div>
+                @endforeach
               </div>
               <div class="clearfix">
               </div>
-              <div class="product-tag leftbar">
+              {{-- <div class="product-tag leftbar">
                 <h3 class="title">
                   Products 
                   <strong>
@@ -780,9 +584,18 @@
                 </form>
               </div>
               <div class="clearfix">
-              </div>
+              </div> --}}
               <div class="fbl-box leftbar">
-                <h3 class="title">
+                <div id="fb-root"></div>
+                <script>(function(d, s, id) {
+                  var js, fjs = d.getElementsByTagName(s)[0];
+                  if (d.getElementById(id)) return;
+                  js = d.createElement(s); js.id = id;
+                  js.src = 'https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.11&appId=316215622172670';
+                  fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));</script>
+                <div class="fb-page" data-href="https://www.facebook.com/BXH-608593912643661/" data-tabs="messages, timeline, events" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" height="370"><blockquote cite="https://www.facebook.com/BXH-608593912643661/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/BXH-608593912643661/">BXH</a></blockquote></div>
+                {{-- <h3 class="title">
                   Facebook
                 </h3>
                 <span class="likebutton">
@@ -834,7 +647,7 @@
                     </span>
                     Facebook social plugin
                   </a>
-                </div>
+                </div> --}}
               </div>
               <div class="clearfix">
               </div>
@@ -842,102 +655,7 @@
           </div>
           <div class="clearfix">
           </div>
-          <div class="our-brand">
-            <h3 class="title">
-              <strong>
-                Our 
-              </strong>
-              Brands
-            </h3>
-            <div class="control">
-              <a id="prev_brand" class="prev" href="#">
-                &lt;
-              </a>
-              <a id="next_brand" class="next" href="#">
-                &gt;
-              </a>
-            </div>
-            <ul id="braldLogo">
-              <li>
-                <ul class="brand_item">
-                  <li>
-                    <a href="#">
-                      <div class="brand-logo">
-                        <img src="images/envato.png" alt="">
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="brand-logo">
-                        <img src="images/themeforest.png" alt="">
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="brand-logo">
-                        <img src="images/photodune.png" alt="">
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="brand-logo">
-                        <img src="images/activeden.png" alt="">
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="brand-logo">
-                        <img src="images/envato.png" alt="">
-                      </div>
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <ul class="brand_item">
-                  <li>
-                    <a href="#">
-                      <div class="brand-logo">
-                        <img src="images/envato.png" alt="">
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="brand-logo">
-                        <img src="images/themeforest.png" alt="">
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="brand-logo">
-                        <img src="images/photodune.png" alt="">
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="brand-logo">
-                        <img src="images/activeden.png" alt="">
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="brand-logo">
-                        <img src="images/envato.png" alt="">
-                      </div>
-                    </a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
+          @include('pages.ours_brands')
         </div>
 </div>
 @endsection

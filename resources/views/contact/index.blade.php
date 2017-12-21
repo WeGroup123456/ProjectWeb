@@ -1,3 +1,6 @@
+@section('title')
+  Contact
+@endsection
 @extends('layout.index_general')
 @section('content')
 <div class="container_fullwidth">
