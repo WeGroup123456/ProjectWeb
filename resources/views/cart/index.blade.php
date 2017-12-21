@@ -1,4 +1,7 @@
-@extends('layout.index_general')
+@section('title')
+  Cart
+@endsection
+@extends('layout.index')
 @section('content')
 <div class="container_fullwidth">
         <div class="container shopping-cart">
@@ -66,7 +69,7 @@
                     </td>
                     <td>
                       <h5>
-                        {{number_format($item->price)}}
+                        {{number_format($item->price)}} x
                       </h5>
                     </td>
                     <td>
@@ -82,7 +85,7 @@
                     <td>
                       <h5>
                         <strong class="red">
-                          {{number_format($item->price)}}
+                          {{number_format($item->price * $item->qty)}}
                         </strong>
                       </h5>
                     </td>
@@ -99,10 +102,10 @@
                   <tr>
                     <td colspan="6">
                       <button class="pull-left">
-                        Continue Shopping
+                        <a href="product">Continue Shopping</a>
                       </button>
                       <button class=" pull-right">
-                        Update Shopping Cart
+                        <a href="product">Update Shopping Cart</a>
                       </button>
                     </td>
                   </tr>
@@ -635,9 +638,10 @@
                         ${{$total}}
                       </span>
                     </div>
-                    <button>
+                    {{-- <button>
                       Process To Checkout
-                    </button>
+                    </button> --}}
+                    <a href="paynow">Process To Checkout</a>
                   </div>
                 </div>
               </div>
@@ -748,31 +752,33 @@
 <!-- không cần form token cũng đk -->
 @section('script')
     <script type="text/javascript">
-        $(document).ready(function(){
-            $(".SoLuong").change(function(){
-              var rowId = $(this).attr('id');
-              var qty = $(this).val();
-              var token = $("input[name='_token']").val();
-              $.ajax({
-                url:'ajax/update/'+rowId+'/'+qty,
-                type:'GET',
-                cache: false,
-                data:{
-                  "_token":token,
-                  "id":rowId,
-                  "qty":qty
-                },
-                success: function(data){
-                  if (data == "oke"){
-                    window.location = "cart";
-                  }else{
-                    alert("No");
-                  }
-                },error: function(){
-                  alert("error");
-                }
-              });
-            });
+    jQuery(function($) {
+
+      $(".SoLuong").change(function(){
+        var rowId = $(this).attr('id');
+        var qty = $(this).val();
+        var token = $("input[name='_token']").val();
+        $.ajax({
+          url:'ajax/update/'+rowId+'/'+qty,
+          type:'GET',
+          cache: false,
+          data:{
+            "_token":token,
+            "id":rowId,
+            "qty":qty
+          },
+          success: function(data){
+            if (data == "oke"){
+              window.location = "cart";
+            }else{
+              alert("No");
+            }
+          },error: function(){
+            alert("error");
+          }
         });
+      });
+      
+    });
     </script>
 @endsection
