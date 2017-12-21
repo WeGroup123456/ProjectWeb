@@ -119,86 +119,59 @@
               <div class="header_bottom">
                 <ul class="option">
                   <li id="search" class="search">
-                    <form>
+                    <form method="get" action="search">
                       <input class="search-submit" type="submit" value="">
-                      <input class="search-input" placeholder="Enter your search term..." type="text" value="" name="search">
+                      <input class="search-input" placeholder="Enter your search term..." type="text" value="" name="q" required="">
                     </form>
                   </li>
                   <li class="option-cart">
-                    <a href="#" class="cart-icon">
+                    <a href="cart" class="cart-icon">
                       cart 
                       <span class="cart_no">
-                        02
+                        {{count($content)}}
                       </span>
                     </a>
                     <ul class="option-cart-item">
+
+                    @foreach ($content as $item)
                       <li>
                         <div class="cart-item">
                           <div class="image">
-                            <img src="images/products/thum/products-01.png" alt="">
+                            <img src="upload/giay/{{$item->id}}/chinh/{{$item->options->image}}" alt="">
                           </div>
                           <div class="item-description">
                             <p class="name">
-                              Lincoln chair
+                              {{$item->name}}
                             </p>
                             <p>
                               Size: 
                               <span class="light-red">
-                                One size
+                                {{$item->options->size}}
                               </span>
                               <br>
                               Quantity: 
                               <span class="light-red">
-                                01
+                                {{$item->qty}}
                               </span>
                             </p>
                           </div>
                           <div class="right">
                             <p class="price">
-                              $30.00
+                              ${{number_format($item->price * $item->qty)}}
                             </p>
-                            <a href="#" class="remove">
+                            <a href="deletecart/{{$item->rowId}}" class="remove">
                               <img src="images/remove.png" alt="remove">
                             </a>
                           </div>
                         </div>
                       </li>
-                      <li>
-                        <div class="cart-item">
-                          <div class="image">
-                            <img src="images/products/thum/products-02.png" alt="">
-                          </div>
-                          <div class="item-description">
-                            <p class="name">
-                              Lincoln chair
-                            </p>
-                            <p>
-                              Size: 
-                              <span class="light-red">
-                                One size
-                              </span>
-                              <br>
-                              Quantity: 
-                              <span class="light-red">
-                                01
-                              </span>
-                            </p>
-                          </div>
-                          <div class="right">
-                            <p class="price">
-                              $30.00
-                            </p>
-                            <a href="#" class="remove">
-                              <img src="images/remove.png" alt="remove">
-                            </a>
-                          </div>
-                        </div>
-                      </li>
+                    @endforeach
+                      
                       <li>
                         <span class="total">
                           Total 
                           <strong>
-                            $60.00
+                            ${{$total}}
                           </strong>
                         </span>
                         <button class="checkout" onClick="location.href='checkout.html'">
