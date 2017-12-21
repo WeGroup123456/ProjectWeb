@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;    
+use Illuminate\Routing\UrlGenerator;
 use App\Http\Requests;
 use App\BaoHanh;
 use App\Brand;
@@ -28,10 +29,10 @@ class PagesController extends Controller
     function __construct(){
         $shoe_brand_all = Brand::all();
         $shoe_cate_all = LoaiGiay::all();
-    	$shoe_all = MauGiay::all();
+        $shoe_all = MauGiay::all();
 
-    	view()->share('shoe_brand_all',$shoe_brand_all);
-    	view()->share('shoe_cate_all',$shoe_cate_all);
+        view()->share('shoe_brand_all',$shoe_brand_all);
+        view()->share('shoe_cate_all',$shoe_cate_all);
         view()->share('shoe_all',$shoe_all);
 
         if (Auth::check()) {
@@ -50,13 +51,13 @@ class PagesController extends Controller
         $hot_shoes_1 = MauGiay::where('NoiBat',1)->take(4)->get();
         $hot_shoes_2 = MauGiay::where('NoiBat',1)->skip(4)->take(4)->get();
         
-        $new_shoes_1 = MauGiay::orderBy('created_at')->take(4)->get();
-        $new_shoes_2 = MauGiay::orderBy('created_at')->skip(4)->take(4)->get();
-    	return view('pages.homepage',['slide_all'=>$slide_all,'hot_shoes_1'=>$hot_shoes_1,'hot_shoes_2'=>$hot_shoes_2,'new_shoes_1'=>$new_shoes_1,'new_shoes_2'=>$new_shoes_2]);
-    }
+        $new_shoes_1 = MauGiay::orderBy('created_at','desc')->take(4)->get();
+        $new_shoes_2 = MauGiay::orderBy('created_at','desc')->skip(4)->take(4)->get();
 
-    function errorPage(){
-        return view('error-page');
+        $special_deals_1 = MauGiay::orderByRaw('(GiaMoi/GiaCu) ASC')->take(4)->get();
+        $special_deals_2 = MauGiay::orderByRaw('(GiaMoi/GiaCu) ASC')->skip(4)->take(4)->get();
+
+        return view('pages.homepage',['slide_all'=>$slide_all,'special_deals_1'=>$special_deals_1,'special_deals_2'=>$special_deals_2,'hot_shoes_1'=>$hot_shoes_1,'hot_shoes_2'=>$hot_shoes_2,'new_shoes_1'=>$new_shoes_1,'new_shoes_2'=>$new_shoes_2]);
     }
 
     function product(){
@@ -66,16 +67,62 @@ class PagesController extends Controller
 
     function productDetail($alias,$idShoe){
         $shoe = MauGiay::find($idShoe);
+        $special_deals = MauGiay::orderByRaw('(GiaMoi/GiaCu) ASC')->take(3)->get();
+        $hot_shoes_1 = MauGiay::where('NoiBat',1)->take(3)->get();
+        $hot_shoes_2 = MauGiay::where('NoiBat',1)->skip(3)->take(3)->get();
+
         $sort = Size::where('mau_giay_id',$idShoe)->orderBy('Size', 'asc')->get();
-        return view('details.index',['shoe'=>$shoe,'sort'=>$sort]);
+        return view('details.index',['shoe'=>$shoe,'sort'=>$sort,'special_deals'=>$special_deals,'hot_shoes_1'=>$hot_shoes_1,'hot_shoes_2'=>$hot_shoes_2]);
     }
 
-    function productFilter(Request $request){
+    function unparse_url($parsed_url) {
+        $scheme   = isset($parsed_url['scheme']) ? $parsed_url['scheme'] . '://' : '';
+        $host     = isset($parsed_url['host']) ? $parsed_url['host'] : '';
+        $port     = isset($parsed_url['port']) ? ':' . $parsed_url['port'] : '';
+        $user     = isset($parsed_url['user']) ? $parsed_url['user'] : '';
+        $pass     = isset($parsed_url['pass']) ? ':' . $parsed_url['pass']  : '';
+        $pass     = ($user || $pass) ? "$pass@" : '';
+        $path     = isset($parsed_url['path']) ? $parsed_url['path'] : '';
+        $query    = isset($parsed_url['query']) ? '?' . $parsed_url['query'] : '';
+        $fragment = isset($parsed_url['fragment']) ? '#' . $parsed_url['fragment'] : '';
+        return "$scheme$user$pass$host$port$path$query$fragment";
+    }
+
+
+    function removeQueryParam($url, $param_to_remove) {
+        $parsed = parse_url($url);
+        if ($parsed && isset($parsed['query'])) {
+            $parsed['query'] = implode('&', array_filter(explode('&', $parsed['query']), function($param) use ($param_to_remove) {
+                return explode('=', $param)[0] !== $param_to_remove;
+            }));
+            if ($parsed['query'] === '') unset($parsed['query']);
+            return $this->unparse_url($parsed);
+        } else {
+            return $url;
+        }
+    }
+
+    function productFilter(Request $request, $unsetcon = null){
+        if ($unsetcon != null) {
+            if($unsetcon === "price"){
+                $urlTemp = $this->removeQueryParam(url()->previous(), "max_price");
+                echo $urlTemp;
+                return redirect($this->removeQueryParam($urlTemp, "min_price")) ;
+            }
+            return redirect($this->removeQueryParam(url()->previous(), $unsetcon)) ;
+        }
+
         $gender = $request->gender;
         $brands = $request->brands;
         $cate = $request->cate;
         $max_price = $request->max_price;
         $min_price = $request->min_price;
+
+        $sorting = $request->sorting;
+        $numItem = 6;
+        if ($request->numItem != null) {
+            $numItem = $request->numItem;
+        }
 
         $count_query_1 = 1;
         $count_query_2 = 0;
@@ -90,8 +137,10 @@ class PagesController extends Controller
                 $count_query_1++;
                 $query->where('GioiTinh',$gender);
                 if ($count_query_1 == 1) {
-                    echo "gender"; // trả về item nếu không lọc được sản phẩm nào để delete trong localStorage
-                    exit();
+                    echo '<script language="javascript">';
+                    echo 'alert("No product found!!")';
+                    echo '</script>';
+                    $query->where('Status',3);
                 }
             }
         })->where(function ($query) use ($min_price,$max_price,$count_query_5) {
@@ -102,8 +151,10 @@ class PagesController extends Controller
                 }
 
                 if ($count_query_5 == 0) {
-                    echo "price"; // trả về item nếu không lọc được sản phẩm nào để delete trong localStorage
-                    exit();
+                    echo '<script language="javascript">';
+                    echo 'alert("No product found!!")';
+                    echo '</script>';
+                    $query->where('Status',3);
                 }
             }
         })->where(function ($query) use ($brands,$count_query_4) {
@@ -119,8 +170,10 @@ class PagesController extends Controller
                     }
                 }
                 if ($count_query_4 == 0) {
-                    echo "BrandType"; // trả về item nếu không lọc được sản phẩm nào để delete trong localStorage
-                    exit();
+                    echo '<script language="javascript">';
+                    echo 'alert("No product found!!")';
+                    echo '</script>';
+                    $query->where('Status',3);
                 }
             }
         })->where(function ($query) use ($cate,$count_query_3) {
@@ -136,19 +189,37 @@ class PagesController extends Controller
                     }
                 }
                 if ($count_query_3 == 0) {
-                    echo "cate"; // trả về item nếu không lọc được sản phẩm nào để delete trong localStorage
-                    exit();
+                    echo '<script language="javascript">';
+                    echo 'alert("No product found!!")';
+                    echo '</script>';
+                    $query->where('Status',3);
                 }
             }
         });
 
+        if($sorting != null) {
+            if ($sorting == "popularity") {
+                //chua lam
+            }else if($sorting == "lowest_price"){
+                $query->orderBy('GiaMoi', 'asc');
+            }else if($sorting == "name_shoe"){
+                $query->orderBy('Ten', 'asc');
+            }else if($sorting == "highest_price"){
+                $query->orderBy('GiaMoi', 'desc');
+            }else if($sorting == "latest_arrival"){
+                $query->orderBy('created_at', 'asc');
+            }else if($sorting == "discount"){
+                //chua lam
+            }
+        }
+
         $count = $count_query_1 + $count_query_2 + $count_query_3 + $count_query_4 + $count_query_5;
 
         if ($count != 0) {
-            $shoe = $query->paginate(5)->appends(['gender' => $gender, 'brands' => $brands, 'cate' => $cate, 'min_price' => $min_price, 'max_price' => $max_price]);
+            $shoe = $query->paginate($numItem)->appends(['gender' => $gender, 'brands' => $brands, 'cate' => $cate, 'min_price' => $min_price, 'max_price' => $max_price, 'sorting' => $sorting,  'numItem' => $numItem]);
             
             Session::put('shoe', $shoe);
-            echo "oke";
+            // echo "oke";
         }else{
             echo "Không tìm thấy dữ liệu phù hợp";
         }
@@ -210,5 +281,68 @@ class PagesController extends Controller
     function getDeletecart($rowId){
         Cart::remove($rowId);
         return redirect()->route('cart');
+    }
+
+    function getPayNow(){
+        return view('checkout.paynow');
+    }
+
+    function postPayNow(Request $request){
+        $this->validate($request,
+            [
+                'Ten' => 'required',
+                'Email' => 'required',
+                'DiaChi' => 'required',
+                'DienThoai' => 'required',
+            ],[
+                'Ten.required' => 'Bạn chưa nhập tên',
+                'Email.required' => 'Bạn chưa nhập email',
+                'DiaChi.required' => 'Bạn chưa nhập địa chỉ',
+                'DienThoai.required' => 'Bạn chưa nhập điện thoại',
+            ]);
+        $customer = new Customer;
+        $customer->Ten = $request->Ten;
+        $customer->DiaChi = $request->DiaChi;
+        $customer->Email = $request->Email;
+        $customer->DienThoai = $request->DienThoai;
+
+        $customer->save();
+
+        Session::put('customer', $customer);
+        return redirect()->route('vnpay')->with('thongbao','Cài đặt thông tin khách hàng thành công');
+    }
+
+    function getVnPay(){
+        return view('checkout.vn-pay');
+    }
+
+    function getCheckOrder(){
+        return view('checkout.checkorder');
+    }
+
+    function postCheckOrder(Request $request){
+        $order = Orders::where('vnp_TransactionNo',$request->MaDonHang)->get()->first();
+         
+        return view('checkout.orderstatus',['order'=>$order]);
+    }
+
+    function getOrderStatus(){
+        return view('checkout.orderstatus');
+    }
+
+    function deleteSession(){
+        return view('delete-session');
+    }
+
+    public function search(Request $request)
+    {
+        $q = $request->q;
+        $q = strtoupper($q);
+
+
+        $shoe = MauGiay::where('Ten','like',"%$q%")->orWhere('MaGiay','like',"%$q%")->orWhere('Mau','like',"%$q%")->paginate(6)->appends(['q' => $q]);
+        Session::put('q', $q);
+        Session::put('shoe', $shoe);
+        return view('product.productgird');
     }
 }

@@ -10,7 +10,8 @@
 | and give it the controller to call when that URI is requested.
 |
 */
-
+Route::get('home','PagesController@home');
+Route::get('/','PagesController@home');
 Route::get('admin/','UserController@getDangnhapAdmin');
 
 Route::get('admin/dangnhap','UserController@getDangnhapAdmin');
@@ -120,11 +121,17 @@ Route::group(['prefix'=>'admin','middleware'=>'adminLogin'],function() {
 	});
 });
 
+// Route::get('product', function()
+// {
+//     return view('product.productgird');
+// });
+
+
 /*shoppingcart*/
 Route::get('cart',['as'=>'cart','uses'=>'PagesController@getCart']);
 //Route::get('insertcart/{id}','PagesController@getInsertcart');
 Route::post('insertcart/{id}','PagesController@postInsertcart');
-Route::get('ajax/capnhat/{id}/{qty}','PagesAjaxController@getCapNhat');
+Route::get('ajax/update/{id}/{qty}','PagesAjaxController@getUpdate');
 Route::get('deletecart/{rowId}','PagesController@getDeletecart');
 /*end-shoppingcart*/
 
@@ -134,8 +141,17 @@ Route::get('productdetail/{alias}/shoe{idShoe}.html','PagesController@productDet
 /*End Product*/
 
 /*Product Filter*/
-Route::get('productfilter',['as'=>'productfilter','uses'=>'PagesController@productFilter']);
+Route::get('productfilter/{unsetcon?}',['as'=>'productfilter','uses'=>'PagesController@productFilter']);
 /*End Product Filter*/
 
-Route::get('errorpage','PagesController@errorPage');
-Route::get('home','PagesController@home');
+/*Pay-now*/
+Route::get('paynow',['as'=>'paynow','uses'=>'PagesController@getPayNow']);
+Route::post('paynow','PagesController@postPayNow');
+/*End Pay now*/
+
+Route::get('vnpay',['as'=>'vnpay','uses'=>'PagesController@getVnPay']);
+Route::get('checkorder','PagesController@getCheckOrder');
+Route::post('checkorder','PagesController@postCheckOrder');
+Route::get('orderstatus','PagesController@getOrderStatus');
+
+Route::get('search','PagesController@search');
