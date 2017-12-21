@@ -1,4 +1,7 @@
- @extends('layout.index_general')
+@section('title')
+  Check out
+@endsection
+ @extends('layout.index')
  @section('content')
     <div class="container_fullwidth">
         <div class="container">
