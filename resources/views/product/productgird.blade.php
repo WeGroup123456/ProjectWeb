@@ -1,3 +1,6 @@
+@section('title')
+  Product
+@endsection
  @extends('layout.index')
  @section('content')
  @php
@@ -5,47 +8,65 @@
    use Illuminate\Support\Facades\URL;
  @endphp
 
+ @php
+   $q = null;
+   if (Session::get('q') != null) {
+      $q = Session::get('q');
+      function highlight($str, $q) {
+        $highlighted = preg_filter('/' . preg_quote($q) . '/i', '<b><span class="search-highlight" style="color:#16a085">$0</span></b>', $str);
+        if (!empty($highlighted)) {
+            $str = $highlighted;
+        }
+        return $str;
+      }
+    }
+ @endphp
+
  @if (Session::get('shoe')!==null)
   @php
     $shoe = Session::get('shoe');
     //Session::forget('shoe');
   @endphp
-  @if (count($shoe) > 0)
+{{--   @if (count($shoe) > 0)
     <div class="alert alert-info">Có {{count($shoe)}} kết quả</div>
   @else
     <div class="alert alert-info">Không có kết quả phù hợp</div>
-  @endif
+  @endif --}}
 @endif
 <form method="get" action="productfilter" id="my_form">
  <div class="container_fullwidth">
         <div class="container">
           <div class="row">
             <div class="col-md-3">
-
-              <div class="others leftbar">
+              <div class="others leftbar" {{Input::has('gender')||Input::has('brands')||Input::has('cate')||Input::has('min_price') ? '' : 'hidden'}}>
                 <h3 class="title">
                   Điều kiện lọc
                 </h3>
-                <div class="form-group">
-                  <label>
-                  <input type="checkbox" name="" {{Input::has('gender') ? 'checked' : ''}}>
-                    Gender
-                  </label>
+                <div class="clearfix">
                 </div>
+                <ul id="removeCondition" style="list-style: none;">
+                  <li {{Input::has('gender') ? '' : 'hidden'}}><div class="alert alert-info" name="gender" style="background: #333333;"><h5 style="color: #fff;" id="genderCon"></h5></div></li>
+                  
+                  <li {{Input::has('brands') ? '' : 'hidden'}}><div class="alert alert-info" name="brands" style="background: #333333;"><h5 style="color: #fff;" id="brandCon"></h5></div></li>
+                  
+                  <li {{Input::has('cate') ? '' : 'hidden'}}><div class="alert alert-info" name="cate" style="background: #333333;"><h5 style="color: #fff;" id="typeShoeCon"></h5></div></li>
+                  
+                  <li {{Input::has('min_price') || Input::has('max_price') ? '' : 'hidden'}}><div class="alert alert-info" name="price" style="background: #333333;"><h5 style="color: #fff;" id="priceCon">Price: {{Input::has('min_price') ? number_format(Input::get('min_price')) : ''}} - {{Input::has('max_price') ? number_format(Input::get('max_price')) : ''}}<i class="glyphicon glyphicon-remove pull-right"></i></h5></div></li>
+                  <div class="alert alert-info" style="background: #e74c3c;" {{Input::has('gender')||Input::has('brands')||Input::has('cate')||Input::has('min_price') ? '' : 'hidden'}}><h5 style="color: #fff; text-align: center; cursor: pointer;" onclick="window.location.href = 'productfilter'">Remove All</h5></div>
+                </ul>
               </div>
               <div class="clearfix">
               </div>
-
               <div class="category leftbar">
                 <h3 class="title">
                   Gender
                 </h3>
                 <?php $gender = Input::has('gender') ? Input::get('gender'): [] ; ?>
-                <ul>
+                <ul id="gender">
                   <li class="">
                     <div class="form-group">
                       <label>
-                      <input type="radio" name="gender" id="men" value="0" onclick="document.getElementById('my_form').submit()" {{Input::get('gender') == 0 ? 'checked' : ''}}>
+                      <input type="radio" name="gender" id="men" value="0" onclick="document.getElementById('my_form').submit()" {{Input::has('gender') && Input::get('gender') == 0 ? 'checked' : ''}}>
                         Men
                       </label>
                     </div>
@@ -66,7 +87,7 @@
                 <h3 class="title">
                   Brand
                 </h3>
-                <ul>
+                <ul id="brands">
                 @foreach ($shoe_brand_all as $sba)
                   <?php
                     $nameBrand = strtolower(preg_replace('/\s+/', '', $sba->TenKhongDau));
@@ -78,7 +99,7 @@
                     </a> --}}
                     <div class="form-group">
                       <label>
-                      <input type="radio" name="brands" value="{{$nameBrand}}" onclick="document.getElementById('my_form').submit()" {{Input::get('brands') == $nameBrand ? 'checked' : ''}}>
+                      <input type="radio" class="brands" name="brands" value="{{$nameBrand}}" onclick="document.getElementById('my_form').submit()" {{Input::get('brands') == $nameBrand ? 'checked' : ''}}>
                         {{$sba->Ten}}
                       </label>
                     </div>
@@ -92,7 +113,7 @@
                 <h3 class="title">
                   Type of Shoes
                 </h3>
-                <ul>
+                <ul id="typeShoes">
                 @foreach ($shoe_cate_all as $sca)
                   <?php
                     $nameCate = strtolower(preg_replace('/\s+/', '', $sca->TenKhongDau));
@@ -113,28 +134,31 @@
               </div>
               <div class="clearfix">
               </div>
+
+              
+
               <div class="price-filter leftbar">
                 <h3 class="title">
                   Price
                 </h3>
-                <form class="pricing">
+                <form class="pricing" method="get" action="productfilter">
                   <label>
                     $ 
-                    <input type="number" name="min_price" value="{{Input::get('min_price')}}">
+                    <input type="number" name="min_price" style="margin-bottom: 10px;" value="{{Input::get('min_price')}}" required="">
                   </label>
                   <span class="separate">
                     - 
                   </span>
                   <label>
                     $ 
-                    <input type="number" name="max_price" value="{{Input::get('max_price')}}">
+                    <input type="number" name="max_price" style="margin-bottom: 10px !important;" value="{{Input::get('max_price')}}" required="">
                   </label>
-                  <input type="submit" value="Go">
+                  <input class="button" type="submit" value="Go">
                 </form>
               </div>
               <div class="clearfix">
               </div>
-              <div class="clolr-filter leftbar">
+              {{-- <div class="clolr-filter leftbar">
                 <h3 class="title">
                   Color
                 </h3>
@@ -203,8 +227,83 @@
               </div>
               <div class="clearfix">
               </div>
-              <div class="fbl-box leftbar">
+              <div class="product-tag leftbar">
                 <h3 class="title">
+                  Products 
+                  <strong>
+                    Tags
+                  </strong>
+                </h3>
+                <ul>
+                  <li>
+                    <a href="#">
+                      Lincoln us
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      SDress for Girl
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      Corner
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      Window
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      PG
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      Oscar
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      Bath room
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      PSD
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="clearfix">
+              </div>
+              <div class="others leftbar">
+                <h3 class="title">
+                  Others
+                </h3>
+              </div>
+              <div class="clearfix">
+              </div>
+              <div class="others leftbar">
+                <h3 class="title">
+                  Others
+                </h3>
+              </div>
+              <div class="clearfix">
+              </div> --}}
+              <div class="fbl-box leftbar">
+                <div id="fb-root"></div>
+            <script>(function(d, s, id) {
+              var js, fjs = d.getElementsByTagName(s)[0];
+              if (d.getElementById(id)) return;
+              js = d.createElement(s); js.id = id;
+              js.src = 'https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.11&appId=316215622172670';
+              fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));</script>
+            <div class="fb-page" data-href="https://www.facebook.com/BXH-608593912643661/" data-tabs="messages, timeline, events" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" height="370"><blockquote cite="https://www.facebook.com/BXH-608593912643661/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/BXH-608593912643661/">BXH</a></blockquote></div>
+                {{-- <h3 class="title">
                   Facebook
                 </h3>
                 <span class="likebutton">
@@ -256,13 +355,13 @@
                     </span>
                     Facebook social plugin
                   </a>
-                </div>
+                </div> --}}
               </div>
-              <div class="clearfix">
+              {{-- <div class="clearfix">
               </div>
               <div class="leftbanner">
                 <img src="images/banner-small-01.png" alt="">
-              </div>
+              </div> --}}
             </div>
             <div class="col-md-9">
               <div class="banner">
@@ -270,17 +369,12 @@
                   <ul class="slides">
                     <li>
                       <a href="#">
-                        <img src="images/banners/carousel1.jpg" alt=""/>
+                        <img src="images/banner-01.jpg" alt=""/>
                       </a>
                     </li>
                     <li>
                       <a href="#">
-                        <img src="images/banners/carousel2.jpg" alt=""/>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <img src="images/banners/carousel3.jpg" alt=""/>
+                        <img src="images/banner-02.jpg" alt=""/>
                       </a>
                     </li>
                   </ul>
@@ -301,28 +395,37 @@
                     </div>
                     <div class="sort-by">
                       Sort by : 
-                      <select name="" >
-                        <option value="Default" selected>
-                          Default
+                      <select name="sorting" onchange="document.getElementById('my_form').submit()">
+                        <option value="Select" selected disabled="">
+                          Choose
                         </option>
-                        <option value="Name">
+                        <option value="name_shoe" {{Input::get('sorting') == 'name_shoe' ? 'selected' : ''}}>
                           Name
                         </option>
-                        <option value="Price">
-                          Price
+                        <option value="lowest_price" {{Input::get('sorting') == 'lowest_price' ? 'selected' : ''}}>
+                          Lowest Price
+                        </option>
+                        <option value="highest_price" {{Input::get('sorting') == 'highest_price' ? 'selected' : ''}}>
+                          Highest Price
+                        </option>
+                        <option value="latest_arrival" {{Input::get('sorting') == 'latest_arrival' ? 'selected' : ''}}>
+                          Lastest Arrival
                         </option>
                       </select>
                     </div>
                     <div class="limiter">
                       Show : 
-                      <select name="" >
-                        <option value="3" selected>
+                      <select name="numItem" onchange="document.getElementById('my_form').submit()">
+                        <option value="Select" selected disabled="">
+                          >>
+                        </option>
+                        <option value="3" {{Input::get('numItem') == 3 ? 'selected' : ''}}>
                           3
                         </option>
-                        <option value="6">
+                        <option value="6" {{Input::get('numItem') == 6 ? 'selected' : ''}}>
                           6
                         </option>
-                        <option value="9">
+                        <option value="9" {{Input::get('numItem') == 9 ? 'selected' : ''}}>
                           9
                         </option>
                       </select>
@@ -353,7 +456,6 @@
                         {{session('thongbao')}}
                     </div>
                 @endif
-
                 @foreach ($shoe as $sh)
                   <div class="col-md-4 col-sm-6">
                     <div class="products">
@@ -374,7 +476,12 @@
                         </div>
                       </div>
                       <div class="productname">
-                        <a href="productdetail/{{$sh->giay->TenKhongDau}}/shoe{{$sh->id}}.html">{{$sh->giay->Ten}}
+                        <a href="productdetail/{{$sh->giay->TenKhongDau}}/shoe{{$sh->id}}.html">
+                        @if ($q != null)
+                          {!! highlight($sh->giay->Ten, $q) !!}
+                        @else
+                          {{$sh->giay->Ten}}
+                        @endif
                         </a>
                       </div>
                       <div class="price">${{number_format($sh->GiaMoi)}}</div>
@@ -386,7 +493,7 @@
                 </div>
                 <div class="clearfix">
                 </div>
-                <div class="toolbar">
+                {{-- <div class="toolbar">
                   <div class="sorter bottom">
                     <div class="view-mode">
                       <a href="productlitst.html" class="list">
@@ -398,7 +505,7 @@
                     </div>
                     <div class="sort-by">
                       Sort by : 
-                      <select name="">
+                      <select id="SORTING">
                         <option value="Default" selected>
                           Default
                         </option>
@@ -432,7 +539,7 @@
                   <div class="pager">
                     {!! $shoe->links() !!}
                   </div>
-                </div>
+                </div> --}}
                 <div class="clearfix">
                 </div>
               </div>
@@ -440,102 +547,7 @@
           </div>
           <div class="clearfix">
           </div>
-          <div class="our-brand">
-            <h3 class="title">
-              <strong>
-                Our 
-              </strong>
-              Brands
-            </h3>
-            <div class="control">
-              <a id="prev_brand" class="prev" href="#">
-                &lt;
-              </a>
-              <a id="next_brand" class="next" href="#">
-                &gt;
-              </a>
-            </div>
-            <ul id="braldLogo">
-              <li>
-                <ul class="brand_item">
-                  <li>
-                    <a href="#">
-                      <div class="brand-logo">
-                        <img src="images/envato.png" alt="">
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="brand-logo">
-                        <img src="images/themeforest.png" alt="">
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="brand-logo">
-                        <img src="images/photodune.png" alt="">
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="brand-logo">
-                        <img src="images/activeden.png" alt="">
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="brand-logo">
-                        <img src="images/envato.png" alt="">
-                      </div>
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <ul class="brand_item">
-                  <li>
-                    <a href="#">
-                      <div class="brand-logo">
-                        <img src="images/envato.png" alt="">
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="brand-logo">
-                        <img src="images/themeforest.png" alt="">
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="brand-logo">
-                        <img src="images/photodune.png" alt="">
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="brand-logo">
-                        <img src="images/activeden.png" alt="">
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="brand-logo">
-                        <img src="images/envato.png" alt="">
-                      </div>
-                    </a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
+          @include('pages.ours_brands')
         </div>
 </div>
 </form>
@@ -543,8 +555,74 @@
 
 @section('script')
   <script type="text/javascript">
-    $(document).ready(function(){
-      
+    jQuery(function($) {
+      // window.checkCheck = function(){
+      //   if($('#men').is(':checked')){
+      //     $('#men').on('click', function() {
+      //         var unsetcon = $(this).attr("name");
+      //         window.location.href = 'productfilter/'+unsetcon;
+      //     });
+      //   }else{
+      //     document.getElementById('my_form').submit()
+      //   }
+      // }
+
+      // if($('#men').is(':checked')){
+      //     $('#men').on('click', function() {
+      //         var unsetcon = $(this).attr("name");
+      //         window.location.href = 'productfilter/'+unsetcon;
+      //         window.stop();
+      //     });
+      //   }
+
+      // $('#men').on('click', function() {
+      //     alert("ok");
+      //     document.getElementById('my_form').submit();
+      // });
+
+      // $('#abc').on('click', function() {
+      //     var unsetcon = $('#men').attr("name");
+      //     window.location.href = 'productfilter/'+unsetcon;
+      // });
+
+      $( "#removeCondition > li > div" ).each(function() {
+        $(this).on('click', function() {
+          var unsetcon = $(this).attr('name');
+          window.location.href = 'productfilter/'+unsetcon;
+        });
+      });
+
+      $( "#gender input" ).each(function() {
+        $(this).on('click', function() {
+          var name = $(this).parent().text();
+          localStorage.setItem('genderName',name);
+        });
+      });
+
+      $( "#brands input" ).each(function() {
+        $(this).on('click', function() {
+          var name = $(this).parent().text();
+          localStorage.setItem('brandName',name);
+        });
+      });
+
+      $( "#typeShoes input" ).each(function() {
+        $(this).on('click', function() {
+          var name = $(this).parent().text();
+          localStorage.setItem('typeShoeName',name);
+        });
+      });
+
+      if (localStorage.getItem('genderName') != null) {
+        document.getElementById("genderCon").innerHTML = 'Gender: '+localStorage.getItem('genderName') + '<i class="glyphicon glyphicon-remove pull-right"></i>';
+      }
+      if (localStorage.getItem('brandName') != null) {
+        document.getElementById("brandCon").innerHTML = 'Brand: '+localStorage.getItem('brandName') + '<i class="glyphicon glyphicon-remove pull-right"></i>';
+      }
+      if (localStorage.getItem('typeShoeName') != null) {
+        document.getElementById("typeShoeCon").innerHTML = 'TS: '+localStorage.getItem('typeShoeName') + '<i class="glyphicon glyphicon-remove pull-right"></i>';
+      }
+
     });
   </script>
 @endsection
