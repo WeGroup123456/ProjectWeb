@@ -903,7 +903,7 @@ var Dashboard = function() {
             var map = AmCharts.makeChart("dashboard_amchart_2", {
                 type: "map",
                 "theme": "light",
-                pathToImages: "../assets/global/plugins/amcharts/ammap/images/",
+                pathToImages: "assets/global/plugins/amcharts/ammap/images/",
 
                 dataProvider: {
                     map: "worldLow",
@@ -1175,7 +1175,7 @@ var Dashboard = function() {
                 "type": "serial",
                 "addClassNames": true,
                 "theme": "light",
-                "path": "../assets/global/plugins/amcharts/ammap/images/",
+                "path": "assets/global/plugins/amcharts/ammap/images/",
                 "autoMargins": false,
                 "marginLeft": 30,
                 "marginRight": 8,
@@ -1264,7 +1264,7 @@ var Dashboard = function() {
             var chart = AmCharts.makeChart("dashboard_amchart_4", {
                 "type": "pie",
                 "theme": "light",
-                "path": "../assets/global/plugins/amcharts/ammap/images/",
+                "path": "assets/global/plugins/amcharts/ammap/images/",
                 "dataProvider": [{
                     "country": "Lithuania",
                     "value": 260
@@ -1315,7 +1315,7 @@ var Dashboard = function() {
             }
 
             $('#mapplic').mapplic({
-                source: '../assets/global/plugins/mapplic/world.json',
+                source: 'assets/global/plugins/mapplic/world.json',
                 height: 265,
                 animate: false,
                 sidebar: false,

@@ -2,7 +2,7 @@ jQuery(document).ready(function() {
     // ECHARTS
     require.config({
         paths: {
-            echarts: '../assets/global/plugins/echarts/'
+            echarts: 'assets/global/plugins/echarts/'
         }
     });
 
