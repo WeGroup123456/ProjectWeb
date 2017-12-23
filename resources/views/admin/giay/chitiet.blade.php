@@ -5,7 +5,7 @@
 <!-- Page Content -->
         <div id="page-wrapper"  style="margin: 0px 0px;">
             <div class="container-fluid">
-                <div class="row"><a href="admin/giay/danhsach">Quay lại</a></div>
+                <div class="row"><a href="admin/giay/danhsach" class="btn btn-primary">Quay lại</a></div>
                 <div class="row">
                     <div class="col-lg-12">
                         <h1 class="page-header">Giày

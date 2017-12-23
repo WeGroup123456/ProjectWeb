@@ -8,6 +8,8 @@
                     <div class="col-lg-12">
                         <h1 class="page-header">Giày
                             <small>Sửa</small>
+                            <br>
+                            <a href="admin/giay/danhsach" class="btn btn-primary">Quay lại</a>
                         </h1>
                     </div>
                     <!-- /.col-lg-12 -->

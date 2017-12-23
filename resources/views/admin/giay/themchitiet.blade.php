@@ -8,6 +8,8 @@
                     <div class="col-lg-12">
                         <h1 class="page-header">Giày
                             <small>Thêm chi tiết</small>
+                            <br>
+                            <a href="admin/giay/danhsach" class="btn btn-primary">Quay lại</a>
                         </h1>
                     </div>
                     <!-- /.col-lg-12 -->
@@ -92,7 +94,7 @@
                                 <input class="form-control" name="GiaMoi" placeholder="Nhập giá mới" required="" />
                             </div>
 
-                            <div class="form-group">
+                            {{-- <div class="form-group">
                                 <label>Size</label>
                                 <select class="form-control" name="Size">
                                     @for ($i = 35; $i <= 45 ; $i++)
@@ -104,7 +106,7 @@
                             <div class="form-group">
                                 <label>Số lượng</label>
                                 <input class="form-control" name="SoLuong" placeholder="Nhập số lượng" required="" />
-                            </div>
+                            </div> --}}
 
                             <div class="form-group">
                                 <label>Status</label>

@@ -125,6 +125,9 @@ Route::group(['prefix'=>'admin','middleware'=>'adminLogin'],function() {
 // {
 //     return view('product.productgird');
 // });
+Route::get('aboutus','PagesController@aboutus');
+Route::get('location','PagesController@location');
+Route::get('contact','PagesController@contact');
 
 
 /*shoppingcart*/
@@ -138,6 +141,7 @@ Route::get('deletecart/{rowId}','PagesController@getDeletecart');
 /*Product*/
 Route::get('product',['as'=>'product','uses'=>'PagesController@product']);
 Route::get('productdetail/{alias}/shoe{idShoe}.html','PagesController@productDetail');
+Route::get('ajax/checksize/{idparent}/{size}','PagesAjaxController@checkSize');
 /*End Product*/
 
 /*Product Filter*/

@@ -70,8 +70,15 @@ class GiayController extends Controller
     }
 
     public function postThemChiTiet(Request $request,$id){
+        $this->validate($request,
+            [
+                'MaGiay' => 'unique:MauGiay,MaGiay',
+            ],[
+                'MaGiay.unique' => 'Mã giày đã tồn tại',
+            ]);
+
         $maugiay = new MauGiay;
-        $size = new Size;
+        // $size = new Size;
         $giay = Giay::where('id',$id)->get();
 
         if ($request->hasFile('HinhBe')) {
@@ -103,11 +110,11 @@ class GiayController extends Controller
 
         $maugiay->save();
 
-        $size->SoLuong = $request->SoLuong;
-        $size->Size = $request->Size;
-        $size->mau_giay_id = $maugiay->id;
+        // $size->SoLuong = $request->SoLuong;
+        // $size->Size = $request->Size;
+        // $size->mau_giay_id = $maugiay->id;
 
-        $size->save();
+        // $size->save();
 
         if(count($_FILES['upload']['name']) > 0){
 

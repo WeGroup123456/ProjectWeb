@@ -8,6 +8,8 @@
                     <div class="col-lg-12">
                         <h1 class="page-header">Giày: {{$maugiay->giay->Ten}}|| Mã: {{$maugiay->MaGiay}}
                             <small>Thêm size</small>
+                            <br>
+                            <a href="admin/giay/chitiet/{{$maugiay->giay->id}}"  class="btn btn-primary">Quay lại</a>
                         </h1>
                     </div>
                     <!-- /.col-lg-12 -->

@@ -25,20 +25,32 @@ class PagesAjaxController extends Controller
         echo "oke";
     }
 
+    public function checkSize($idparent, $size, Request $request) {
+        $idparent = $request->idparent;
+        $size = $request->size;
+        $result = Size::where('mau_giay_id',$idparent)->where('Size',$size)->first();
+        if ($result->SoLuong > 0) {
+            echo "avail";
+        }else{
+           echo "not avail"; 
+        }
+        
+    }
+
     public function getSorting($action){
-    	if ($action == "popularity") {
+        if ($action == "popularity") {
             //chua lam
-    		$maugiay = MauGiay::orderBy('GiaMoi', 'desc')->get();
-    	}else if($action == "lowest_price"){
-    		$maugiay = MauGiay::orderBy('GiaMoi', 'asc')->get();
-    	}else if($action == "highest_price"){
             $maugiay = MauGiay::orderBy('GiaMoi', 'desc')->get();
-    	}else if($action == "latest_arrival"){
+        }else if($action == "lowest_price"){
+            $maugiay = MauGiay::orderBy('GiaMoi', 'asc')->get();
+        }else if($action == "highest_price"){
+            $maugiay = MauGiay::orderBy('GiaMoi', 'desc')->get();
+        }else if($action == "latest_arrival"){
             $maugiay = MauGiay::orderBy('created_at', 'asc')->get();
-    	}else if($action == "discount"){
+        }else if($action == "discount"){
             //chua lam
             $maugiay = MauGiay::orderBy('GiaMoi', 'desc')->get();
-    	}
+        }
 
         if (count($maugiay) > 0) {
             Session::flash('maugiay', $maugiay);
@@ -208,9 +220,9 @@ class PagesAjaxController extends Controller
                 $count_query_1++;
                 $query->where('GioiTinh',$gender);
                 if ($count_query_1 == 1) {
-	                echo "gender"; // trả về item nếu không lọc được sản phẩm nào để delete trong localStorage
-	                exit();
-	            }
+                    echo "gender"; // trả về item nếu không lọc được sản phẩm nào để delete trong localStorage
+                    exit();
+                }
             }
         })->where(function ($query) use ($priceFrom,$priceTo,$count_query_5) {
             if($priceFrom != null && $priceTo != null) {

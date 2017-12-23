@@ -60,6 +60,18 @@ class PagesController extends Controller
         return view('pages.homepage',['slide_all'=>$slide_all,'special_deals_1'=>$special_deals_1,'special_deals_2'=>$special_deals_2,'hot_shoes_1'=>$hot_shoes_1,'hot_shoes_2'=>$hot_shoes_2,'new_shoes_1'=>$new_shoes_1,'new_shoes_2'=>$new_shoes_2]);
     }
 
+    function aboutus(){
+        return view('pages.aboutus');
+    }
+
+    function location(){
+        return view('pages.location');
+    }
+
+    function contact(){
+        return view('pages.contact');
+    }
+
     function product(){
         $shoe = MauGiay::paginate(6);
         return view('product.productgird',['shoe'=>$shoe]);
