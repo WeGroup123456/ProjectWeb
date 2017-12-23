@@ -47,12 +47,12 @@
                         <div class="productname">
                           {{$item->name}}
                         </div>
-                        <p>
+                        {{-- <p>
                           <img alt="" src="images/star.png">
                           <a class="review_num" href="#">
                             02 Review(s)
                           </a>
-                        </p>
+                        </p> --}}
                         <p>
                           Product Size : 
                           <strong class="pcode">
@@ -114,7 +114,7 @@
               <div class="clearfix">
               </div>
               <div class="row">
-                <div class="col-md-4 col-sm-6">
+                {{-- <div class="col-md-4 col-sm-6">
                   <div class="shippingbox">
                     <h5>
                       Estimate Shipping And Tax
@@ -619,8 +619,8 @@
                       </button>
                     </form>
                   </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
+                </div> --}}
+                <div class="col-md-5 col-md-offset-7 col-sm-6">
                   <div class="shippingbox">
                     <div class="subtotal">
                       <h5>
@@ -641,7 +641,7 @@
                     {{-- <button>
                       Process To Checkout
                     </button> --}}
-                    <a href="paynow">Process To Checkout</a>
+                    <a href="paynow" class="button">Process To Checkout</a>
                   </div>
                 </div>
               </div>

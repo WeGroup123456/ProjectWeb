@@ -18,7 +18,7 @@
                   @foreach ($special_deals_1 as $sd1)
                      <div class="col-md-3 col-sm-6">
                         <div class="products">
-                           <div class="ribbon"><span>- %{{number_format((1-($sd1->GiaMoi/$sd1->GiaCu))*100)}}</span></div>
+                           <div class="ribbon"><span>- %{{$sd1->GiaCu == 0 ? 'N' : number_format((1-($sd1->GiaMoi/$sd1->GiaCu))*100)}}</span></div>
                            <div class="thumbnail">
                               <a href="productdetail/{{$sd1->giay->TenKhongDau}}/shoe{{$sd1->id}}.html"><img src="upload/giay/{{$sd1->MaGiay}}/chinh/{{$sd1->HinhBe}}" alt="Product Name"></a>
                               <div class="sizesanco">
@@ -45,7 +45,7 @@
                   @foreach ($special_deals_2 as $sd2)
                      <div class="col-md-3 col-sm-6">
                         <div class="products">
-                           <div class="ribbon"><span>- %{{number_format((1-($sd2->GiaMoi/$sd2->GiaCu))*100)}}</span></div>
+                           <div class="ribbon"><span>- %{{$sd2->GiaCu == 0 ? 'N' : number_format((1-($sd2->GiaMoi/$sd2->GiaCu))*100)}}</span></div>
                            <div class="thumbnail"><a href="productdetail/{{$sd2->giay->TenKhongDau}}/shoe{{$sd2->id}}.html"><img src="upload/giay/{{$sd2->MaGiay}}/chinh/{{$sd2->HinhBe}}" alt="Product Name"></a>
                               <div class="sizesanco">
                                  <h4>Size sẵn có:</h4>

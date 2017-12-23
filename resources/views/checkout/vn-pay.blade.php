@@ -5,8 +5,8 @@
 @section('content')
 <link href="vnpay_php/assets/jumbotron-narrow.css" rel="stylesheet">  
 <link href="https://pay.vnpay.vn/lib/vnpay/vnpay.css" rel="stylesheet" />
-<div class="container" style="background: #fff; height: 100vh;">
-  <div style="width: 100%;padding-top:100px;font-weight: bold;color: #333333"><h3>Tạo mới đơn hàng</h3></div>
+<div class="container" style="background: #fff;">
+  <div style="width: 100%;padding-top:100px;font-weight: bold;color: #333333; text-align: center;";><h3>Tạo mới đơn hàng</h3></div>
   <div style="width: 100%" >
       @if(count($errors) > 0)
           <div class="alert alert-danger">
@@ -29,35 +29,38 @@
         }
         
       @endphp
-      <form action="http://localhost/ProjectWebFront/ProjectWeb/public/vnpay_php/vnpay_ajax.php" id="frmCreateOrder" method="post">        
+      <div class="col-md-2"></div>
+      <form class="col-md-8" action="{{URL::to('/')}}/vnpay_php/vnpay_ajax.php" id="frmCreateOrder" method="post" style="padding: 20px 30px 20px 30px;">        
           <div class="form-group">
-              <label for="language">Loại hàng hóa </label>
-	            <select name="ordertype" id="ordertype" class="form-control">
-	                <!-- <option value="topup">Nạp tiền điện thoại</option>
+              <label style="padding-bottom: 10px;" for="language">Loại hàng hóa </label>
+              <select style="margin-left: 0;" name="ordertype" id="ordertype" class="form-control">
+                  <!-- <option value="topup">Nạp tiền điện thoại</option>
                   <option value="billpayment">Thanh toán hóa đơn</option> -->
-	                <option value="fashion">Thời trang</option>
-	            </select>
+                  <option value="fashion">Thời trang</option>
+              </select>
           </div>
           <div class="form-group">
-              <label for="name">User ID: </label>
-              <input class="form-control" data-val="true" data-val-number="The field Amount must be a number." data-val-required="The userid field is required." id="userid" max="100000000" min="1" name="userid" type="number" {{-- value="{{$customer->id}}" disabled="" --}} />
+              <label style="padding-bottom: 10px;" for="name">User ID: </label>
+              <input class="form-control" data-val="true" data-val-number="The field Amount must be a number." data-val-required="The userid field is required." id="userid" max="100000000" min="1" name="userid" type="number" value="{{$customer->id}}" {{-- value="{{$customer->id}}" disabled="" --}} />
           </div>
           <div class="form-group">
-              <label for="amount">Số tiền</label>
-              <input class="form-control" data-val="true" data-val-number="The field Amount must be a number." data-val-required="The Amount field is required." id="amount" max="100000000" min="1" name="amount" type="number" {{-- value="{{$total}}" placeholder="{{$total}}" disabled="" --}} />
+              <label style="padding-bottom: 10px;" for="amount">Số tiền</label>
+              <input class="form-control" data-val="true" data-val-number="The field Amount must be a number." data-val-required="The Amount field is required." id="amount" max="100000000" min="1" name="amount" type="number" value="{{preg_replace("/([^0-9\\.])/i", "", $total)}}" {{-- value="{{$total}}" placeholder="{{$total}}" disabled="" --}} />
           </div>
-          <div class="form-group">
-              <label for="">Tổng tiền:</label>
-              <p>{{$total}}</p>
-          </div>
+          {{-- <div class="form-group">
+              <label style="padding-bottom: 10px;" for="">Tổng tiền:</label>
+              <div style="border: 1px solid #bdc3c7; border-radius: 10px;">
+                <p style="padding: 8px; margin:0">{{$total}}</p>
+              </div>
+          </div> --}}
            
           <div class="form-group">
-              <label for="OrderDescription">Nội dung thanh toán</label>
+              <label style="padding-bottom: 10px;" for="OrderDescription">Nội dung thanh toán</label>
               <textarea class="form-control" cols="20" id="orderDesc" name="orderDesc" rows="2">Thanh toan don hang test</textarea>
           </div>
           <div class="form-group">
-              <label for="bankcode">Ngân hàng</label>
-              <select name="bankcode" id="bankcode" class="form-control">
+              <label style="padding-bottom: 10px;" for="bankcode">Ngân hàng</label>
+              <select style="margin-left: 0;" name="bankcode" id="bankcode" class="form-control">
                   <option value="">Không chọn </option>
                   <option value="NCB">Ngan hang NCB</option>
                   <option value="SACOMBANK">Ngan hang SacomBank  </option>
@@ -83,8 +86,8 @@
           </div>
 
           <div class="form-group">
-              <label for="language">Ngôn ngữ</label>
-              <select name="language" id="language" class="form-control">
+              <label style="padding-bottom: 10px;" for="language">Ngôn ngữ</label>
+              <select style="margin-left: 0;" name="language" id="language" class="form-control">
                   <option value="vn">Tiếng Việt</option>
                   <option value="en">English</option>
               </select>

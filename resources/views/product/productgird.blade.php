@@ -44,10 +44,28 @@
                 </h3>
                 <div class="clearfix">
                 </div>
+                
                 <ul id="removeCondition" style="list-style: none;">
-                  <li {{Input::has('gender') ? '' : 'hidden'}}><div class="alert alert-info" name="gender" style="background: #333333;"><h5 style="color: #fff;" id="genderCon"></h5></div></li>
+                  <li {{Input::has('gender') ? '' : 'hidden'}}>
+                    <div class="alert alert-info" name="gender" style="background: #333333;">
+                      <h5 style="color: #fff;" id="genderCon">
+
+                      </h5>
+                    </div>
+                  </li>
                   
-                  <li {{Input::has('brands') ? '' : 'hidden'}}><div class="alert alert-info" name="brands" style="background: #333333;"><h5 style="color: #fff;" id="brandCon"></h5></div></li>
+                  <li {{Input::has('brands') ? '' : 'hidden'}}>
+                    <div class="alert alert-info" name="brands" style="background: #333333;">
+                      <h5 style="color: #fff;" id="brandCon">
+                        @foreach ($shoe_brand_all as $sba)
+                          @if (Input::get('brands') === $sba->TenKhongDau)
+                            {{$sba->Ten}}
+                          @endif
+                        @endforeach
+                        <i class="glyphicon glyphicon-remove pull-right"></i>
+                      </h5>
+                    </div>
+                  </li>
                   
                   <li {{Input::has('cate') ? '' : 'hidden'}}><div class="alert alert-info" name="cate" style="background: #333333;"><h5 style="color: #fff;" id="typeShoeCon"></h5></div></li>
                   
@@ -369,12 +387,12 @@
                   <ul class="slides">
                     <li>
                       <a href="#">
-                        <img src="images/banner-01.jpg" alt=""/>
+                        <img src="images/banner-cus-01.jpg" alt=""/>
                       </a>
                     </li>
                     <li>
                       <a href="#">
-                        <img src="images/banner-02.jpg" alt=""/>
+                        <img src="images/banner-cus-03.jpg" alt=""/>
                       </a>
                     </li>
                   </ul>
@@ -386,9 +404,9 @@
                 <div class="toolbar">
                   <div class="sorter">
                     <div class="view-mode">
-                      <a href="productlitst.html" class="list">
+                      {{-- <a href="productlitst.html" class="list">
                         List
-                      </a>
+                      </a> --}}
                       <a href="#" class="grid active">
                         Grid
                       </a>
@@ -599,12 +617,12 @@
         });
       });
 
-      $( "#brands input" ).each(function() {
-        $(this).on('click', function() {
-          var name = $(this).parent().text();
-          localStorage.setItem('brandName',name);
-        });
-      });
+      // $( "#brands input" ).each(function() {
+      //   $(this).on('click', function() {
+      //     var name = $(this).parent().text();
+      //     localStorage.setItem('brandName',name);
+      //   });
+      // });
 
       $( "#typeShoes input" ).each(function() {
         $(this).on('click', function() {
@@ -616,9 +634,9 @@
       if (localStorage.getItem('genderName') != null) {
         document.getElementById("genderCon").innerHTML = 'Gender: '+localStorage.getItem('genderName') + '<i class="glyphicon glyphicon-remove pull-right"></i>';
       }
-      if (localStorage.getItem('brandName') != null) {
-        document.getElementById("brandCon").innerHTML = 'Brand: '+localStorage.getItem('brandName') + '<i class="glyphicon glyphicon-remove pull-right"></i>';
-      }
+      // if (localStorage.getItem('brandName') != null) {
+      //   document.getElementById("brandCon").innerHTML = 'Brand: '+localStorage.getItem('brandName') + '<i class="glyphicon glyphicon-remove pull-right"></i>';
+      // }
       if (localStorage.getItem('typeShoeName') != null) {
         document.getElementById("typeShoeCon").innerHTML = 'TS: '+localStorage.getItem('typeShoeName') + '<i class="glyphicon glyphicon-remove pull-right"></i>';
       }

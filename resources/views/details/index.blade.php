@@ -43,12 +43,12 @@
                       {{"Nữ"}}
                     @endif
                   </h5>
-                  <p>
+                  {{-- <p>
                     <img alt="" src="images/star.png">
                     <a class="review_num" href="#">
                       02 Review(s)
                     </a>
-                  </p>
+                  </p> --}}
                     @if(count($errors) > 0)
                         <div class="alert alert-danger">
                             @foreach($errors->all() as $err)
@@ -63,11 +63,11 @@
                         </div>
                     @endif
                   <div class="available-size inline-block" style="margin: 10px 0px;">
-                    Size sẵn có:
+                    Available Size:
                     <ul class="list-inline" style="list-style: none;">
                       @foreach ($sort as $so)
                         <li>
-                            <input id="" type="radio" value="{{$so->Size}}" name="Size">
+                            <input type="radio" value="{{$so->Size}}" name="Size" idparent="{{$so->mau_giay_id}}">
                             <label>
                               {{$so->Size}}
                             </label>
@@ -91,7 +91,7 @@
                   </div>
                   <p>
                     Availability: 
-                    <span class=" light-red">
+                    <span class="light-red hidden" id="available-size">
                       In Stock
                     </span>
                   </p>
@@ -113,7 +113,7 @@
                   </div>
                   <hr class="border">
                   <div class="wided">
-                    <div class="qty">
+                    <div class="qty" id="qty-size">
                       Qty &nbsp;&nbsp;: 
                       <select>
                         <option>
@@ -123,10 +123,10 @@
                     </div>
                     
                       <div class="button_group">
-                        <button class="button" >
+                        <button class="button" id="cart-size">
                           Add To Cart
                         </button>
-                        <button class="button compare">
+                        {{-- <button class="button compare">
                           <i class="fa fa-exchange">
                           </i>
                         </button>
@@ -137,14 +137,14 @@
                         <button class="button favorite">
                           <i class="fa fa-envelope-o">
                           </i>
-                        </button>
+                        </button> --}}
                       </div>
                     
                   </div>
                   <div class="clearfix">
                   </div>
-                  <hr class="border">
-                  <img src="images/share.png" alt="" class="pull-right">
+                  {{-- <hr class="border">
+                  <img src="images/share.png" alt="" class="pull-right"> --}}
                 </div>
                 </form>
               </div>
@@ -158,7 +158,7 @@
                         DESCRIPTION
                       </a>
                     </li>
-                    <li>
+                    {{-- <li>
                       <a href="productdetail/nemeziz-tango-17-1-trainers/shoe22.html#Reviews">
                         REVIEW
                       </a>
@@ -167,7 +167,7 @@
                       <a href="productdetail/nemeziz-tango-17-1-trainers/shoe22.html#tags">
                         PRODUCT TAGS
                       </a>
-                    </li>
+                    </li> --}}
                   </ul>
                 </div>
                 <div class="tab-content-wrap">
@@ -387,7 +387,7 @@
                       fjs.parentNode.insertBefore(js, fjs);
                     }(document, 'script', 'facebook-jssdk'));</script>
                   
-                    <div class="fb-comments" data-href="http://localhost/ProjectWebFront/ProjectWeb/public/productdetail/{{$shoe->giay->TenKhongDau}}/shoe{{$shoe->id}}.html" data-numposts="5" data-width="100%"></div>
+                    <div class="fb-comments" data-href="{{URL::to('/')}}/productdetail/{{$shoe->giay->TenKhongDau}}/shoe{{$shoe->id}}.html" data-numposts="5" data-width="100%"></div>
                   </div>
               <div id="productsDetails" class="hot-products">
                 <h3 class="title">
@@ -508,7 +508,7 @@
                       {{$sd->giay->Ten}}
                     </p>
                     <h5 class="price">
-                      {{number_format($sd->GiaCu)}}<p><div class="offer" style="position: static !important; color: #fff; background-color: #f7544a;">- %{{number_format((1-($sd->GiaMoi/$sd->GiaCu))*100)}}</div></p>
+                      {{number_format($sd->GiaCu)}}<p><div class="offer" style="position: static !important; color: #fff; background-color: #f7544a;">- %{{$sd->GiaCu == 0 ? 'N' : number_format((1-($sd->GiaMoi/$sd->GiaCu))*100)}}</div></p>
                     </h5>
                   </div>
                 </div>
@@ -658,4 +658,43 @@
           @include('pages.ours_brands')
         </div>
 </div>
+@endsection
+
+@section('script')
+    <script type="text/javascript">
+    jQuery(function($) {
+
+      $(".available-size > ul > li > input").each(function() {
+        $(this).on('click', function() {
+          var size = $(this).val();
+          var idparent = $(this).attr('idparent');
+          
+          $.ajax({
+            url:'ajax/checksize/'+idparent+'/'+size,
+            type:'GET',
+            cache: false,
+            data:{
+              "idparent":idparent,
+              "size":size
+            },
+            success: function(data){
+              if (data == "avail"){
+                document.getElementById('available-size').innerHTML = 'In Stock';
+                $('#qty-size').removeClass('hidden');
+                $('#cart-size').removeClass('hidden');
+              }else{
+                document.getElementById('available-size').innerHTML = 'Out of Stock';
+                $('#qty-size').addClass('hidden');
+                $('#cart-size').addClass('hidden');
+              }
+              $('#available-size').removeClass('hidden');
+            },error: function(){
+              alert("error");
+            }
+          });
+        });
+      });
+      
+    });
+    </script>
 @endsection
