@@ -5,7 +5,7 @@ $param='?amount='.$_GET['?amount'].'&user_id='.$_GET['?user_id'];
 ?>
 <div style="width: 100%;padding-top:0px;font-weight: bold;color: #333333"><h3>Tạo mới đơn hàng</h3></div>
 <div style="width: 100%" >
-    <form action="http://localhost/ProjectWebFront/ProjectWeb/vnpay_php/vnpay_ajax.php" id="frmCreateOrder" method="post">        
+    <form action="http://se2017s1g9.esy.es/vnpay_php/vnpay_ajax.php" id="frmCreateOrder" method="post">        
         <div class="form-group">
             <label for="language">Loại hàng hóa </label>
             <select name="ordertype" id="ordertype" class="form-control">

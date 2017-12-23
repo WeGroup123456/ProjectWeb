@@ -9,7 +9,7 @@
         <meta name="author" content="">
         <title>VNPAY RESPONSE</title>
         <!-- Bootstrap core CSS -->
-        <link href="http://117.6.131.222/vnpay_php/assets/bootstrap.min.css" rel="stylesheet"/>
+        <link href="http://se2017s1g9.esy.es/vnpay_php/assets/bootstrap.min.css" rel="stylesheet"/>
         <!-- Custom styles for this template -->
         <link href="http://117.6.131.222/vnpay_php/assets/jumbotron-narrow.css" rel="stylesheet">         
         <script src="http://117.6.131.222/vnpay_php/assets/jquery-1.11.3.min.js"></script>
@@ -42,6 +42,34 @@
         }
 
         $secureHash = md5($hashSecret . $hashData);
+
+
+        // $Amount = $_GET['vnp_Amount'];
+        // $OrderDescription = $_GET['vnp_OrderInfo'];
+        // $IpAddr = "117.6.131.222";
+        // $UserAgent = "Mozilla/5.0 (Linux; Android 7.0; BLL-L22 Build/HUAWEIBLL-L22; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/61.0.3163.98 Mobile Safari/537.36";
+        // $vnp_TransactionNo = $_GET['vnp_TransactionNo'] ;
+        // $vnp_TxnResponseCode = $_GET['vnp_ResponseCode'];
+        // $vnp_BatchNo = $_POST['city_name'];
+        // $vnp_BankCode = $_GET['vnp_BankCode'];
+        // $vnp_PayDate = $_GET['vnp_PayDate'];
+        // $CreatedDate = $_GET['vnp_PayDate'];
+        // if ($secureHash == $vnp_SecureHash) {
+        //     if ($_GET['vnp_ResponseCode'] == '00') {
+        //         $Status = 1;
+        //     } else {
+        //         $Status = 0;
+        //     }
+        // } else {
+        //     echo "Chu ky khong hop le";
+        // }
+
+        // $sql_query = "INSERT INTO `orders`(`Amount`, `OrderDescription`, `IpAddr`, `UserAgent`, `vnp_TransactionNo`, `vnp_TxnResponseCode`, `vnp_BatchNo`, `vnp_BankCode`, `vnp_PayDate`, `CreatedDate`, `Status`) VALUES ('$Amount','$OrderDescription','$IpAddr','$UserAgent','$vnp_TransactionNo','$vnp_TxnResponseCode','$vnp_BatchNo','$vnp_BankCode','$vnp_PayDate','$CreatedDate','$Status')";
+        // if (mysql_query($sql_query)) {
+        //     echo "Success";
+        // }else{
+        //     echo "Error";
+        // }
         ?>
         <!--Begin display -->
         <div class="container">
@@ -101,7 +129,7 @@
                     <label><?php echo $_GET['vnp_PayDate'] ?></label>
                 </div> 
             </div>
-            <div style="clear: both"><a href="index.php">Về danh sách</a></div>
+            <div style="clear: both"><a href="http://se2017s1g9.esy.es/home">Về trang chủ</a></div>
             <p>
                 &nbsp;
             </p>

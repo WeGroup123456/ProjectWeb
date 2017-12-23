@@ -1,9 +1,9 @@
 <?php
 
 $db_host = "localhost";
-$db_name = "vn_pay";
-$db_user = "root";
-$db_pwd = "";
+$db_name = "u814690230_se";
+$db_user = "u814690230_se";
+$db_pwd = "TRzyvE7wTI8z";
 
 $vnpay_tmn_code = "BYBJKMQQ"; //VNPAY will send to you
 $vnpay_hash_secret = "CWUVWGHCEVNFCKIXKTIYHMZGHQZDXQZV";
