@@ -1,6 +1,6 @@
 <?php
 
-$db_host = "localhost";
+$db_host = "mysql.hostinger.vn";
 $db_name = "u814690230_se";
 $db_user = "u814690230_se";
 $db_pwd = "TRzyvE7wTI8z";
