@@ -162,14 +162,14 @@
                 <form class="pricing" method="get" action="productfilter">
                   <label>
                     $ 
-                    <input type="number" name="min_price" style="margin-bottom: 10px;" value="{{Input::get('min_price')}}" required="">
+                    <input type="number" name="min_price" min="0" style="margin-bottom: 10px;" value="{{Input::get('min_price')}}" required="">
                   </label>
                   <span class="separate">
                     - 
                   </span>
                   <label>
                     $ 
-                    <input type="number" name="max_price" style="margin-bottom: 10px !important;" value="{{Input::get('max_price')}}" required="">
+                    <input type="number" name="max_price" min="0" style="margin-bottom: 10px !important;" value="{{Input::get('max_price')}}" required="">
                   </label>
                   <input class="button" type="submit" value="Go">
                 </form>

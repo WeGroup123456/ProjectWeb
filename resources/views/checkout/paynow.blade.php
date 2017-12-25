@@ -123,11 +123,16 @@
       <div class="col-md-12">
         <div id="msg" class="hidden"></div>
         <div id="map" class="map"><div id="popup"></div></div>
+        <style type="text/css">
+          .ol-rotate-reset {
+            display: none;
+          }
+        </style>
         <!-- <button id="zoom-out">Zoom out</button>
         <button id="zoom-in">Zoom in</button>
         <br>
         <br> -->
-        <!-- <button type="submit"  onclick="pointToPoint()" class="btn btn-primary" id="find">Vẽ đường đến cửa hàng gần nhất</button> -->
+        <button type="submit"  onclick="pointToPoint()" class="btn btn-primary" id="find">Vẽ đường đến cửa hàng gần nhất</button>
       </div>
   </div>
 </div>
@@ -177,7 +182,8 @@
         {
          gis_data: [ 20.9948186,105.86831329999995 ],
          id: 3,
-         place_id: "ChIJo4YF2gSsNTERL3dPEDR6s4E",
+         place_id: "ChIJeX0XMhusNTERyJhNRyk_Cd4",
+         //ChIJo4YF2gSsNTERL3dPEDR6s4E
          name: "Cửa hàng số 3 tại Times City",
          description: "abc",
          image: "op/upload/icon.png"
@@ -379,7 +385,6 @@
                     lon_cus = data.routes[0].legs[0].start_location.lng;
                     lat_shop = data.routes[0].legs[0].end_location.lat;
                     lon_shop = data.routes[0].legs[0].end_location.lng;
-                    
 
                     drawPoint(parseInt(start_location_lat),parseInt(start_location_lon));
 
@@ -395,7 +400,6 @@
                     var num = total.toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, '$1,');
 
                     //array
-
                     for (var i = 0; i < array.length; i++) {
                       if(array[i].place_id == place_id){
                         var nameShop = array[i].name;
@@ -403,7 +407,7 @@
                     }
 
                     $('#paragraph').html("Giá: "+num + " VND" + "<br>Khoảng cách: "+shortest+" km <br>Tới Shop gần nhất: "+nameShop);
-                    pointToPoint();
+                    
                   }
               },
               error: function() {
@@ -411,8 +415,7 @@
               }
 
             });
-          }
-
+          } // end for
         });
       }
 
